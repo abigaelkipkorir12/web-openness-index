@@ -1,4 +1,4 @@
-.PHONY: install format lint typecheck test check scan
+.PHONY: install format lint typecheck test schema schema-check check scan
 
 install:
 	uv sync --all-groups
@@ -17,7 +17,13 @@ typecheck:
 test:
 	uv run pytest
 
-check: lint typecheck test
+schema:
+	uv run python scripts/export_schema.py
+
+schema-check:
+	uv run python scripts/export_schema.py --check
+
+check: lint typecheck schema-check test
 
 scan:
 	uv run web-openness scan example.org

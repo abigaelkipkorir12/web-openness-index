@@ -218,8 +218,9 @@ Logs must avoid response bodies, credentials, cookies, and unnecessary query str
 ### Phase 0: runnable foundation — current
 
 - Versioned observation schema
+- Committed JSON Schema and deterministic compatibility fixture
 - Budgeted and delayed HTTP client
-- Robots, homepage, metadata, and `llms.txt` probes
+- DNS/TLS, robots, sitemap, homepage, metadata, and `llms.txt` probes
 - Immutable local JSON output
 - Offline test suite and CI
 - Public README and architecture plan
@@ -229,7 +230,7 @@ Exit criterion: a clean checkout can pass all checks and produce a policy-compli
 ### Phase 1: research MVP
 
 - Versioned domain registry and sampling strata
-- DNS, TLS, sitemap, headers, CDN/WAF, and HTTP-protocol probes
+- Headers, CDN/WAF, DNS-provider, hosting-provider, and HTTP-protocol probes
 - Playwright worker for browser-versus-HTTP and screenshot evidence
 - Fixture-based validation for login, paywall, cookie-wall, CAPTCHA, and JavaScript signals
 - Parquet export and DuckDB analysis notebooks/scripts

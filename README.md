@@ -33,8 +33,10 @@ Machine-readable metadata—including Schema.org, Open Graph, RSS/Atom/JSON feed
 This repository contains the first collector skeleton and the infrastructure plan. The current collector:
 
 - normalizes a domain into a reproducible scan target;
+- records bounded DNS resolution and TLS negotiation evidence;
 - fetches `robots.txt` with a transparent user agent;
 - obeys applicable `robots.txt` rules before requesting other paths;
+- discovers and safely classifies one sitemap without recursively crawling it;
 - records homepage availability and response metadata;
 - detects basic structured metadata in the homepage HTML;
 - checks for a public `llms.txt` when policy allows;
@@ -114,7 +116,10 @@ The observatory measures only publicly discoverable interfaces and never attempt
 ```text
 .
 ├── docs/
-│   └── architecture.md       # System boundaries, infrastructure, and delivery plan
+│   ├── architecture.md       # System boundaries, infrastructure, and delivery plan
+│   └── methodology/          # Sampling and research methodology
+├── schemas/                  # Committed, versioned evidence contracts
+├── scripts/                  # Reproducible schema and maintenance commands
 ├── src/web_openness/
 │   ├── probes/               # Independently testable measurement modules
 │   ├── client.py             # Budgeted, rate-limited HTTP access
@@ -125,7 +130,7 @@ The observatory measures only publicly discoverable interfaces and never attempt
 └── .github/workflows/ci.yml  # Formatting, linting, typing, and test checks
 ```
 
-See [docs/architecture.md](docs/architecture.md) for the proposed production architecture, scaling path, and phase-by-phase acceptance criteria.
+See [docs/architecture.md](docs/architecture.md) for the proposed production architecture, scaling path, and phase-by-phase acceptance criteria. The first pilot design is specified in [docs/methodology/pilot_sampling.md](docs/methodology/pilot_sampling.md).
 
 ## Priorities
 

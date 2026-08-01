@@ -9,11 +9,20 @@ from web_openness import __version__
 from web_openness.client import RequestBudgetExceeded, SiteClient
 from web_openness.config import ScanConfig
 from web_openness.models import DomainSnapshot, Observation, ProbeError
-from web_openness.probes import HomepageProbe, MetadataProbe, RobotsProbe, WellKnownProbe
+from web_openness.probes import (
+    HomepageProbe,
+    MetadataProbe,
+    NetworkProbe,
+    RobotsProbe,
+    SitemapProbe,
+    WellKnownProbe,
+)
 from web_openness.probes.base import Probe, ProbeContext
 
 DEFAULT_PROBES: tuple[Probe, ...] = (
+    NetworkProbe(),
     RobotsProbe(),
+    SitemapProbe(),
     HomepageProbe(),
     MetadataProbe(),
     WellKnownProbe(),

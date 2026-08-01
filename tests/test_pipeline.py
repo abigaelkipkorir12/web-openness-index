@@ -6,7 +6,22 @@ import pytest
 from web_openness.config import ScanConfig
 from web_openness.models import Confidence
 from web_openness.pipeline import Scanner, normalize_target
+from web_openness.probes import (
+    HomepageProbe,
+    MetadataProbe,
+    RobotsProbe,
+    SitemapProbe,
+    WellKnownProbe,
+)
 from web_openness.storage import write_snapshot
+
+OFFLINE_HTTP_PROBES = (
+    RobotsProbe(),
+    SitemapProbe(),
+    HomepageProbe(),
+    MetadataProbe(),
+    WellKnownProbe(),
+)
 
 
 def test_normalize_target() -> None:
@@ -32,6 +47,16 @@ async def test_scan_collects_evidence_without_live_network(tmp_path: Path) -> No
             )
         if request.url.path == "/llms.txt":
             return httpx.Response(200, text="# Example", request=request)
+        if request.url.path == "/sitemap.xml":
+            return httpx.Response(
+                200,
+                text=(
+                    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+                    "<url><loc>https://example.org/one</loc></url>"
+                    "</urlset>"
+                ),
+                request=request,
+            )
         if request.url.path == "/":
             return httpx.Response(
                 200,
@@ -47,16 +72,19 @@ async def test_scan_collects_evidence_without_live_network(tmp_path: Path) -> No
 
     scanner = Scanner(
         ScanConfig(request_delay_seconds=0),
+        probes=OFFLINE_HTTP_PROBES,
         transport=httpx.MockTransport(handler),
     )
     snapshot = await scanner.scan("example.org")
 
     assert snapshot.domain == "example.org"
-    assert snapshot.request_count == 3
+    assert snapshot.request_count == 4
     assert snapshot.errors == []
     assert snapshot.observations["crawler.robots_exists"].value is True
     assert snapshot.observations["crawler.ai_specific_user_agents"].value == ["gptbot"]
     assert snapshot.observations["human.homepage_accessible"].value is True
+    assert snapshot.observations["metadata.sitemap_exists"].value is True
+    assert snapshot.observations["metadata.sitemap_url_count"].value == 1
     assert snapshot.observations["metadata.json_ld"].value is True
     assert snapshot.observations["metadata.open_graph"].value is True
     assert snapshot.observations["metadata.feeds"].value == ["/feed.xml"]
@@ -75,6 +103,7 @@ async def test_robots_disallow_skips_all_followup_requests() -> None:
 
     scanner = Scanner(
         ScanConfig(request_delay_seconds=0),
+        probes=OFFLINE_HTTP_PROBES,
         transport=httpx.MockTransport(handler),
     )
     snapshot = await scanner.scan("example.org")
@@ -95,6 +124,7 @@ async def test_inconclusive_robots_status_fails_closed() -> None:
 
     scanner = Scanner(
         ScanConfig(request_delay_seconds=0),
+        probes=OFFLINE_HTTP_PROBES,
         transport=httpx.MockTransport(handler),
     )
     snapshot = await scanner.scan("example.org")

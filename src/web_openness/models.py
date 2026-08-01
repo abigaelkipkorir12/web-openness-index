@@ -1,8 +1,16 @@
 from datetime import datetime
 from enum import StrEnum
-from typing import Any
+from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
+
+SCHEMA_VERSION: Literal["0.1.0"] = "0.1.0"
+
+
+class ContractModel(BaseModel):
+    """Base for persisted models: unknown fields must never disappear silently."""
+
+    model_config = ConfigDict(extra="forbid")
 
 
 class Confidence(StrEnum):
@@ -13,7 +21,7 @@ class Confidence(StrEnum):
     UNKNOWN = "unknown"
 
 
-class Evidence(BaseModel):
+class Evidence(ContractModel):
     source_url: str
     observed_at: datetime
     http_status: int | None = None
@@ -21,7 +29,7 @@ class Evidence(BaseModel):
     note: str | None = None
 
 
-class Observation(BaseModel):
+class Observation(ContractModel):
     value: Any
     confidence: Confidence
     confidence_score: float = Field(ge=0.0, le=1.0)
@@ -29,7 +37,7 @@ class Observation(BaseModel):
     evidence: list[Evidence] = Field(default_factory=list)
 
 
-class RequestRecord(BaseModel):
+class RequestRecord(ContractModel):
     requested_url: str
     final_url: str | None = None
     started_at: datetime
@@ -41,13 +49,13 @@ class RequestRecord(BaseModel):
     error: str | None = None
 
 
-class ProbeError(BaseModel):
+class ProbeError(ContractModel):
     probe: str
     message: str
 
 
-class DomainSnapshot(BaseModel):
-    schema_version: str = "0.1.0"
+class DomainSnapshot(ContractModel):
+    schema_version: Literal["0.1.0"] = SCHEMA_VERSION
     run_id: str
     domain: str
     origin: str
