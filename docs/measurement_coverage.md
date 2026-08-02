@@ -5,9 +5,9 @@ the collector emits direct evidence or a deliberately conservative inference. â€
 emits a candidate or hint but cannot yet establish the full research claim. A missing signal is
 never converted to `false`.
 
-The operational catalog currently has **102 implemented keys out of 110**. That ratio describes
-software coverage, not completion of the research program: several implemented keys are
-supporting metadata or explicitly probabilistic hints.
+The operational catalog now has an implementation path for **all 110 keys**. This is software
+coverage, not completion of the research program: some probes are opt-in, and several findings are
+supporting metadata, explicit declarations, or deliberately probabilistic hints.
 
 At the original Priority-1 requirement-group level, the collector has **23 fully implemented, 7
 partial, and 0 not yet supported**. Browser-versus-HTTP comparison is now implemented. Human barrier
@@ -32,13 +32,13 @@ labels rather than being promoted to facts.
 | Area | Current evidence | Main gap |
 | --- | --- | --- |
 | Agent access | Bounded candidate links for OpenAPI, GraphQL, OAuth, API docs, MCP, A2A, and agent cards | Safe verification, structured commerce, and the capability ladder |
-| Legal access | Candidate policy/license links and explicit homepage license declarations | Policy-text extraction and validated restrictions taxonomy |
-| Economic access | Candidate pricing/registration links and explicit JSON-LD subscription declarations | Free/registration/metering/enterprise/API-pricing classification |
-| Preservation | Cache-related response headers | Archive coverage, archive blocking, validated cache behavior, and ephemeral-content indicators |
-| Research outputs | Immutable JSON snapshots and smoke reports | Scoring, longitudinal aggregates, screenshots, public API, and dashboard |
+| Legal access | Candidate policy/license links plus explicit scraping and AI-use restrictions from one bounded policy follow-up | Labeled validation, broader policy coverage, and commercial/research-use taxonomy |
+| Economic access | Candidate links plus explicit registration, metering, subscription, and API-price declarations from one bounded follow-up | Labeled validation and broader free/enterprise/context classification |
+| Preservation | Cache headers, optional monthly-collapsed Wayback coverage/block evidence, and optional conditional cache validation | Archive-provider breadth, validation, and ephemeral-content indicators |
+| Research outputs | Immutable snapshots, reproducible stratified selection manifests, analysis-ready CSV exports, repeated-scan comparisons, and a scoring preregistration draft | Detector validation, weighted estimates, screenshots, public API, and dashboard |
 
 ## Interpretation
 
-The collector is suitable for a bounded pilot and missingness analysis. The optional browser pass
-closes the HTTP/render comparison gap, but a defensible openness index still requires detector
-validation sets, sampling, scoring, and a longitudinal release methodology.
+The collector is suitable for a bounded pilot and missingness analysis. A defensible openness index
+still requires a frozen real sampling frame, detector validation sets, preregistered weights and
+coverage thresholds, repeated waves, and a reviewed public-release methodology.

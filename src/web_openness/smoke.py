@@ -132,23 +132,19 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "legal.policy_links",
         "legal.license_links",
         "legal.license",
+        "legal.scraping_restrictions",
+        "legal.ai_restrictions",
         "economic.pricing_links",
         "economic.registration_links",
         "economic.subscription_required",
-        "metadata.llms_txt_exists",
-        "metadata.llms_txt_status",
-    )
-) + tuple(
-    SignalSpec(key, False)
-    for key in (
-        "legal.scraping_restrictions",
-        "legal.ai_restrictions",
         "economic.registration_required",
         "economic.metering",
         "economic.api_pricing",
         "preservation.archive_coverage",
         "preservation.archive_blocked",
         "preservation.cache_behavior",
+        "metadata.llms_txt_exists",
+        "metadata.llms_txt_status",
     )
 )
 
@@ -364,6 +360,30 @@ def render_markdown(run: SmokeRun) -> str:
             f"{_display_signal(domain, 'legal.license')} | "
             f"{_display_signal(domain, 'economic.subscription_required')} | "
             f"{_display_signal(domain, 'infrastructure.waf')} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Policy and preservation findings",
+            "",
+            "| Domain | Scraping restriction | AI restriction | Registration | Metering | "
+            "API pricing | Archive coverage | Archive blocked | Cache validation |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for domain in run.domains:
+        label = domain.domain or domain.target
+        lines.append(
+            f"| {label} | "
+            f"{_display_signal(domain, 'legal.scraping_restrictions')} | "
+            f"{_display_signal(domain, 'legal.ai_restrictions')} | "
+            f"{_display_signal(domain, 'economic.registration_required')} | "
+            f"{_display_signal(domain, 'economic.metering')} | "
+            f"{_display_signal(domain, 'economic.api_pricing')} | "
+            f"{_display_signal(domain, 'preservation.archive_coverage')} | "
+            f"{_display_signal(domain, 'preservation.archive_blocked')} | "
+            f"{_display_signal(domain, 'preservation.cache_behavior')} |"
         )
 
     lines.extend(

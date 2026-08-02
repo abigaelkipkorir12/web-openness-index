@@ -41,13 +41,20 @@ report. Each observation has an explicit outcome:
 - **Conventional discovery:** bounded public DNS queries for `tollbit.<domain>`; a record is not a
   claim that TollBit enforcement is active on every path.
 - **Explicit declarations:** `rel=license`, JSON-LD `license`, `isAccessibleForFree`, and
-  `requiresSubscription` values found in the bounded homepage response.
+  `requiresSubscription` values found in the bounded homepage response, plus explicit scraping,
+  AI-use, registration, metering, and API-price statements from at most one policy page and one
+  pricing/API page.
 - **Candidate discovery:** strongly named homepage links for OpenAPI, GraphQL, OAuth, MCP, A2A,
-  agent cards, API documentation, legal/license policies, pricing, and registration. Candidates
-  are recorded but not fetched or verified.
-- **Not yet supported:** authenticated interfaces, policy-text interpretation, archive coverage,
-  screenshots, and validated cache behavior. Browser-versus-HTTP confirmation is available only
-  with `--browser`.
+  agent cards, API documentation, legal/license policies, pricing, and registration. Agent
+  interface candidates are not fetched. A separate bounded probe may examine one policy and one
+  pricing/API candidate, but the discovery signal itself remains only a candidate.
+- **Optional preservation:** `--archive` makes one bounded Wayback CDX query; `--validate-cache`
+  makes at most one same-host conditional homepage request when a validator is available. Both are
+  disabled by default. Browser-versus-HTTP confirmation is available only with `--browser`.
+
+All 110 operational catalog keys now have a collector path. Authenticated interface testing,
+screenshots, comprehensive legal interpretation, and validated scoring remain outside this smoke
+test rather than appearing as unsupported catalog entries.
 
 ## Fetch and politeness semantics
 

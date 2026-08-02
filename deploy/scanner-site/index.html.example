@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Public web measurement scanner</title>
+  </head>
+  <body>
+    <main>
+      <h1>Public web measurement scanner</h1>
+      <p>
+        This host identifies a bounded academic study of access to public websites. It performs
+        domain characterization, not vulnerability scanning, authentication, or bulk collection.
+      </p>
+
+      <h2>Identification</h2>
+      <dl>
+        <dt>User-Agent</dt>
+        <dd><code>REPLACE_USER_AGENT</code></dd>
+        <dt>Source addresses</dt>
+        <dd><code>REPLACE_SOURCE_ADDRESSES</code></dd>
+        <dt>Reverse DNS</dt>
+        <dd><code>REPLACE_REVERSE_DNS</code></dd>
+      </dl>
+
+      <h2>Collection limits</h2>
+      <p>
+        Requests are rate-limited, bounded by per-domain request, response-byte, redirect, and
+        wall-clock limits, and preceded by a robots.txt policy check. The scanner does not sign in,
+        submit forms, bypass controls, or retain page text in its browser observations.
+      </p>
+
+      <h2>Contact and opt-out</h2>
+      <p>
+        For questions, corrections, complaints, or an opt-out request, contact
+        <a href="REPLACE_CONTACT_URI">REPLACE_CONTACT_URI</a>. Include the affected domain and the
+        requested scope. Do not send passwords, API keys, or other secrets.
+      </p>
+    </main>
+  </body>
+</html>

@@ -5,8 +5,11 @@ import signal
 from collections.abc import Sequence
 from pathlib import Path
 
+from web_openness.analysis import export_analysis
+from web_openness.archive import ArchivePolicy
 from web_openness.browser_policy import BrowserPolicy
 from web_openness.config import DEFAULT_USER_AGENT, ScanConfig
+from web_openness.frame import build_selection_manifest
 from web_openness.models import DomainSnapshot
 from web_openness.pipeline import Scanner
 from web_openness.runner import RunProgress, RunStore, execute_run
@@ -81,6 +84,31 @@ def build_parser() -> argparse.ArgumentParser:
         "batch-clear-stop", help="clear the database-wide batch stop"
     )
     clear_stop.add_argument("--state", type=Path, default=Path("data/runner.sqlite3"))
+
+    frame_sample = subparsers.add_parser(
+        "frame-sample", help="draw a reproducible stratified sample from a versioned CSV frame"
+    )
+    frame_sample.add_argument("frame", type=Path)
+    frame_sample.add_argument("--frame-version", required=True)
+    frame_sample.add_argument("--code-revision", required=True)
+    frame_sample.add_argument("--seed", required=True)
+    frame_sample.add_argument("--per-stratum", type=int, default=4)
+    frame_sample.add_argument(
+        "--manifest-output",
+        type=Path,
+        default=Path("data/research/selection-manifest.json"),
+    )
+    frame_sample.add_argument(
+        "--targets-output",
+        type=Path,
+        default=Path("data/research/selected-domains.txt"),
+    )
+
+    analyze = subparsers.add_parser(
+        "analyze", help="export validated snapshots as analysis-ready CSV and JSON summaries"
+    )
+    analyze.add_argument("snapshots", type=Path)
+    analyze.add_argument("--output", type=Path, default=Path("data/analysis"))
     return parser
 
 
@@ -118,6 +146,16 @@ def _add_scan_options(parser: argparse.ArgumentParser) -> None:
         action="store_true",
         help="enable one bounded, non-interactive Chromium render per domain",
     )
+    parser.add_argument(
+        "--archive",
+        action="store_true",
+        help="enable one bounded public Wayback CDX lookup per domain",
+    )
+    parser.add_argument(
+        "--validate-cache",
+        action="store_true",
+        help="allow one conditional homepage request when a validator is available",
+    )
 
 
 async def run_scans(args: argparse.Namespace) -> list[tuple[DomainSnapshot, Path]]:
@@ -141,6 +179,8 @@ def _scan_config(args: argparse.Namespace) -> ScanConfig:
         max_response_bytes=args.max_response_bytes,
         cease_list_path=args.cease_list,
         browser_policy=BrowserPolicy(enabled=args.browser),
+        archive_policy=ArchivePolicy(enabled=args.archive),
+        cache_validation_enabled=args.validate_cache,
     )
 
 
@@ -240,6 +280,25 @@ def main(argv: Sequence[str] | None = None) -> int:
         elif args.command in {"batch-status", "batch-stop"}:
             progress = _stored_progress(args, stop=args.command == "batch-stop")
             print(json.dumps(progress.as_dict(), sort_keys=True))
+            return 0
+        elif args.command == "frame-sample":
+            manifest = build_selection_manifest(
+                args.frame,
+                frame_version=args.frame_version,
+                code_revision=args.code_revision,
+                seed=args.seed,
+                per_stratum=args.per_stratum,
+            )
+            manifest.write(args.manifest_output, args.targets_output)
+            print(f"Selection manifest: {args.manifest_output}")
+            print(f"Selected domains: {args.targets_output}")
+            return 0
+        elif args.command == "analyze":
+            exported = export_analysis(args.snapshots, args.output)
+            print(f"Runs: {exported.runs_path}")
+            print(f"Observations: {exported.observations_path}")
+            print(f"Changes: {exported.changes_path}")
+            print(f"Summary: {exported.summary_path}")
             return 0
         else:
             control = _set_global_stop(args, requested=args.command == "batch-stop-all")

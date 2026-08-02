@@ -2,7 +2,7 @@ import asyncio
 import hashlib
 import re
 import time
-from collections.abc import Awaitable, Callable
+from collections.abc import Awaitable, Callable, Mapping
 from dataclasses import dataclass, replace
 from datetime import UTC, datetime
 
@@ -162,9 +162,15 @@ class SiteClient:
                 self._politeness_store = None
                 self._owns_politeness_store = False
 
-    async def get(self, url: str) -> FetchResult:
+    async def get(
+        self,
+        url: str,
+        *,
+        conditional_headers: Mapping[str, str] | None = None,
+    ) -> FetchResult:
         if self._client is None:
             raise RuntimeError("SiteClient must be used as an async context manager")
+        request_headers = _validated_conditional_headers(conditional_headers)
         current_url = url
         redirects_followed = 0
         transient_retries = 0
@@ -204,7 +210,11 @@ class SiteClient:
                     cookie_names=tuple(sorted(cookie_names, key=str.lower)),
                 )
 
-            outcome = await self._fetch_once(url, current_url)
+            outcome = await self._fetch_once(
+                url,
+                current_url,
+                conditional_headers=request_headers,
+            )
             attempts.append(outcome.result.evidence)
             _merge_cookie_names(cookie_names, outcome.result.cookie_names)
             if outcome.transient:
@@ -249,11 +259,16 @@ class SiteClient:
 
             redirects_followed += 1
             current_url = outcome.next_url
+            # Validators are scoped to the selected representation. Never forward
+            # them through a redirect, particularly one crossing origins.
+            request_headers = None
 
     async def _fetch_once(
         self,
         original_url: str,
         attempt_url: str,
+        *,
+        conditional_headers: dict[str, str] | None = None,
     ) -> _AttemptOutcome:
         if self._client is None:
             raise RuntimeError("SiteClient must be used as an async context manager")
@@ -273,7 +288,11 @@ class SiteClient:
         retry_after_seconds: float | None = None
 
         try:
-            async with self._client.stream("GET", attempt_url) as response:
+            async with self._client.stream(
+                "GET",
+                attempt_url,
+                headers=conditional_headers,
+            ) as response:
                 status_code = response.status_code
                 final_url = str(response.url)
                 http_version = response.http_version
@@ -413,6 +432,27 @@ class SiteClient:
             evidence=record,
             deferred_until=deferred_until,
         )
+
+
+def _validated_conditional_headers(
+    headers: Mapping[str, str] | None,
+) -> dict[str, str] | None:
+    if headers is None:
+        return None
+
+    allowed = {"if-none-match", "if-modified-since"}
+    validated: dict[str, str] = {}
+    for raw_name, raw_value in headers.items():
+        name = raw_name.strip().lower()
+        if name not in allowed:
+            raise ValueError(f"conditional request header is not allowed: {raw_name!r}")
+        value = raw_value.strip()
+        if not value or len(value) > MAX_STORED_HEADER_CHARS:
+            raise ValueError(f"conditional request header {raw_name!r} has an invalid value")
+        if any(ord(character) < 32 or ord(character) == 127 for character in value):
+            raise ValueError(f"conditional request header {raw_name!r} contains control characters")
+        validated[name] = value
+    return validated or None
 
 
 def _extract_cookie_names(headers: list[str]) -> tuple[str, ...]:

@@ -70,6 +70,11 @@ the same contract in an ephemeral container without changing probes or stored ev
 
 ## First deployment gate
 
+Prepare the neutral scanner-page template, complaint log, cease list, and initialized runner state,
+then run the read-only readiness check and stop drill in the
+[pilot operations runbook](../deploy/operations/README.md). After publishing the identity, verify it
+from outside the worker.
+
 Run offline tests, then scan only the reviewed canary file. Watch request counts, statuses, timeouts,
 and complaints; stop the run if behavior exceeds the published limits. Do not schedule recurring or
 larger batches until the canary report has been reviewed and obvious detector failures have fixtures.

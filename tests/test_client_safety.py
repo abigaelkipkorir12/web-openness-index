@@ -89,6 +89,52 @@ async def test_redirect_target_is_validated_before_request() -> None:
 
 
 @pytest.mark.asyncio
+async def test_conditional_validator_is_not_forwarded_through_redirect() -> None:
+    requests: list[httpx.Request] = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        requests.append(request)
+        if request.url.path == "/start":
+            return httpx.Response(302, headers={"location": "/final"}, request=request)
+        return httpx.Response(200, request=request)
+
+    async with SiteClient(
+        ScanConfig(request_delay_seconds=0),
+        transport=httpx.MockTransport(handler),
+    ) as client:
+        await client.get(
+            "https://example.org/start",
+            conditional_headers={"If-None-Match": '"opaque-validator"'},
+        )
+
+    assert requests[0].headers["if-none-match"] == '"opaque-validator"'
+    assert "if-none-match" not in requests[1].headers
+
+
+@pytest.mark.asyncio
+async def test_conditional_request_accepts_only_bounded_validator_headers() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        raise AssertionError(f"invalid header reached transport: {request.headers}")
+
+    async with SiteClient(
+        ScanConfig(request_delay_seconds=0),
+        transport=httpx.MockTransport(handler),
+    ) as client:
+        with pytest.raises(ValueError, match="not allowed"):
+            await client.get(
+                "https://example.org/",
+                conditional_headers={"Authorization": "secret"},
+            )
+        with pytest.raises(ValueError, match="control characters"):
+            await client.get(
+                "https://example.org/",
+                conditional_headers={"If-None-Match": "value\nleak"},
+            )
+
+    assert client.records == []
+
+
+@pytest.mark.asyncio
 async def test_public_redirect_preserves_bounded_evidence() -> None:
     long_header = "a" * (MAX_STORED_HEADER_CHARS + 100)
 

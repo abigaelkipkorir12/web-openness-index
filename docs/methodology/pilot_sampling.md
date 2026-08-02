@@ -63,6 +63,12 @@ These thresholds are pilot conventions, not natural categories. Report sensitivi
 
 Given the same inputs, code revision, and seed, selection must reproduce the same ordered sample. Publish the selection manifest and source metadata when licensing permits; otherwise publish hashes and executable reconstruction instructions.
 
+The repository implements the core reproducibility fields for a small CSV frame with
+`web-openness frame-sample`.
+The command canonicalizes registrable domains, merges consistent source memberships, uses a stable
+SHA-256 order within each stratum, and writes both the complete audit manifest and the selected target
+list. See [the analysis workflow](../analysis.md) for the exact input columns and command.
+
 ## First stratified pilot
 
 Use the full cross-product of six sectors, six geography groups, and three popularity bands. Draw four domains without replacement from each cell for a target baseline of **432 domains** (`6 × 6 × 3 × 4`). Within a cell, use a seeded uniform random draw from the deduplicated eligible frame. Do not replace a sparse cell with a convenient domain from another cell: record its shortfall and keep the achieved allocation visible.

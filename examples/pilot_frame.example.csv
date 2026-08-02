@@ -1,0 +1,11 @@
+domain,source,sector,geography,popularity_band,eligible,exclusion_reason
+example.org,illustrative_source,general_other,global_or_unassigned,head,true,
+example.com,illustrative_source,general_other,global_or_unassigned,head,true,
+mit.edu,illustrative_source,academia_research,americas,head,true,
+stanford.edu,illustrative_source,academia_research,americas,head,true,
+data.gov,illustrative_source,government_civic,americas,head,true,
+www.gov.uk,illustrative_source,government_civic,europe,head,true,
+theguardian.com,illustrative_source,news_media,europe,head,true,
+reuters.com,illustrative_source,news_media,global_or_unassigned,head,true,
+github.com,illustrative_source,forums_communities,global_or_unassigned,head,true,
+excluded-example.org,illustrative_source,general_other,global_or_unassigned,long_tail,false,illustrative exclusion

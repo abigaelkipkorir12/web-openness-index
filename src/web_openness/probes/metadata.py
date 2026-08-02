@@ -279,7 +279,7 @@ class MetadataProbe:
                     links,
                     confidence=Confidence.POSSIBLE if links else Confidence.NO_EVIDENCE,
                     score=0.6 if links else 1.0,
-                    method="strongly named homepage link; linked document was not fetched",
+                    method="candidate discovery from a strongly named homepage link",
                     evidence=evidence,
                 )
                 for key, links in discovery_links.items()

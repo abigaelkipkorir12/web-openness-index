@@ -21,10 +21,10 @@ Each domain receives a timestamped evidence record. Scores and aggregate indices
 | Human access | Homepage availability, login requirements, paywalls, cookie walls, CAPTCHAs, geographic restrictions, JavaScript requirements | Human Accessibility Index |
 | Crawler access | `robots.txt`, AI-specific directives, crawl delay, sitemaps, HTTP status, 403/429 responses, browser-versus-HTTP differences | Crawl Accessibility Index |
 | Agent access | Candidate links for APIs, OpenAPI, GraphQL, OAuth metadata, MCP, A2A, agent cards, and API documentation | Agent Accessibility Index |
-| Legal access | Candidate policy and license links; planned analysis of scraping, AI, commercial-use, and research restrictions | Legal Restrictiveness Index |
-| Economic access | Candidate pricing and registration links; planned analysis of metering, subscriptions, and API pricing | Economic Accessibility Index |
+| Legal access | Candidate policy/license links and explicit scraping or AI-use restrictions from one bounded policy follow-up | Legal Restrictiveness Index |
+| Economic access | Candidate pricing/registration links and explicit registration, metering, subscription, and API-price declarations | Economic Accessibility Index |
 | Infrastructure | CDN, WAF, DNS and hosting providers, TLS configuration, HTTP version | Infrastructure Hardening Index |
-| Preservation | Cache-header hints; planned archive coverage, archive blocking, and validated cache behavior | Preservation Index |
+| Preservation | Cache-header evidence plus optional archive coverage/blocking and conditional cache validation | Preservation Index |
 
 Machine-readable metadata—including Schema.org, Open Graph, RSS/Atom/JSON feeds, sitemaps, `robots.txt`, and `llms.txt`—is retained as supporting evidence.
 
@@ -52,7 +52,11 @@ The current collector:
 - detects structured metadata, canonical/feed/manifest/OpenSearch links, and bounded candidate
   agent-interface, legal-policy, license, pricing, and registration links in homepage HTML without
   fetching or claiming to verify those candidates;
+- follows at most one same-site policy page and one pricing/API page, when allowed, to retain only
+  explicit scraping, AI-use, registration, metering, and API-pricing declarations;
 - checks for a public `llms.txt` when policy allows;
+- optionally makes one monthly-collapsed public-archive lookup and one conditional homepage request
+  for preservation evidence; both are disabled by default;
 - rejects local, private, reserved, and otherwise non-public network destinations;
 - emits a schema `0.2.0` JSON snapshot with explicit `observed`, `no_evidence`, `skipped`, and
   `error` outcomes, plus confidence, evidence, attempt-level request records, and errors;
@@ -64,8 +68,8 @@ The current collector:
 It does **not** yet produce an openness score. Score definitions will be added only after the measurement schema, sampling strategy, and validation protocol are documented and tested.
 
 See [the measurement coverage matrix](docs/measurement_coverage.md) for a requirement-by-requirement
-accounting. The operational catalog currently supports 94 of 103 keys, but candidate links and
-probabilistic hints should not be mistaken for completed research measurements.
+accounting. The operational catalog now has an implementation path for all 110 keys, but opt-in,
+candidate, and probabilistic findings should not be mistaken for validated research measurements.
 
 ## Quick start
 
@@ -114,6 +118,16 @@ cross-site top-level redirects, and does not click, type, submit forms, or retai
 Its requests and transferred bytes are reported under `browser.network_summary` rather than mixed
 into the direct HTTP request budget.
 
+The preservation checks are also opt-in because each adds network work:
+
+```bash
+uv run web-openness scan example.org --archive --validate-cache --json
+```
+
+`--archive` sends one bounded query to the public Wayback CDX index. `--validate-cache` sends at
+most one same-host conditional request, only when the homepage supplies ETag or Last-Modified and
+the path is allowed.
+
 To run the small diagnostic canary and produce a JSON plus Markdown coverage report:
 
 ```bash
@@ -139,6 +153,19 @@ uv run web-openness batch \
 The command prints a run ID. Inspect, stop, or resume it with `batch-status`, `batch-stop`, and
 `batch --run-id RUN_ID`; see [docs/operations.md](docs/operations.md) for the concise runbook.
 
+Build a reproducible pilot sample and export existing snapshots for analysis with:
+
+```bash
+uv run web-openness frame-sample data/frame/pilot.csv \
+  --frame-version pilot-v0.1 --code-revision COMMIT_SHA --seed pilot-v0.1 \
+  --manifest-output data/research/pilot-v0.1.manifest.json \
+  --targets-output data/research/pilot-v0.1.domains.txt
+uv run web-openness analyze data/snapshots --output data/analysis
+```
+
+See [the analysis workflow](docs/analysis.md) and
+[scoring preregistration draft](docs/methodology/scoring.md).
+
 ## Measurement workflow
 
 For each domain, the implemented HTTP collection sequence is:
@@ -148,16 +175,16 @@ For each domain, the implemented HTTP collection sequence is:
 3. Apply the effective crawler policy and persistent registrable-domain pacing.
 4. Fetch one bounded sitemap and the homepage when allowed and within budget.
 5. Parse HTML, structured declarations, response headers, conservative infrastructure/barrier
-   hints, and candidate interface/policy links.
+   hints, candidate interfaces, and at most two explicit policy/pricing follow-ups.
 6. Optionally render the homepage once to compare HTTP and browser access, record bounded rendered
    metadata, and identify visible high-precision barrier markers.
-7. Fetch `llms.txt`, summarize all recorded HTTP outcomes, and store an immutable schema `0.2.0`
-   evidence snapshot.
+7. Fetch `llms.txt`; optionally query public archive coverage and conditionally validate homepage
+   caching; then summarize HTTP outcomes and store an immutable schema `0.2.0` evidence snapshot.
 
 HTTP paywall, consent-wall, CAPTCHA, and JavaScript findings remain conservative markup/resource
 hints. Optional browser findings report visible selectors, not a claim that a barrier is active or
-impossible to bypass. Verified interface probing, policy-text interpretation, screenshots, scoring,
-and longitudinal aggregation remain later stages.
+impossible to bypass. Verified interface probing, detector validation, screenshots, scoring, and a
+public longitudinal release remain later stages.
 
 The target HTTP budget is roughly 5–15 requests per domain. DNS metadata uses six concurrent,
 bounded lookups and is reported separately from the HTTP request count. This is domain

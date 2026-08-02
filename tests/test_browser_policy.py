@@ -35,6 +35,67 @@ async def test_gate_bounds_first_and_third_party_requests() -> None:
 
 
 @pytest.mark.asyncio
+async def test_gate_concurrent_authorizations_cannot_overshoot_caps() -> None:
+    started = asyncio.Event()
+    release = asyncio.Event()
+
+    async def delayed_resolver(_hostname: str, _port: int) -> tuple[str, ...]:
+        started.set()
+        await release.wait()
+        return ("93.184.216.34",)
+
+    gate = BrowserRequestGate(
+        "https://example.org/",
+        BrowserPolicy(enabled=True, max_requests=3, max_third_party_requests=2),
+        resolver=delayed_resolver,
+    )
+    tasks = [
+        asyncio.create_task(gate.authorize(f"https://cdn{i}.example.net/asset.js"))
+        for i in range(8)
+    ]
+    await started.wait()
+    await asyncio.sleep(0)
+
+    assert gate.request_count == 2
+    assert gate.third_party_request_count == 2
+
+    release.set()
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    assert sum(not isinstance(result, BaseException) for result in results) == 2
+    assert gate.request_count == 2
+    assert gate.third_party_request_count == 2
+
+
+@pytest.mark.asyncio
+async def test_gate_concurrent_first_party_requests_cannot_overshoot_total_cap() -> None:
+    release = asyncio.Event()
+
+    async def delayed_resolver(_hostname: str, _port: int) -> tuple[str, ...]:
+        await release.wait()
+        return ("93.184.216.34",)
+
+    gate = BrowserRequestGate(
+        "https://example.org/",
+        BrowserPolicy(enabled=True, max_requests=3, max_third_party_requests=3),
+        resolver=delayed_resolver,
+    )
+    tasks = [
+        asyncio.create_task(gate.authorize(f"https://static{i}.example.org/asset.js"))
+        for i in range(8)
+    ]
+    await asyncio.sleep(0)
+
+    assert gate.request_count == 3
+    release.set()
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    assert sum(not isinstance(result, BaseException) for result in results) == 3
+    assert gate.request_count == 3
+    assert gate.third_party_request_count == 0
+
+
+@pytest.mark.asyncio
 async def test_gate_rejects_non_public_destinations_before_counting_request() -> None:
     async def private_resolver(_hostname: str, _port: int) -> tuple[str, ...]:
         return ("10.0.0.8",)

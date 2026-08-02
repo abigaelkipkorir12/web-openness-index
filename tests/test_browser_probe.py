@@ -4,16 +4,19 @@ import httpx
 import pytest
 
 from web_openness.browser_policy import BrowserPolicy, BrowserRender, BrowserRequestGate
+from web_openness.client import FetchResult
 from web_openness.config import ScanConfig
-from web_openness.models import ObservationOutcome
+from web_openness.models import ObservationOutcome, RequestRecord
 from web_openness.pipeline import Scanner
 from web_openness.probes import BrowserProbe, HomepageProbe, RobotsProbe
+from web_openness.probes.browser import _http_comparison
 
 
 class FixtureBrowserWorker:
-    def __init__(self, *, fail: bool = False) -> None:
+    def __init__(self, *, fail: bool = False, final_url: str | None = None) -> None:
         self.called = False
         self.fail = fail
+        self.final_url = final_url
 
     async def render(
         self,
@@ -26,7 +29,7 @@ class FixtureBrowserWorker:
         await request_gate.authorize(target_url, top_level_navigation=True)
         request_gate.record_response_chunk("document", 120)
         return BrowserRender(
-            final_url=target_url,
+            final_url=self.final_url or target_url,
             status_code=200,
             title="Rendered title",
             document_chars=320,
@@ -146,3 +149,61 @@ async def test_browser_probe_preserves_worker_failure_as_signal_errors() -> None
     assert snapshot.observations["browser.navigation"].outcome == ObservationOutcome.ERROR
     assert snapshot.errors[0].probe == "browser"
     assert "fixture browser failed" in snapshot.errors[0].message
+
+
+@pytest.mark.asyncio
+async def test_browser_probe_rejects_browser_internal_error_page() -> None:
+    worker = FixtureBrowserWorker(final_url="chrome-error://chromewebdata/")
+    scanner = Scanner(
+        ScanConfig(
+            request_delay_seconds=0,
+            browser_policy=BrowserPolicy(enabled=True),
+        ),
+        probes=(RobotsProbe(), HomepageProbe(), BrowserProbe()),
+        transport=_transport(),
+        browser_worker=worker,
+    )
+
+    snapshot = await scanner.scan("93.184.216.34")
+
+    assert snapshot.observations["browser.navigation"].outcome == ObservationOutcome.ERROR
+    assert "non-web error page" in snapshot.errors[0].message
+
+
+def test_browser_comparison_does_not_treat_missing_http_result_as_denial() -> None:
+    observed_at = datetime.now(UTC)
+    homepage = FetchResult(
+        requested_url="https://example.org/",
+        final_url=None,
+        status_code=None,
+        http_version=None,
+        headers={},
+        body=b"",
+        truncated=False,
+        error="request deferred",
+        evidence=RequestRecord(
+            requested_url="https://example.org/",
+            started_at=observed_at,
+            elapsed_ms=0,
+            status_code=None,
+            response_bytes=0,
+            error="request deferred",
+        ),
+    )
+    rendered = BrowserRender(
+        final_url="https://example.org/",
+        status_code=200,
+        title="Example",
+        document_chars=100,
+        visible_text_chars=20,
+        markers={},
+        observed_at=observed_at,
+    )
+
+    comparison = _http_comparison(homepage, rendered)
+
+    assert comparison["http_available"] is False
+    assert comparison["status_changed"] is None
+    assert comparison["access_disposition_changed"] is None
+    assert comparison["final_url_changed"] is None
+    assert comparison["document_char_delta"] is None

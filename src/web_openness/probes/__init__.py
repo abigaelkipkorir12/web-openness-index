@@ -4,6 +4,8 @@ from web_openness.probes.homepage import HomepageProbe
 from web_openness.probes.metadata import MetadataProbe
 from web_openness.probes.network import NetworkProbe
 from web_openness.probes.page_signals import PageSignalsProbe
+from web_openness.probes.policy_signals import PolicySignalsProbe
+from web_openness.probes.preservation import PreservationProbe
 from web_openness.probes.response import ResponseProbe
 from web_openness.probes.robots import RobotsProbe
 from web_openness.probes.sitemap import SitemapProbe
@@ -16,6 +18,8 @@ __all__ = [
     "MetadataProbe",
     "NetworkProbe",
     "PageSignalsProbe",
+    "PolicySignalsProbe",
+    "PreservationProbe",
     "ResponseProbe",
     "RobotsProbe",
     "SitemapProbe",

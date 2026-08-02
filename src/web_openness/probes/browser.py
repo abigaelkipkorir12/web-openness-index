@@ -2,6 +2,7 @@ from typing import cast
 from urllib.parse import urljoin, urlsplit
 
 from web_openness.browser_policy import (
+    BrowserPolicyError,
     BrowserRender,
     BrowserWorker,
     run_browser_worker,
@@ -69,6 +70,9 @@ class BrowserProbe:
                 policy,
                 url_allowed=lambda url: _url_allowed(context, url),
             )
+            final_url = urlsplit(rendered.final_url)
+            if final_url.scheme not in {"http", "https"} or final_url.hostname is None:
+                raise BrowserPolicyError("browser navigation ended on a non-web error page")
         except Exception as exc:
             message = f"{type(exc).__name__}: {exc}"
             context.errors.append(ProbeError(probe=self.name, message=message))
@@ -170,10 +174,28 @@ def _http_comparison(homepage: object, rendered: BrowserRender) -> dict[str, obj
         }
 
     http_final_url = homepage.final_url or homepage.requested_url
-    http_accessible = homepage.status_code is not None and 200 <= homepage.status_code < 400
+    http_available = homepage.error is None and homepage.status_code is not None
+    if not http_available:
+        return {
+            "http_available": False,
+            "http_status": homepage.status_code,
+            "browser_status": rendered.status_code,
+            "status_changed": None,
+            "access_disposition_changed": None,
+            "http_final_url": http_final_url,
+            "browser_final_url": rendered.final_url,
+            "final_url_changed": None,
+            "http_document_chars": None,
+            "rendered_document_chars": rendered.document_chars,
+            "document_char_delta": None,
+        }
+
+    http_status = homepage.status_code
+    assert http_status is not None
+    http_accessible = 200 <= http_status < 400
     browser_accessible = rendered.status_code is not None and 200 <= rendered.status_code < 400
     return {
-        "http_available": homepage.error is None,
+        "http_available": True,
         "http_status": homepage.status_code,
         "browser_status": rendered.status_code,
         "status_changed": homepage.status_code != rendered.status_code,
