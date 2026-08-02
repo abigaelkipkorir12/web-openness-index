@@ -1,8 +1,8 @@
-import urllib.robotparser
 from urllib.parse import urljoin
 
-from web_openness.models import Confidence, Observation, ProbeError
+from web_openness.models import Confidence, Observation, ObservationOutcome, ProbeError
 from web_openness.probes.base import ProbeContext, evidence_from_fetch, observation
+from web_openness.probes.robots import policy_allows
 
 
 class WellKnownProbe:
@@ -10,19 +10,14 @@ class WellKnownProbe:
 
     async def collect(self, context: ProbeContext) -> dict[str, Observation]:
         url = urljoin(f"{context.origin}/", "llms.txt")
-        parser_value = context.shared.get("robot_parser")
-        if isinstance(parser_value, urllib.robotparser.RobotFileParser):
-            allowed = parser_value.can_fetch(context.config.user_agent_token, url)
-        else:
-            allowed = context.shared.get("robots_allows_followup") is True
-
-        if not allowed:
+        if not policy_allows(context, url):
             return {
                 "metadata.llms_txt_exists": observation(
                     None,
                     confidence=Confidence.UNKNOWN,
                     score=0.0,
                     method="skipped because crawler policy was not affirmatively allowed",
+                    outcome=ObservationOutcome.SKIPPED,
                 )
             }
 

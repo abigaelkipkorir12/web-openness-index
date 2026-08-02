@@ -1,4 +1,6 @@
+import asyncio
 from collections.abc import Iterable
+from dataclasses import dataclass
 from datetime import UTC, datetime
 from urllib.parse import SplitResult, urlsplit, urlunsplit
 from uuid import uuid4
@@ -8,25 +10,40 @@ import httpx
 from web_openness import __version__
 from web_openness.client import RequestBudgetExceeded, SiteClient
 from web_openness.config import ScanConfig
+from web_openness.domains import canonical_hostname
+from web_openness.governance import CeaseList
 from web_openness.models import DomainSnapshot, Observation, ProbeError
 from web_openness.probes import (
     HomepageProbe,
     MetadataProbe,
     NetworkProbe,
+    ResponseProbe,
     RobotsProbe,
     SitemapProbe,
     WellKnownProbe,
 )
 from web_openness.probes.base import Probe, ProbeContext
+from web_openness.safety import validate_public_url
 
 DEFAULT_PROBES: tuple[Probe, ...] = (
     NetworkProbe(),
     RobotsProbe(),
     SitemapProbe(),
     HomepageProbe(),
+    ResponseProbe(),
     MetadataProbe(),
     WellKnownProbe(),
 )
+
+
+class DomainScanTimedOut(TimeoutError):
+    """Raised when a domain exceeds its total collection wall-clock budget."""
+
+
+@dataclass(frozen=True, slots=True)
+class ScanOutcome:
+    snapshot: DomainSnapshot
+    deferred_until: datetime | None = None
 
 
 def normalize_target(target: str) -> tuple[str, str]:
@@ -43,9 +60,7 @@ def normalize_target(target: str) -> tuple[str, str]:
     if parsed.username is not None or parsed.password is not None:
         raise ValueError("target must not include credentials")
 
-    hostname = parsed.hostname.rstrip(".").lower()
-    if not hostname:
-        raise ValueError("target hostname must not be empty")
+    hostname = canonical_hostname(parsed.hostname)
     host = f"[{hostname}]" if ":" in hostname else hostname
     if parsed.port is not None:
         host = f"{host}:{parsed.port}"
@@ -64,9 +79,40 @@ class Scanner:
         self.config = config or ScanConfig()
         self.probes = tuple(probes)
         self.transport = transport
+        self.cease_list = (
+            CeaseList.load(self.config.cease_list_path)
+            if self.config.cease_list_path is not None
+            else CeaseList.empty()
+        )
+
+    def require_target_allowed(self, target: str) -> None:
+        domain, _origin = normalize_target(target)
+        cease_list = (
+            CeaseList.load(self.config.cease_list_path)
+            if self.config.cease_list_path is not None
+            else self.cease_list
+        )
+        cease_list.require_allowed(domain)
 
     async def scan(self, target: str) -> DomainSnapshot:
+        return (await self.scan_outcome(target)).snapshot
+
+    async def scan_outcome(self, target: str) -> ScanOutcome:
+        try:
+            async with asyncio.timeout(self.config.domain_timeout_seconds):
+                return await self._scan_outcome(target)
+        except TimeoutError as exc:
+            raise DomainScanTimedOut(
+                f"domain scan exceeded {self.config.domain_timeout_seconds:g} seconds"
+            ) from exc
+
+    async def _scan_outcome(self, target: str) -> ScanOutcome:
         domain, origin = normalize_target(target)
+        self.require_target_allowed(target)
+        await validate_public_url(
+            origin,
+            resolve_dns=not isinstance(self.transport, httpx.MockTransport),
+        )
         started_at = datetime.now(UTC)
         observations: dict[str, Observation] = {}
 
@@ -94,7 +140,7 @@ class Scanner:
                     )
 
             completed_at = datetime.now(UTC)
-            return DomainSnapshot(
+            snapshot = DomainSnapshot(
                 run_id=str(uuid4()),
                 domain=domain,
                 origin=origin,
@@ -106,3 +152,4 @@ class Scanner:
                 requests=client.records,
                 errors=context.errors,
             )
+            return ScanOutcome(snapshot=snapshot, deferred_until=client.deferred_until)
