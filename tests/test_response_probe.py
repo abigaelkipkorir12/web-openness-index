@@ -15,6 +15,7 @@ def _context(
     headers: dict[str, str],
     *,
     error: str | None = None,
+    cookie_names: tuple[str, ...] = (),
 ) -> ProbeContext:
     config = ScanConfig(request_delay_seconds=0)
     context = ProbeContext(
@@ -41,6 +42,7 @@ def _context(
         error=error,
         evidence=record,
         http_version="HTTP/2",
+        cookie_names=cookie_names,
     )
     return context
 
@@ -65,6 +67,8 @@ async def test_classifies_protocol_security_cache_and_cdn_hints() -> None:
     assert values["infrastructure.cdn_hints"].value == ["cloudflare"]
     assert values["infrastructure.cdn_hints"].confidence == Confidence.LIKELY
     assert values["infrastructure.cdn"].value == ["cloudflare"]
+    assert values["infrastructure.waf"].value == []
+    assert values["infrastructure.waf"].confidence == Confidence.NO_EVIDENCE
     assert values["preservation.cache_header_hints"].value == {
         "cache-control": "public, max-age=60"
     }
@@ -84,6 +88,79 @@ async def test_classifies_authentication_challenge() -> None:
     assert values["human.login_required"].value is True
     assert values["human.rate_limited"].value is False
     assert values["human.rate_limited"].confidence == Confidence.CONFIRMED
+
+
+@pytest.mark.asyncio
+async def test_451_is_a_conservative_geographic_restriction_hint() -> None:
+    values = await ResponseProbe().collect(_context(451, {}))
+
+    assert values["human.http_access_disposition"].value == ("unavailable_for_legal_reasons")
+    assert values["human.geographic_restriction"].value == {
+        "detected": True,
+        "status": 451,
+    }
+    assert values["human.geographic_restriction"].confidence == Confidence.POSSIBLE
+
+
+@pytest.mark.asyncio
+async def test_reports_only_specific_waf_response_hints() -> None:
+    values = await ResponseProbe().collect(
+        _context(
+            403,
+            {
+                "cf-mitigated": "challenge",
+                "x-iinfo": "test",
+                "x-sucuri-block": "DENY",
+                "x-sucuri-id": "test",
+                "x-wa-info": "test",
+            },
+        )
+    )
+
+    finding = values["infrastructure.waf"]
+    assert finding.value == ["cloudflare", "sucuri"]
+    assert finding.confidence == Confidence.LIKELY
+    assert values["infrastructure.cdn_hints"].value == []
+    assert values["infrastructure.edge_response_hints"].value == [
+        "cloudflare",
+        "f5",
+        "imperva",
+        "sucuri",
+    ]
+    assert values["infrastructure.acceleration_hints"].value == ["f5_big_ip"]
+    assert values["infrastructure.challenge_response"].value == {
+        "provider": "cloudflare",
+        "type": "challenge",
+    }
+
+
+@pytest.mark.asyncio
+async def test_collects_response_capabilities_without_cookie_values() -> None:
+    values = await ResponseProbe().collect(
+        _context(
+            200,
+            {
+                "alt-svc": 'h3=":443"; ma=86400',
+                "cf-cache-status": "hit",
+                "cf-ray": "abc123-SFO",
+                "content-encoding": "br",
+            },
+            cookie_names=("__cf_bm", "BIGipServerPool", "ordinary_session"),
+        )
+    )
+
+    assert values["infrastructure.cache_status"].value == [
+        {"provider": "cloudflare", "status": "HIT"}
+    ]
+    assert values["infrastructure.edge_location_hints"].value == {"cloudflare": "SFO"}
+    assert values["infrastructure.http3_advertised"].value is True
+    assert values["infrastructure.content_encoding"].value == "br"
+    assert values["infrastructure.response_cookie_fingerprints"].value == [
+        "cloudflare:__cf_bm",
+        "f5:BIGipServer*",
+    ]
+    assert values["infrastructure.bot_management_hints"].value == ["cloudflare"]
+    assert values["infrastructure.load_balancer_hints"].value == ["f5"]
 
 
 @pytest.mark.asyncio

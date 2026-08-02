@@ -34,12 +34,21 @@ This repository contains a working HTTP measurement collector and a lean persist
 The current collector:
 
 - normalizes a domain into a reproducible scan target;
-- records bounded DNS resolution and TLS negotiation evidence;
+- records bounded DNS resolution, CNAME, nameserver, SOA, and TLS negotiation evidence;
 - fetches `robots.txt` with a transparent user agent;
 - obeys applicable `robots.txt` rules before requesting other paths;
 - discovers and safely classifies one sitemap without recursively crawling it;
 - records homepage availability and response metadata;
-- records HTTP protocol, security headers, cache-header hints, and conservative CDN hints;
+- summarizes the status distribution and HTTP 403/429 frequency across every recorded scan
+  attempt, including redirects and retries;
+- records HTTP protocol and HTTP/3 advertisements, security headers, exact per-response cache
+  outcomes when exposed, edge-location hints, and conservative CDN/edge/DNS/hosting attribution;
+- separates explicit challenge/block evidence, bot-management cookie-name fingerprints,
+  load-balancer hints, and acceleration headers instead of treating them all as generic WAF use;
+- checks public DNS for a conventional `tollbit.<domain>` gateway without requesting it;
+- records conservative homepage paywall, consent, CAPTCHA, and JavaScript-required markers without
+  claiming to observe rendered state, and records HTTP 451 only as a possible geographic or
+  jurisdictional restriction;
 - detects structured metadata, canonical/feed/manifest/OpenSearch links, and bounded candidate
   agent-interface, legal-policy, license, pricing, and registration links in homepage HTML without
   fetching or claiming to verify those candidates;
@@ -53,6 +62,10 @@ The current collector:
   once, and temporarily ceases a domain after repeated transient failures.
 
 It does **not** yet produce an openness score. Score definitions will be added only after the measurement schema, sampling strategy, and validation protocol are documented and tested.
+
+See [the measurement coverage matrix](docs/measurement_coverage.md) for a requirement-by-requirement
+accounting. The operational catalog currently supports 94 of 103 keys, but candidate links and
+probabilistic hints should not be mistaken for completed research measurements.
 
 ## Quick start
 
@@ -87,8 +100,19 @@ The tests use deterministic mock HTTP responses and do not contact live websites
 The collector publishes a neutral [scanner identity and opt-out process](docs/scanner.md). Before
 sustained live collection, review the [deployment checklist](docs/deployment.md), load a canonical
 cease list, and deploy the [RFC 9511 attribution template](deploy/scanner-site/README.md).
-Application checks do not replace production network egress controls. No browser runtime is
-integrated; browser-dependent signals remain unsupported.
+Application checks do not replace production network egress controls. HTTP collection remains the
+default. To enable the optional, non-interactive Chromium pass:
+
+```bash
+uv sync --extra browser
+uv run playwright install chromium
+uv run web-openness scan example.org --browser --json
+```
+
+The browser pass uses a fresh context, keeps the same public identity and robots decision, blocks
+cross-site top-level redirects, and does not click, type, submit forms, or retain page content.
+Its requests and transferred bytes are reported under `browser.network_summary` rather than mixed
+into the direct HTTP request budget.
 
 To run the small diagnostic canary and produce a JSON plus Markdown coverage report:
 
@@ -119,17 +143,25 @@ The command prints a run ID. Inspect, stop, or resume it with `batch-status`, `b
 
 For each domain, the implemented HTTP collection sequence is:
 
-1. Resolve and validate the target.
+1. Resolve and validate the target, then collect bounded public DNS metadata.
 2. Fetch and parse `robots.txt`.
 3. Apply the effective crawler policy and persistent registrable-domain pacing.
-4. Fetch one bounded sitemap, the homepage, and `llms.txt` when allowed and within budget.
-5. Parse HTML, response headers, infrastructure hints, and candidate interface/policy links.
-6. Store and validate an immutable schema `0.2.0` evidence snapshot.
+4. Fetch one bounded sitemap and the homepage when allowed and within budget.
+5. Parse HTML, structured declarations, response headers, conservative infrastructure/barrier
+   hints, and candidate interface/policy links.
+6. Optionally render the homepage once to compare HTTP and browser access, record bounded rendered
+   metadata, and identify visible high-precision barrier markers.
+7. Fetch `llms.txt`, summarize all recorded HTTP outcomes, and store an immutable schema `0.2.0`
+   evidence snapshot.
 
-Browser comparison, verified interface probing, policy-text interpretation, scoring, and
-longitudinal aggregation remain later stages.
+HTTP paywall, consent-wall, CAPTCHA, and JavaScript findings remain conservative markup/resource
+hints. Optional browser findings report visible selectors, not a claim that a barrier is active or
+impossible to bypass. Verified interface probing, policy-text interpretation, screenshots, scoring,
+and longitudinal aggregation remain later stages.
 
-The target budget is roughly 5–15 requests per domain. This is domain characterization, not large-scale crawling.
+The target HTTP budget is roughly 5–15 requests per domain. DNS metadata uses six concurrent,
+bounded lookups and is reported separately from the HTTP request count. This is domain
+characterization, not large-scale crawling.
 
 ## Confidence and evidence
 

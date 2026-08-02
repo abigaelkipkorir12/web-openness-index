@@ -40,6 +40,9 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "network.dns_address_count",
         "network.dns_ip_families",
         "network.dns_addresses_truncated",
+        "network.dns_canonical_name",
+        "network.dns_nameservers",
+        "network.dns_soa_primary",
         "network.tls_handshake",
         "network.tls_version",
         "network.tls_cipher",
@@ -54,6 +57,21 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "infrastructure.cache_headers",
         "infrastructure.cdn_hints",
         "infrastructure.cdn",
+        "infrastructure.edge_response_hints",
+        "infrastructure.waf",
+        "infrastructure.challenge_response",
+        "infrastructure.cache_status",
+        "infrastructure.edge_location_hints",
+        "infrastructure.http3_advertised",
+        "infrastructure.content_encoding",
+        "infrastructure.response_cookie_fingerprints",
+        "infrastructure.bot_management_hints",
+        "infrastructure.load_balancer_hints",
+        "infrastructure.acceleration_hints",
+        "infrastructure.edge_provider",
+        "infrastructure.edge_service_hints",
+        "infrastructure.dns_provider",
+        "infrastructure.hosting_provider",
         "crawler.robots_exists",
         "crawler.robots_status",
         "crawler.user_agents",
@@ -62,6 +80,13 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "crawler.crawl_delays",
         "crawler.sitemaps",
         "crawler.homepage_policy_allowed",
+        "crawler.http_status_distribution",
+        "crawler.http_403_frequency",
+        "crawler.http_429_frequency",
+        "crawler.browser_http_difference",
+        "browser.navigation",
+        "browser.rendered_document",
+        "browser.network_summary",
         "human.homepage_accessible",
         "human.homepage_status",
         "human.homepage_final_url",
@@ -70,6 +95,15 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "human.authentication_challenge",
         "human.login_required",
         "human.rate_limited",
+        "human.geographic_restriction",
+        "human.paywall_detected",
+        "human.cookie_wall_detected",
+        "human.captcha_detected",
+        "human.javascript_required",
+        "human.browser_login_marker_visible",
+        "human.browser_paywall_marker_visible",
+        "human.browser_cookie_wall_marker_visible",
+        "human.browser_captcha_marker_visible",
         "preservation.cache_header_hints",
         "metadata.sitemap_exists",
         "metadata.sitemap_status",
@@ -94,30 +128,23 @@ SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
         "agent.a2a",
         "agent.agent_card",
         "agent.api_documentation",
+        "agent.tollbit_gateway",
         "legal.policy_links",
         "legal.license_links",
+        "legal.license",
         "economic.pricing_links",
         "economic.registration_links",
+        "economic.subscription_required",
         "metadata.llms_txt_exists",
         "metadata.llms_txt_status",
     )
 ) + tuple(
     SignalSpec(key, False)
     for key in (
-        "infrastructure.waf",
-        "infrastructure.dns_provider",
-        "infrastructure.hosting_provider",
-        "human.paywall_detected",
-        "human.cookie_wall_detected",
-        "human.captcha_detected",
-        "human.javascript_required",
-        "crawler.browser_http_difference",
         "legal.scraping_restrictions",
         "legal.ai_restrictions",
-        "legal.license",
         "economic.registration_required",
         "economic.metering",
-        "economic.subscription_required",
         "economic.api_pricing",
         "preservation.archive_coverage",
         "preservation.archive_blocked",
@@ -313,6 +340,78 @@ def render_markdown(run: SmokeRun) -> str:
             f"{_display_signal(domain, 'infrastructure.cdn_hints')} | "
             f"{_display_signal(domain, 'network.tls_version')} | "
             f"{_display_signal(domain, 'network.http_version')} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Access-condition findings",
+            "",
+            "| Domain | Paywall hint | Consent hint | CAPTCHA hint | JavaScript hint | "
+            "Geo restriction | License | Subscription | WAF hint |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for domain in run.domains:
+        label = domain.domain or domain.target
+        lines.append(
+            f"| {label} | "
+            f"{_display_signal(domain, 'human.paywall_detected')} | "
+            f"{_display_signal(domain, 'human.cookie_wall_detected')} | "
+            f"{_display_signal(domain, 'human.captcha_detected')} | "
+            f"{_display_signal(domain, 'human.javascript_required')} | "
+            f"{_display_signal(domain, 'human.geographic_restriction')} | "
+            f"{_display_signal(domain, 'legal.license')} | "
+            f"{_display_signal(domain, 'economic.subscription_required')} | "
+            f"{_display_signal(domain, 'infrastructure.waf')} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Browser findings",
+            "",
+            "| Domain | Navigation | HTTP comparison | Login marker | Paywall marker | "
+            "Consent marker | CAPTCHA marker |",
+            "| --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for domain in run.domains:
+        label = domain.domain or domain.target
+        lines.append(
+            f"| {label} | "
+            f"{_display_signal(domain, 'browser.navigation')} | "
+            f"{_display_signal(domain, 'crawler.browser_http_difference')} | "
+            f"{_display_signal(domain, 'human.browser_login_marker_visible')} | "
+            f"{_display_signal(domain, 'human.browser_paywall_marker_visible')} | "
+            f"{_display_signal(domain, 'human.browser_cookie_wall_marker_visible')} | "
+            f"{_display_signal(domain, 'human.browser_captcha_marker_visible')} |"
+        )
+
+    lines.extend(
+        [
+            "",
+            "## Infrastructure findings",
+            "",
+            "| Domain | DNS edge | Response edge | DNS | Hosting | Cache outcome | HTTP/3 | "
+            "Bot management | Load balancer | Acceleration | TollBit gateway |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+        ]
+    )
+    for domain in run.domains:
+        label = domain.domain or domain.target
+        lines.append(
+            f"| {label} | "
+            f"{_display_signal(domain, 'infrastructure.edge_provider')} | "
+            f"{_display_signal(domain, 'infrastructure.edge_response_hints')} | "
+            f"{_display_signal(domain, 'infrastructure.dns_provider')} | "
+            f"{_display_signal(domain, 'infrastructure.hosting_provider')} | "
+            f"{_display_signal(domain, 'infrastructure.cache_status')} | "
+            f"{_display_signal(domain, 'infrastructure.http3_advertised')} | "
+            f"{_display_signal(domain, 'infrastructure.bot_management_hints')} | "
+            f"{_display_signal(domain, 'infrastructure.load_balancer_hints')} | "
+            f"{_display_signal(domain, 'infrastructure.acceleration_hints')} | "
+            f"{_display_signal(domain, 'agent.tollbit_gateway')} |"
         )
 
     lines.extend(

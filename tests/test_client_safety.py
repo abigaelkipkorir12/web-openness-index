@@ -1,7 +1,12 @@
 import httpx
 import pytest
 
-from web_openness.client import MAX_STORED_HEADER_CHARS, RequestBudgetExceeded, SiteClient
+from web_openness.client import (
+    MAX_COOKIE_NAMES,
+    MAX_STORED_HEADER_CHARS,
+    RequestBudgetExceeded,
+    SiteClient,
+)
 from web_openness.config import ScanConfig
 from web_openness.safety import URLSafetyError, validate_public_url
 
@@ -89,14 +94,25 @@ async def test_public_redirect_preserves_bounded_evidence() -> None:
 
     def handler(request: httpx.Request) -> httpx.Response:
         if request.url.path == "/start":
-            return httpx.Response(302, headers={"location": "/final"}, request=request)
+            return httpx.Response(
+                302,
+                headers=[
+                    ("location", "/final"),
+                    ("set-cookie", "__cf_bm=redirect-secret; Secure; HttpOnly"),
+                ],
+                request=request,
+            )
         return httpx.Response(
             200,
-            headers={
-                "content-language": "en",
-                "server-timing": long_header,
-                "x-ignored": "not stored",
-            },
+            headers=[
+                ("content-language", "en"),
+                ("server-timing", long_header),
+                ("x-ignored", "not stored"),
+                ("cf-mitigated", "challenge"),
+                ("x-iinfo", "example"),
+                ("set-cookie", "BIGipServerPool=final-secret; Secure"),
+                ("set-cookie", "ordinary_session=also-secret; Secure"),
+            ],
             text="ok",
             extensions={"http_version": b"HTTP/2"},
             request=request,
@@ -113,13 +129,39 @@ async def test_public_redirect_preserves_bounded_evidence() -> None:
     assert result.http_version == "HTTP/2"
     assert result.headers["content-language"] == "en"
     assert len(result.headers["server-timing"]) == MAX_STORED_HEADER_CHARS
+    assert result.headers["cf-mitigated"] == "challenge"
+    assert result.headers["x-iinfo"] == "example"
     assert "x-ignored" not in result.headers
+    assert "set-cookie" not in result.headers
+    assert result.cookie_names == ("__cf_bm", "BIGipServerPool", "ordinary_session")
+    assert "redirect-secret" not in repr(result)
+    assert "final-secret" not in repr(result)
     assert [record.requested_url for record in client.records] == [
         "https://example.org/start",
         "https://example.org/final",
     ]
     assert [record.status_code for record in client.records] == [302, 200]
     assert result.evidence is client.records[-1]
+
+
+@pytest.mark.asyncio
+async def test_cookie_name_limit_applies_across_redirects() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path == "/start":
+            headers = [("location", "/final")]
+            headers.extend(("set-cookie", f"c{index:03}=secret") for index in range(40))
+            return httpx.Response(302, headers=headers, request=request)
+        headers = [("set-cookie", f"c{index:03}=secret") for index in range(40, 80)]
+        return httpx.Response(200, headers=headers, request=request)
+
+    async with SiteClient(
+        ScanConfig(request_delay_seconds=0),
+        transport=httpx.MockTransport(handler),
+    ) as client:
+        result = await client.get("https://example.org/start")
+
+    assert len(result.cookie_names) == MAX_COOKIE_NAMES
+    assert result.cookie_names == tuple(f"c{index:03}" for index in range(MAX_COOKIE_NAMES))
 
 
 @pytest.mark.asyncio
