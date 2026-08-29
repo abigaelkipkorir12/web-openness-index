@@ -58,6 +58,7 @@ class BrowserRequestGate:
     total_response_bytes: int = 0
     _started_at: float = field(default_factory=time.monotonic)
     _response_bytes: dict[str, int] = field(default_factory=dict)
+    _authorization_lock: asyncio.Lock = field(default_factory=asyncio.Lock, repr=False)
 
     async def authorize(
         self,
@@ -65,24 +66,37 @@ class BrowserRequestGate:
         *,
         top_level_navigation: bool = False,
     ) -> AuthorizedBrowserRequest:
-        if not self.policy.enabled:
-            raise BrowserPolicyError("browser collection is disabled")
-        self._require_time_remaining()
-        if self.request_count >= self.policy.max_requests:
-            raise BrowserPolicyError("browser request limit exhausted")
-
         third_party = not same_site(self.top_level_url, url)
-        if self.url_allowed is not None and not self.url_allowed(url):
-            raise BrowserPolicyError("browser URL rejected by collection policy")
-        if top_level_navigation and third_party:
-            raise BrowserPolicyError("cross-site top-level browser navigation is disabled")
-        if third_party and self.third_party_request_count >= self.policy.max_third_party_requests:
-            raise BrowserPolicyError("browser third-party request limit exhausted")
+        async with self._authorization_lock:
+            if not self.policy.enabled:
+                raise BrowserPolicyError("browser collection is disabled")
+            self._require_time_remaining()
+            if self.request_count >= self.policy.max_requests:
+                raise BrowserPolicyError("browser request limit exhausted")
+            if self.url_allowed is not None and not self.url_allowed(url):
+                raise BrowserPolicyError("browser URL rejected by collection policy")
+            if top_level_navigation and third_party:
+                raise BrowserPolicyError("cross-site top-level browser navigation is disabled")
+            if (
+                third_party
+                and self.third_party_request_count >= self.policy.max_third_party_requests
+            ):
+                raise BrowserPolicyError("browser third-party request limit exhausted")
 
-        addresses = await validate_public_url(url, resolver=self.resolver)
-        self.request_count += 1
-        if third_party:
-            self.third_party_request_count += 1
+            # Reserve before DNS validation so concurrent browser callbacks cannot
+            # all pass the cap check while their lookups are in flight.
+            self.request_count += 1
+            if third_party:
+                self.third_party_request_count += 1
+
+        try:
+            addresses = await validate_public_url(url, resolver=self.resolver)
+        except BaseException:
+            async with self._authorization_lock:
+                self.request_count -= 1
+                if third_party:
+                    self.third_party_request_count -= 1
+            raise
         return AuthorizedBrowserRequest(str(url), addresses, third_party)
 
     def record_response(self, response_bytes: int) -> None:

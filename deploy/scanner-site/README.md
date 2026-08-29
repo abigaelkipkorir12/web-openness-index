@@ -2,12 +2,16 @@
 
 Serve the contents of this directory from the hostname in the dedicated worker's reverse DNS.
 
-1. Copy `.well-known/probing.txt.example` to `.well-known/probing.txt`.
-2. Replace every `scanner.example.org` and `example.org` value with controlled, monitored endpoints.
-3. Set `Expires` to a valid RFC 3339 timestamp less than one year ahead and renew it operationally.
-4. Serve the file over HTTPS as UTF-8 `text/plain` without authentication.
-5. Confirm both the reverse DNS hostname and the worker's literal IP URL expose an identical file
+1. Copy `index.html.example` to `index.html` and replace every `REPLACE_` value.
+2. Copy `.well-known/probing.txt.example` to `.well-known/probing.txt`.
+3. Replace every `scanner.example.org` and `example.org` value with controlled, monitored endpoints.
+4. Set `Expires` to a valid RFC 3339 timestamp less than one year ahead and renew it operationally.
+5. Serve the file over HTTPS as UTF-8 `text/plain` without authentication.
+6. Confirm both the reverse DNS hostname and the worker's literal IP URL expose an identical file
    where the hosting arrangement permits it.
+
+Run the provider-neutral readiness check and stop drill in [`deploy/operations`](../operations/README.md)
+before the first pilot.
 
 RFC 9511 defines the well-known path and recommends `Canonical`, `Contact`, `Expires`,
 `Preferred-Languages`, and the one-line `Description` field. This is a deployment template, not a

@@ -1,5 +1,8 @@
 # Restart-safe batch runs
 
+For the first deployed pilot, also complete the provider-neutral identity, complaint handling,
+readiness check, and global-stop drill in [the deployment runbook](../deploy/operations/README.md).
+
 The persistent batch runner is the smallest operational layer around the collector. SQLite holds
 only run and job state; immutable evidence remains in the normal snapshot tree.
 

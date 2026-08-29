@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from web_openness.archive import ArchivePolicy
 from web_openness.browser_policy import BrowserPolicy
 
 DEFAULT_SCANNER_PAGE_URL = "https://github.com/shayne-longpre/web-openness-index"
@@ -81,6 +82,8 @@ class ScanConfig:
     circuit_cooldown_seconds: float = 300.0
     cease_list_path: Path | None = None
     browser_policy: BrowserPolicy = field(default_factory=BrowserPolicy)
+    archive_policy: ArchivePolicy = field(default_factory=ArchivePolicy)
+    cache_validation_enabled: bool = False
 
     def __post_init__(self) -> None:
         if not self.user_agent.strip():

@@ -358,7 +358,9 @@ def test_batch_cli_surface() -> None:
     parser = build_parser()
 
     batch = parser.parse_args(["batch", "--domains-file", "domains.txt", "--concurrency", "2"])
-    browser_scan = parser.parse_args(["scan", "example.org", "--browser"])
+    browser_scan = parser.parse_args(
+        ["scan", "example.org", "--browser", "--archive", "--validate-cache"]
+    )
     status = parser.parse_args(["batch-status", "run-123"])
     stop = parser.parse_args(["batch-stop", "run-123"])
     stop_all = parser.parse_args(["batch-stop-all"])
@@ -366,9 +368,33 @@ def test_batch_cli_surface() -> None:
     assert batch.command == "batch"
     assert batch.concurrency == 2
     assert browser_scan.browser is True
+    assert browser_scan.archive is True
+    assert browser_scan.validate_cache is True
     assert status.run_id == "run-123"
     assert stop.command == "batch-stop"
     assert stop_all.command == "batch-stop-all"
+
+
+def test_research_cli_surface() -> None:
+    parser = build_parser()
+
+    sample = parser.parse_args(
+        [
+            "frame-sample",
+            "frame.csv",
+            "--frame-version",
+            "pilot-v0.1",
+            "--code-revision",
+            "abc123",
+            "--seed",
+            "pilot-seed",
+        ]
+    )
+    analyze = parser.parse_args(["analyze", "data/snapshots"])
+
+    assert sample.frame_version == "pilot-v0.1"
+    assert sample.per_stratum == 4
+    assert analyze.output == Path("data/analysis")
 
 
 def test_batch_status_and_stop_commands_are_offline(

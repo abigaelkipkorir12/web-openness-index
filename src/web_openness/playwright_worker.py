@@ -2,6 +2,7 @@ import asyncio
 from contextlib import suppress
 from datetime import UTC, datetime
 from typing import Any, cast
+from urllib.parse import urlsplit
 
 from web_openness.browser_policy import (
     BrowserPolicyError,
@@ -169,13 +170,21 @@ class PlaywrightBrowserWorker:
                 if transfer_error is not None:
                     raise transfer_error
 
+                final_url = page.url
+                parsed_final_url = urlsplit(final_url)
+                if (
+                    parsed_final_url.scheme not in {"http", "https"}
+                    or parsed_final_url.hostname is None
+                ):
+                    raise BrowserPolicyError("browser navigation ended on a non-web error page")
+
                 raw_markers = await page.evaluate(_VISIBLE_MARKERS_SCRIPT, MARKER_SELECTORS)
                 markers = _normalize_markers(raw_markers)
                 raw_counts = await page.evaluate(_DOCUMENT_COUNTS_SCRIPT)
                 document_chars, visible_text_chars = _normalize_counts(raw_counts)
                 title = (await page.title()).strip()[:500] or None
                 return BrowserRender(
-                    final_url=page.url,
+                    final_url=final_url,
                     status_code=response.status if response is not None else None,
                     title=title,
                     document_chars=document_chars,

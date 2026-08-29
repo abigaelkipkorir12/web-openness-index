@@ -10,7 +10,11 @@ from web_openness.models import (
     Observation,
     ObservationOutcome,
 )
-from web_openness.schema import SCHEMA_FILENAME, domain_snapshot_json_schema
+from web_openness.schema import (
+    SCHEMA_FILENAME,
+    domain_snapshot_json_schema,
+    load_domain_snapshot_json,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCHEMA_PATH = PROJECT_ROOT / "schemas" / SCHEMA_FILENAME
@@ -46,6 +50,13 @@ def test_previous_contract_artifacts_remain_available() -> None:
         "domain-snapshot-v0.1.0.json"
     )
     assert json.loads(LEGACY_FIXTURE_PATH.read_text(encoding="utf-8"))["schema_version"] == "0.1.0"
+
+
+def test_previous_contract_migrates_to_explicit_outcomes() -> None:
+    snapshot = load_domain_snapshot_json(LEGACY_FIXTURE_PATH.read_text(encoding="utf-8"))
+
+    assert snapshot.schema_version == SCHEMA_VERSION
+    assert snapshot.observations["crawler.robots_exists"].outcome == ObservationOutcome.OBSERVED
 
 
 def test_observation_outcome_and_confidence_cannot_conflict() -> None:

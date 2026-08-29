@@ -103,7 +103,7 @@ async def test_smoke_run_is_bounded_and_writes_individual_snapshots(tmp_path: Pa
     assert first.signals["metadata.llms_txt_exists"].status == SignalStatus.NO_EVIDENCE
     assert first.signals["infrastructure.cdn"].status == SignalStatus.SKIPPED
     assert first.signals["preservation.cache_header_hints"].status == SignalStatus.SKIPPED
-    assert first.signals["preservation.cache_behavior"].status == (SignalStatus.NOT_YET_SUPPORTED)
+    assert first.signals["preservation.cache_behavior"].status == SignalStatus.SKIPPED
 
 
 @pytest.mark.asyncio
@@ -143,14 +143,15 @@ def test_reports_are_machine_readable_and_human_readable(tmp_path: Path) -> None
     markdown = markdown_path.read_text(encoding="utf-8")
 
     assert run.completed_at.date().isoformat() in str(json_path)
-    assert payload["report_version"] == "0.2.0"
+    assert payload["report_version"] == "0.3.0"
     assert payload["run_id"] == run.run_id
     assert payload["domain_count"] == 1
     assert payload["request_count"] == 2
-    assert payload["status_counts"]["not_yet_supported"] > 0
+    assert set(payload["status_counts"]) == {"collected", "no_evidence", "skipped", "error"}
     assert "## Diagnostic gaps" in markdown
     assert "## Selected findings" in markdown
     assert "## Access-condition findings" in markdown
+    assert "## Policy and preservation findings" in markdown
     assert "## Browser findings" in markdown
     assert "## Infrastructure findings" in markdown
     assert "1 scan notes" in markdown

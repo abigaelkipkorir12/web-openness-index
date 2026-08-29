@@ -8,6 +8,7 @@ from uuid import uuid4
 import httpx
 
 from web_openness import __version__
+from web_openness.archive import ArchiveLookupClient
 from web_openness.browser_policy import BrowserWorker
 from web_openness.client import RequestBudgetExceeded, SiteClient
 from web_openness.config import ScanConfig
@@ -21,6 +22,8 @@ from web_openness.probes import (
     MetadataProbe,
     NetworkProbe,
     PageSignalsProbe,
+    PolicySignalsProbe,
+    PreservationProbe,
     ResponseProbe,
     RobotsProbe,
     SitemapProbe,
@@ -39,8 +42,10 @@ DEFAULT_PROBES: tuple[Probe, ...] = (
     ResponseProbe(),
     MetadataProbe(),
     PageSignalsProbe(),
+    PolicySignalsProbe(),
     BrowserProbe(),
     WellKnownProbe(),
+    PreservationProbe(),
 )
 
 
@@ -84,11 +89,13 @@ class Scanner:
         probes: Iterable[Probe] = DEFAULT_PROBES,
         transport: httpx.AsyncBaseTransport | None = None,
         browser_worker: BrowserWorker | None = None,
+        archive_client: ArchiveLookupClient | None = None,
     ) -> None:
         self.config = config or ScanConfig()
         self.probes = tuple(probes)
         self.transport = transport
         self.browser_worker = browser_worker
+        self.archive_client = archive_client
         self.cease_list = (
             CeaseList.load(self.config.cease_list_path)
             if self.config.cease_list_path is not None
@@ -137,6 +144,8 @@ class Scanner:
             )
             if self.browser_worker is not None:
                 context.shared["browser_worker"] = self.browser_worker
+            if self.archive_client is not None:
+                context.shared["archive_client"] = self.archive_client
             for probe in self.probes:
                 try:
                     probe_observations = await probe.collect(context)
