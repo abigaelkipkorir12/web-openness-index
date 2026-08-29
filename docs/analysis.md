@@ -67,3 +67,5 @@ COPY (
 
 Keep raw snapshots immutable. Regenerate derived exports when analysis code changes, and record the
 collector revision, frame manifest, analysis revision, and exact command in each release manifest.
+Use the [plot roadmap](plots.md) to produce data-quality figures before substantive comparisons or
+scores.

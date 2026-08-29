@@ -143,11 +143,11 @@ def test_reports_are_machine_readable_and_human_readable(tmp_path: Path) -> None
     markdown = markdown_path.read_text(encoding="utf-8")
 
     assert run.completed_at.date().isoformat() in str(json_path)
-    assert payload["report_version"] == "0.2.0"
+    assert payload["report_version"] == "0.3.0"
     assert payload["run_id"] == run.run_id
     assert payload["domain_count"] == 1
     assert payload["request_count"] == 2
-    assert payload["status_counts"]["not_yet_supported"] == 0
+    assert set(payload["status_counts"]) == {"collected", "no_evidence", "skipped", "error"}
     assert "## Diagnostic gaps" in markdown
     assert "## Selected findings" in markdown
     assert "## Access-condition findings" in markdown

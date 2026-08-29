@@ -23,8 +23,7 @@ report. Each observation has an explicit outcome:
 - `collected` maps to `observed`, including valid negative values such as `false`;
 - `no_evidence` means the probe ran but found no evidence;
 - `skipped` means policy, applicability, pacing, or budget prevented collection;
-- `error` means collection or parsing failed;
-- `not_yet_supported` is a report-only marker for planned measurements.
+- `error` means collection or parsing failed.
 
 ## What this run exercises
 
@@ -49,12 +48,13 @@ report. Each observation has an explicit outcome:
   interface candidates are not fetched. A separate bounded probe may examine one policy and one
   pricing/API candidate, but the discovery signal itself remains only a candidate.
 - **Optional preservation:** `--archive` makes one bounded Wayback CDX query; `--validate-cache`
-  makes at most one same-host conditional homepage request when a validator is available. Both are
-  disabled by default. Browser-versus-HTTP confirmation is available only with `--browser`.
+  makes at most one conditional request to the final canonical homepage URL when a validator is
+  available and its path is allowed. Both are disabled by default. Browser-versus-HTTP confirmation
+  is available only with `--browser`.
 
-All 110 operational catalog keys now have a collector path. Authenticated interface testing,
-screenshots, comprehensive legal interpretation, and validated scoring remain outside this smoke
-test rather than appearing as unsupported catalog entries.
+All 110 operational catalog keys have a collector path. Planned measurements stay outside the
+operational registry until code can collect them. Authenticated interface testing, screenshots,
+comprehensive legal interpretation, and validated scoring remain outside this smoke test.
 
 ## Fetch and politeness semantics
 

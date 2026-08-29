@@ -1,134 +1,57 @@
 # Web Openness Observatory
 
-The Web Openness Observatory is an early-stage research project for measuring how accessible the public web is to humans, crawlers, and AI agents—and how that accessibility changes over time.
+The Web Openness Observatory measures how public websites can be accessed by people, conventional crawlers, and software agents. It records technical, policy, economic, and preservation evidence without bypassing access controls. Repeated, versioned measurements can show where access differs and how it changes over time.
 
-The project is designed around **measurement, not circumvention**. It characterizes public interfaces with a transparent methodology while respecting `robots.txt`, authentication boundaries, rate limits, paywalls, CAPTCHAs, and other standard access controls.
+**New to the project? Start with [the intern guide](docs/START_HERE.md).** It explains the goal, current system, work plan, and a good first contribution.
 
 ## Research questions
 
-- How open is today's web?
-- How is web openness changing over time?
-- How do sectors such as news, government, academia, commerce, and forums differ?
-- Is the web becoming less crawlable while becoming more agent-accessible?
-- Which technical, legal, and economic barriers are driving these changes?
+- Who can access a public website, under what conditions, and through which interfaces?
+- How do access patterns differ across sectors, regions, and popularity bands?
+- Which technical, legal, and economic conditions are associated with those differences?
+- How does web openness change across repeated measurement waves?
 
-## What the observatory measures
+## Current state
 
-Each domain receives a timestamped evidence record. Scores and aggregate indices are derived later from versioned methodology, so the underlying observations remain inspectable and reproducible.
+The repository contains a working, policy-aware collector and restart-safe local batch runner. The scanner has an operational path for **110 signals** across ten families:
 
-| Dimension | Example signals | Planned output |
-| --- | --- | --- |
-| Human access | Homepage availability, login requirements, paywalls, cookie walls, CAPTCHAs, geographic restrictions, JavaScript requirements | Human Accessibility Index |
-| Crawler access | `robots.txt`, AI-specific directives, crawl delay, sitemaps, HTTP status, 403/429 responses, browser-versus-HTTP differences | Crawl Accessibility Index |
-| Agent access | Candidate links for APIs, OpenAPI, GraphQL, OAuth metadata, MCP, A2A, agent cards, and API documentation | Agent Accessibility Index |
-| Legal access | Candidate policy/license links and explicit scraping or AI-use restrictions from one bounded policy follow-up | Legal Restrictiveness Index |
-| Economic access | Candidate pricing/registration links and explicit registration, metering, subscription, and API-price declarations | Economic Accessibility Index |
-| Infrastructure | CDN, WAF, DNS and hosting providers, TLS configuration, HTTP version | Infrastructure Hardening Index |
-| Preservation | Cache-header evidence plus optional archive coverage/blocking and conditional cache validation | Preservation Index |
+| Family | Signals | Examples |
+| --- | ---: | --- |
+| Network | 16 | DNS, TLS, HTTP version |
+| Infrastructure | 21 | CDN, edge, WAF, cache, hosting hints |
+| Crawler | 12 | `robots.txt`, AI-agent rules, crawl delay, HTTP outcomes |
+| Browser | 3 | Optional rendered navigation and network summary |
+| Human | 17 | Reachability and conservative barrier evidence |
+| Metadata | 17 | Sitemaps, JSON-LD, feeds, `llms.txt` |
+| Agent | 9 | Candidate OpenAPI, GraphQL, MCP, A2A, and API links |
+| Legal | 5 | Policy, license, scraping, and AI-use declarations |
+| Economic | 6 | Pricing, registration, subscription, and metering declarations |
+| Preservation | 4 | Cache and optional public-archive evidence |
 
-Machine-readable metadata—including Schema.org, Open Graph, RSS/Atom/JSON feeds, sitemaps, `robots.txt`, and `llms.txt`—is retained as supporting evidence.
+“Operational” means code can collect a result, record no evidence, or explain a skip. It does **not** mean every detector is validated or that all 110 fields should enter an index. See [measurement coverage](docs/measurement_coverage.md) for methods and limits.
 
-## Current status
-
-This repository contains a working HTTP measurement collector and a lean persistent batch runner.
-The current collector:
-
-- normalizes a domain into a reproducible scan target;
-- records bounded DNS resolution, CNAME, nameserver, SOA, and TLS negotiation evidence;
-- fetches `robots.txt` with a transparent user agent;
-- obeys applicable `robots.txt` rules before requesting other paths;
-- discovers and safely classifies one sitemap without recursively crawling it;
-- records homepage availability and response metadata;
-- summarizes the status distribution and HTTP 403/429 frequency across every recorded scan
-  attempt, including redirects and retries;
-- records HTTP protocol and HTTP/3 advertisements, security headers, exact per-response cache
-  outcomes when exposed, edge-location hints, and conservative CDN/edge/DNS/hosting attribution;
-- separates explicit challenge/block evidence, bot-management cookie-name fingerprints,
-  load-balancer hints, and acceleration headers instead of treating them all as generic WAF use;
-- checks public DNS for a conventional `tollbit.<domain>` gateway without requesting it;
-- records conservative homepage paywall, consent, CAPTCHA, and JavaScript-required markers without
-  claiming to observe rendered state, and records HTTP 451 only as a possible geographic or
-  jurisdictional restriction;
-- detects structured metadata, canonical/feed/manifest/OpenSearch links, and bounded candidate
-  agent-interface, legal-policy, license, pricing, and registration links in homepage HTML without
-  fetching or claiming to verify those candidates;
-- follows at most one same-site policy page and one pricing/API page, when allowed, to retain only
-  explicit scraping, AI-use, registration, metering, and API-pricing declarations;
-- checks for a public `llms.txt` when policy allows;
-- optionally makes one monthly-collapsed public-archive lookup and one conditional homepage request
-  for preservation evidence; both are disabled by default;
-- rejects local, private, reserved, and otherwise non-public network destinations;
-- emits a schema `0.2.0` JSON snapshot with explicit `observed`, `no_evidence`, `skipped`, and
-  `error` outcomes, plus confidence, evidence, attempt-level request records, and errors;
-- enforces the request budget across redirects and retries;
-- persists pacing by registrable domain in SQLite across workers and runs, applies effective
-  `robots.txt` `Crawl-delay`, honors `Retry-After` on HTTP 429/503, retries a transient GET at most
-  once, and temporarily ceases a domain after repeated transient failures.
-
-It does **not** yet produce an openness score. Score definitions will be added only after the measurement schema, sampling strategy, and validation protocol are documented and tested.
-
-See [the measurement coverage matrix](docs/measurement_coverage.md) for a requirement-by-requirement
-accounting. The operational catalog now has an implementation path for all 110 keys, but opt-in,
-candidate, and probabilistic findings should not be mistaken for validated research measurements.
+The project does not yet publish an openness score. Detector validation, a frozen sampling frame, pilot collection, missingness analysis, and a preregistered scoring method come first.
 
 ## Quick start
 
-Prerequisites: Python 3.12+ and [uv](https://docs.astral.sh/uv/).
+Requirements: Python 3.12+ and [uv](https://docs.astral.sh/uv/).
 
 ```bash
 uv sync --all-groups
-uv run web-openness scan example.org
+make check
 ```
 
-Snapshots are written under `data/snapshots/<date>/<domain>/` by default. To inspect a result directly:
+All tests are offline and use deterministic fixtures. After reviewing the scanner policy, collect one live public-domain snapshot:
 
 ```bash
 uv run web-openness scan example.org --json
 ```
 
-Apply a reviewed cease list before any live collection:
+Snapshots are written under `data/snapshots/<date>/<domain>/` by default.
 
-```bash
-uv run web-openness scan example.org \
-  --cease-list examples/cease_list.txt
-```
+## Common workflows
 
-Run the complete local check suite with:
-
-```bash
-make check
-```
-
-The tests use deterministic mock HTTP responses and do not contact live websites.
-
-The collector publishes a neutral [scanner identity and opt-out process](docs/scanner.md). Before
-sustained live collection, review the [deployment checklist](docs/deployment.md), load a canonical
-cease list, and deploy the [RFC 9511 attribution template](deploy/scanner-site/README.md).
-Application checks do not replace production network egress controls. HTTP collection remains the
-default. To enable the optional, non-interactive Chromium pass:
-
-```bash
-uv sync --extra browser
-uv run playwright install chromium
-uv run web-openness scan example.org --browser --json
-```
-
-The browser pass uses a fresh context, keeps the same public identity and robots decision, blocks
-cross-site top-level redirects, and does not click, type, submit forms, or retain page content.
-Its requests and transferred bytes are reported under `browser.network_summary` rather than mixed
-into the direct HTTP request budget.
-
-The preservation checks are also opt-in because each adds network work:
-
-```bash
-uv run web-openness scan example.org --archive --validate-cache --json
-```
-
-`--archive` sends one bounded query to the public Wayback CDX index. `--validate-cache` sends at
-most one same-host conditional request, only when the homepage supplies ETag or Last-Modified and
-the path is allowed.
-
-To run the small diagnostic canary and produce a JSON plus Markdown coverage report:
+Run the small diagnostic canary:
 
 ```bash
 uv run web-openness smoke \
@@ -137,10 +60,7 @@ uv run web-openness smoke \
   --concurrency 3
 ```
 
-This is an operational smoke test, not a research sample or ranking. See
-[docs/smoke_test.md](docs/smoke_test.md) for its outputs and interpretation.
-
-For restart-safe multi-domain collection, use the persistent batch runner:
+Run a restart-safe reviewed batch:
 
 ```bash
 uv run web-openness batch \
@@ -150,134 +70,62 @@ uv run web-openness batch \
   --json-progress
 ```
 
-The command prints a run ID. Inspect, stop, or resume it with `batch-status`, `batch-stop`, and
-`batch --run-id RUN_ID`; see [docs/operations.md](docs/operations.md) for the concise runbook.
-
-Build a reproducible pilot sample and export existing snapshots for analysis with:
+Create a deterministic sample and export collected snapshots:
 
 ```bash
 uv run web-openness frame-sample data/frame/pilot.csv \
-  --frame-version pilot-v0.1 --code-revision COMMIT_SHA --seed pilot-v0.1 \
+  --frame-version pilot-v0.1 \
+  --code-revision COMMIT_SHA \
+  --seed pilot-v0.1 \
   --manifest-output data/research/pilot-v0.1.manifest.json \
   --targets-output data/research/pilot-v0.1.domains.txt
+
 uv run web-openness analyze data/snapshots --output data/analysis
 ```
 
-See [the analysis workflow](docs/analysis.md) and
-[scoring preregistration draft](docs/methodology/scoring.md).
+Live collection is transparent and bounded. The scanner honors `robots.txt`, rate limits, cease-list entries, authentication boundaries, paywalls, CAPTCHAs, and other standard controls. It never logs in, submits forms, or tries to evade a block. Browser and preservation requests are opt-in; see the [smoke-test guide](docs/smoke_test.md).
 
-## Measurement workflow
-
-For each domain, the implemented HTTP collection sequence is:
-
-1. Resolve and validate the target, then collect bounded public DNS metadata.
-2. Fetch and parse `robots.txt`.
-3. Apply the effective crawler policy and persistent registrable-domain pacing.
-4. Fetch one bounded sitemap and the homepage when allowed and within budget.
-5. Parse HTML, structured declarations, response headers, conservative infrastructure/barrier
-   hints, candidate interfaces, and at most two explicit policy/pricing follow-ups.
-6. Optionally render the homepage once to compare HTTP and browser access, record bounded rendered
-   metadata, and identify visible high-precision barrier markers.
-7. Fetch `llms.txt`; optionally query public archive coverage and conditionally validate homepage
-   caching; then summarize HTTP outcomes and store an immutable schema `0.2.0` evidence snapshot.
-
-HTTP paywall, consent-wall, CAPTCHA, and JavaScript findings remain conservative markup/resource
-hints. Optional browser findings report visible selectors, not a claim that a barrier is active or
-impossible to bypass. Verified interface probing, detector validation, screenshots, scoring, and a
-public longitudinal release remain later stages.
-
-The target HTTP budget is roughly 5–15 requests per domain. DNS metadata uses six concurrent,
-bounded lookups and is reported separately from the HTTP request count. This is domain
-characterization, not large-scale crawling.
-
-## Confidence and evidence
-
-Measurements are not assumed to be binary. Each observation carries:
-
-- a value;
-- a collection outcome: `observed`, `no_evidence`, `skipped`, or `error`;
-- a confidence label: `confirmed`, `likely`, `possible`, `no_evidence`, or `unknown`;
-- a numeric confidence score;
-- the method that produced it;
-- supporting evidence such as URL, status, timestamp, and content hash.
-
-`No evidence` is distinct from `false`; skipped work and collection errors are also represented
-separately. This distinction is essential for longitudinal analysis and defensible scoring.
-
-## Agent capability ladder
-
-Agent-facing access will be classified progressively:
-
-0. Blocked
-1. Readable
-2. Machine-interpretable
-3. Searchable or queryable
-4. Authenticated API
-5. Actionable API
-6. Agent-native (for example, MCP or A2A)
-7. Delegable with verification
-
-The observatory measures only publicly discoverable interfaces and never attempts authenticated actions.
-
-## Repository layout
+## How the code is organized
 
 ```text
-.
-├── docs/
-│   ├── architecture.md       # System boundaries, infrastructure, and delivery plan
-│   └── methodology/          # Sampling and research methodology
-├── schemas/                  # Committed, versioned evidence contracts
-├── scripts/                  # Reproducible schema and maintenance commands
-├── src/web_openness/
-│   ├── probes/               # Independently testable measurement modules
-│   ├── client.py             # Budgeted, safety-checked HTTP access
-│   ├── politeness.py         # Persistent pacing, retry, and circuit state
-│   ├── models.py             # Versioned evidence schema
-│   ├── pipeline.py           # Probe orchestration
-│   ├── runner.py             # Restart-safe batch coordination
-│   └── storage.py            # Immutable local snapshots
-├── tests/                    # Offline unit and integration-style tests
-└── .github/workflows/ci.yml  # Formatting, linting, typing, and test checks
+src/web_openness/
+├── probes/          independent measurement families
+├── client.py        destination safety, HTTP limits, and request evidence
+├── politeness.py    persistent pacing, retries, and temporary cease state
+├── models.py        versioned observation and snapshot contracts
+├── signals.py       operational signal registry
+├── pipeline.py      deterministic probe orchestration
+├── runner.py        restart-safe batch coordination
+├── frame.py         reproducible sample selection
+└── analysis.py      validated CSV/JSON exports
 ```
 
-See [docs/architecture.md](docs/architecture.md) for the proposed production architecture, scaling path, and phase-by-phase acceptance criteria. The first pilot design is specified in [docs/methodology/pilot_sampling.md](docs/methodology/pilot_sampling.md).
+Collection, evidence, analysis, and scoring are separate layers. The current system uses files and SQLite on one coordinator; it does not need a queue cluster, Kubernetes, or a web dashboard for the pilot. See [architecture](docs/architecture.md) for the boundaries and scaling rule.
 
-## Priorities
+## Documentation
 
-### Priority 1: measurement MVP
+| Read this | For |
+| --- | --- |
+| [Start here](docs/START_HERE.md) | Project context, plan, and first tasks |
+| [Contributing](CONTRIBUTING.md) | Setup, code changes, tests, and pull requests |
+| [Measurement coverage](docs/measurement_coverage.md) | Signal families, methods, and limitations |
+| [Plot roadmap](docs/plots.md) | Planned diagnostic and research figures |
+| [Architecture](docs/architecture.md) | Current data flow and module contracts |
+| [Pilot sampling](docs/methodology/pilot_sampling.md) | Population, strata, waves, and quality gates |
+| [Analysis](docs/analysis.md) | Selection manifests and exported tables |
+| [Scanner policy](docs/scanner.md) | Identity, behavior, corrections, and opt-out |
+| [Deployment](docs/deployment.md) | Safe worker and network setup |
+| [Operations](docs/operations.md) | Start, inspect, stop, and resume a batch |
+| [Scoring draft](docs/methodology/scoring.md) | Preregistration principles; not a leaderboard |
 
-- Human access signals
-- Crawler access and policy signals
-- Infrastructure inference
-- Public metadata discovery
-- Versioned raw snapshots and a defensible sample
+## Research and engineering rules
 
-### Priority 2: agent access
+- Measure barriers; never defeat them.
+- Keep requests few, slow, identifiable, and auditable.
+- Treat `no_evidence`, `skipped`, and `error` as different outcomes; none means `false`.
+- Keep raw evidence immutable and derived classifications reproducible.
+- Validate a detector before using it in a score.
+- Version code, schemas, sampling frames, detector rules, and methods.
+- Add infrastructure only after a measured pilot demonstrates the need.
 
-- OpenAPI, GraphQL, OAuth, MCP, A2A, and agent-card discovery
-- Public API documentation and structured-commerce detection
-- Agent capability classification
-
-### Priority 3: legal, economic, and preservation access
-
-- Rule-based policy and terms extraction, followed by validated model-assisted extraction
-- Paywall and pricing taxonomy
-- Archive coverage and cache behavior
-
-## Engineering principles
-
-- Respect `robots.txt` and explicit access controls.
-- Use a transparent user agent and publish the methodology.
-- Apply conservative per-domain rate limits and bounded concurrency.
-- Retry only failures that are clearly transient.
-- Never bypass CAPTCHAs, authentication, paywalls, or geographic restrictions.
-- Never spoof users or use residential proxies.
-- Preserve raw evidence separately from derived classifications and scores.
-- Version schemas, detectors, sampling frames, and scoring methodology.
-- Make every production result reproducible from code, configuration, and immutable inputs.
-
-The goal is to measure barriers, not defeat them.
-
-## Success criterion
-
-The observatory should make it possible to answer not only **“Can this content be accessed?”**, but **“Who can access it, under what conditions, through which interfaces, and how is that changing over time?”**
+The goal is a defensible longitudinal dataset, not the largest possible crawl.

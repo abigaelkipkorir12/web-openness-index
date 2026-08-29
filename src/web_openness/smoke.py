@@ -11,9 +11,10 @@ from uuid import uuid4
 from web_openness.config import ScanConfig
 from web_openness.models import DomainSnapshot, Observation, ObservationOutcome
 from web_openness.pipeline import Scanner
+from web_openness.signals import SIGNAL_KEYS
 from web_openness.storage import write_snapshot
 
-SMOKE_REPORT_VERSION = "0.2.0"
+SMOKE_REPORT_VERSION = "0.3.0"
 
 
 class SignalStatus(StrEnum):
@@ -21,132 +22,7 @@ class SignalStatus(StrEnum):
     NO_EVIDENCE = "no_evidence"
     SKIPPED = "skipped"
     ERROR = "error"
-    NOT_YET_SUPPORTED = "not_yet_supported"
 
-
-@dataclass(frozen=True, slots=True)
-class SignalSpec:
-    key: str
-    implemented: bool
-
-
-# This short catalog is a coverage checklist, not a scoring model. Observations emitted
-# by newer probes are included automatically even when they are not listed here.
-SIGNAL_CATALOG: tuple[SignalSpec, ...] = tuple(
-    SignalSpec(key, True)
-    for key in (
-        "network.dns_resolved",
-        "network.dns_addresses",
-        "network.dns_address_count",
-        "network.dns_ip_families",
-        "network.dns_addresses_truncated",
-        "network.dns_canonical_name",
-        "network.dns_nameservers",
-        "network.dns_soa_primary",
-        "network.tls_handshake",
-        "network.tls_version",
-        "network.tls_cipher",
-        "network.tls_certificate_not_before",
-        "network.tls_certificate_not_after",
-        "network.tls_certificate_issuer",
-        "network.tls_certificate_verified",
-        "network.http_version",
-        "infrastructure.response_headers",
-        "infrastructure.server_header",
-        "infrastructure.security_headers",
-        "infrastructure.cache_headers",
-        "infrastructure.cdn_hints",
-        "infrastructure.cdn",
-        "infrastructure.edge_response_hints",
-        "infrastructure.waf",
-        "infrastructure.challenge_response",
-        "infrastructure.cache_status",
-        "infrastructure.edge_location_hints",
-        "infrastructure.http3_advertised",
-        "infrastructure.content_encoding",
-        "infrastructure.response_cookie_fingerprints",
-        "infrastructure.bot_management_hints",
-        "infrastructure.load_balancer_hints",
-        "infrastructure.acceleration_hints",
-        "infrastructure.edge_provider",
-        "infrastructure.edge_service_hints",
-        "infrastructure.dns_provider",
-        "infrastructure.hosting_provider",
-        "crawler.robots_exists",
-        "crawler.robots_status",
-        "crawler.user_agents",
-        "crawler.ai_specific_user_agents",
-        "crawler.ai_homepage_policies",
-        "crawler.crawl_delays",
-        "crawler.sitemaps",
-        "crawler.homepage_policy_allowed",
-        "crawler.http_status_distribution",
-        "crawler.http_403_frequency",
-        "crawler.http_429_frequency",
-        "crawler.browser_http_difference",
-        "browser.navigation",
-        "browser.rendered_document",
-        "browser.network_summary",
-        "human.homepage_accessible",
-        "human.homepage_status",
-        "human.homepage_final_url",
-        "human.homepage_content_type",
-        "human.http_access_disposition",
-        "human.authentication_challenge",
-        "human.login_required",
-        "human.rate_limited",
-        "human.geographic_restriction",
-        "human.paywall_detected",
-        "human.cookie_wall_detected",
-        "human.captcha_detected",
-        "human.javascript_required",
-        "human.browser_login_marker_visible",
-        "human.browser_paywall_marker_visible",
-        "human.browser_cookie_wall_marker_visible",
-        "human.browser_captcha_marker_visible",
-        "preservation.cache_header_hints",
-        "metadata.sitemap_exists",
-        "metadata.sitemap_status",
-        "metadata.sitemap_document_type",
-        "metadata.sitemap_url_count",
-        "metadata.sitemap_child_sitemap_count",
-        "metadata.json_ld",
-        "metadata.json_ld_types",
-        "metadata.open_graph",
-        "metadata.feeds",
-        "metadata.html_title",
-        "metadata.html_language",
-        "metadata.canonical_url",
-        "metadata.generator",
-        "metadata.web_manifest_url",
-        "metadata.opensearch_url",
-        "agent.interface_links",
-        "agent.openapi",
-        "agent.graphql",
-        "agent.oauth_metadata",
-        "agent.mcp",
-        "agent.a2a",
-        "agent.agent_card",
-        "agent.api_documentation",
-        "agent.tollbit_gateway",
-        "legal.policy_links",
-        "legal.license_links",
-        "legal.license",
-        "legal.scraping_restrictions",
-        "legal.ai_restrictions",
-        "economic.pricing_links",
-        "economic.registration_links",
-        "economic.subscription_required",
-        "economic.registration_required",
-        "economic.metering",
-        "economic.api_pricing",
-        "preservation.archive_coverage",
-        "preservation.archive_blocked",
-        "preservation.cache_behavior",
-        "metadata.llms_txt_exists",
-        "metadata.llms_txt_status",
-    )
-)
 
 ScanCallable = Callable[[str], Awaitable[DomainSnapshot]]
 
@@ -449,7 +325,6 @@ def render_markdown(run: SmokeRun) -> str:
     no_evidence = _key_status_counts(run, SignalStatus.NO_EVIDENCE)
     skipped = _key_status_counts(run, SignalStatus.SKIPPED)
     errors = _key_status_counts(run, SignalStatus.ERROR)
-    unsupported = _key_status_counts(run, SignalStatus.NOT_YET_SUPPORTED)
     lines.extend(
         [
             "",
@@ -458,7 +333,6 @@ def render_markdown(run: SmokeRun) -> str:
             f"- No evidence: {_format_key_counts(no_evidence, len(run.domains))}",
             f"- Skipped: {_format_key_counts(skipped, len(run.domains))}",
             f"- Errors: {_format_key_counts(errors, len(run.domains))}",
-            f"- Not yet supported: {_format_key_counts(unsupported, len(run.domains))}",
             "",
         ]
     )
@@ -466,18 +340,16 @@ def render_markdown(run: SmokeRun) -> str:
 
 
 def _domain_result(target: str, snapshot: DomainSnapshot, path: Path) -> DomainResult:
-    specs = {spec.key: spec for spec in SIGNAL_CATALOG}
-    keys = list(specs)
-    keys.extend(sorted(snapshot.observations.keys() - specs.keys()))
+    catalog = set(SIGNAL_KEYS)
+    keys = list(SIGNAL_KEYS)
+    keys.extend(sorted(snapshot.observations.keys() - catalog))
     signals: dict[str, SignalResult] = {}
     for key in keys:
         observation = snapshot.observations.get(key)
         if observation is not None:
             signals[key] = _classify_observation(observation)
-        elif specs[key].implemented:
-            signals[key] = SignalResult(SignalStatus.SKIPPED)
         else:
-            signals[key] = SignalResult(SignalStatus.NOT_YET_SUPPORTED)
+            signals[key] = SignalResult(SignalStatus.SKIPPED)
 
     return DomainResult(
         target=target,
@@ -500,12 +372,7 @@ def _classify_observation(observation: Observation) -> SignalResult:
 
 
 def _failed_domain(target: str, exc: Exception) -> DomainResult:
-    signals = {
-        spec.key: SignalResult(
-            SignalStatus.ERROR if spec.implemented else SignalStatus.NOT_YET_SUPPORTED
-        )
-        for spec in SIGNAL_CATALOG
-    }
+    signals = {key: SignalResult(SignalStatus.ERROR) for key in SIGNAL_KEYS}
     return DomainResult(
         target=target,
         domain=None,
