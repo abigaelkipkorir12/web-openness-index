@@ -696,6 +696,7 @@ source = { editable = "." }
 dependencies = [
     { name = "dnspython" },
     { name = "httpx", extra = ["http2"] },
+    { name = "playwright" },
     { name = "protego" },
     { name = "pydantic" },
     { name = "tldextract" },
@@ -718,6 +719,7 @@ dev = [
 requires-dist = [
     { name = "dnspython", specifier = ">=2.8,<3" },
     { name = "httpx", extras = ["http2"], specifier = ">=0.28,<1" },
+    { name = "playwright", specifier = ">=1.62.0" },
     { name = "playwright", marker = "extra == 'browser'", specifier = ">=1.61,<2" },
     { name = "protego", specifier = ">=0.6.2,<1" },
     { name = "pydantic", specifier = ">=2.11,<3" },
