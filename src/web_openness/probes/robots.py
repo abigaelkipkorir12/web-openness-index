@@ -1,7 +1,8 @@
 from dataclasses import dataclass
 from urllib.parse import urljoin
 
-from protego import Protego
+from protego import Protego #library understanding robots.txt rules
+
 
 from web_openness.models import Confidence, Evidence, Observation, ObservationOutcome, ProbeError
 from web_openness.probes.base import ProbeContext, evidence_from_fetch, observation
@@ -41,7 +42,7 @@ class ParsedRobots:
     policy: Protego
 
 
-def _declared_user_agents(text: str) -> set[str]:
+def _declared_user_agents(text: str) -> set[str]:#finds declared user agent names
     """Extract declaration names for evidence; Protego owns policy evaluation."""
 
     user_agents: set[str] = set()
@@ -58,6 +59,7 @@ def _format_crawl_delay(delay: float) -> str:
 
 
 def parse_robots(text: str) -> ParsedRobots:
+    #protego reads robots.txt and creates a policy object
     policy = Protego.parse(text)
     user_agents = _declared_user_agents(text)
     crawl_delays = {
@@ -80,23 +82,23 @@ class RobotsProbe:
     name = "robots"
 
     async def collect(self, context: ProbeContext) -> dict[str, Observation]:
-        url = urljoin(f"{context.origin}/", "robots.txt")
+        url = urljoin(f"{context.origin}/", "robots.txt")#url to redirect
         result = await context.client.get(url)
         evidence = [evidence_from_fetch(result)]
         status = result.status_code
 
-        if result.error is not None:
+        if result.error is not None:#it failed becuase of timeout,dns.connection failire,unsafe destination
             context.shared["robots_allows_followup"] = False
             context.errors.append(ProbeError(probe=self.name, message=result.error))
             return _unavailable_robots("robots.txt fetch failed", evidence=evidence)
 
-        if result.truncated:
+        if result.truncated:#incomplete policy - do not assume access
             context.shared["robots_allows_followup"] = False
             message = "robots.txt was truncated at the response-size limit"
             context.errors.append(ProbeError(probe=self.name, message=message))
             return _unavailable_robots(message, evidence=evidence, status=status)
 
-        if status in {404, 410}:
+        if status in {404, 410}:#robots.txt not present
             await context.client.set_domain_delay(url, context.config.request_delay_seconds)
             context.shared["robots_allows_followup"] = True
             return {
@@ -166,7 +168,7 @@ class RobotsProbe:
                 status=status,
                 outcome=ObservationOutcome.NO_EVIDENCE,
             )
-
+        #robots.txt parsed
         parsed = parse_robots(result.text)
         crawl_delay = parsed.policy.crawl_delay(context.config.user_agent_token)
         await context.client.set_domain_delay(
@@ -175,7 +177,7 @@ class RobotsProbe:
         )
         homepage_url = urljoin(f"{context.origin}/", "/")
         allows_homepage = parsed.policy.can_fetch(homepage_url, context.config.user_agent_token)
-        ai_homepage_policies = {
+        ai_homepage_policies = {#for the agents we know it verifies access
             agent: parsed.policy.can_fetch(homepage_url, agent) for agent in sorted(KNOWN_AI_AGENTS)
         }
         context.shared["robots_policy"] = parsed.policy
@@ -183,35 +185,35 @@ class RobotsProbe:
         context.shared["robots_sitemaps"] = list(parsed.sitemaps)
 
         return {
-            "crawler.robots_exists": observation(
+            "crawler.robots_exists": observation(#if robots.txt exists
                 True,
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
                 method="robots.txt returned HTTP 200",
                 evidence=evidence,
             ),
-            "crawler.robots_status": observation(
+            "crawler.robots_status": observation(#feedback from page in numbers
                 status,
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
                 method="HTTP status",
                 evidence=evidence,
             ),
-            "crawler.user_agents": observation(
+            "crawler.user_agents": observation(#mentioned agents in robts.txt
                 list(parsed.user_agents),
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
                 method="robots.txt directive parsing",
                 evidence=evidence,
             ),
-            "crawler.ai_specific_user_agents": observation(
+            "crawler.ai_specific_user_agents": observation(#known agents that appeared in file
                 list(parsed.ai_user_agents),
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
                 method="robots.txt user-agent matching",
                 evidence=evidence,
             ),
-            "crawler.ai_homepage_policies": observation(
+            "crawler.ai_homepage_policies": observation(#access of known agents
                 ai_homepage_policies,
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
@@ -232,7 +234,7 @@ class RobotsProbe:
                 method="robots.txt sitemap directives",
                 evidence=evidence,
             ),
-            "crawler.homepage_policy_allowed": observation(
+            "crawler.homepage_policy_allowed": observation(#if scanner is allowed to parse the page
                 allows_homepage,
                 confidence=Confidence.CONFIRMED,
                 score=1.0,
@@ -242,7 +244,7 @@ class RobotsProbe:
         }
 
 
-def _unavailable_robots(
+def _unavailable_robots(#when robots.txt cannot be interpreted
     method: str,
     *,
     evidence: list[Evidence],
