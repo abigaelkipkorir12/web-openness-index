@@ -1,7 +1,7 @@
-import asyncio
-import ipaddress
-import socket
-import ssl
+import asyncio# running DNS and TLS checks asychronously
+import ipaddress# validating ip addresses
+import socket#opening  network connections
+import ssl #creating secure https and tls connections
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from datetime import UTC, datetime
@@ -14,12 +14,13 @@ from web_openness.safety import URLSafetyError, require_public_address
 
 MAX_STORED_ADDRESSES = 16
 MAX_CERTIFICATE_FIELD_CHARS = 1_024
+#prevents large responses from consuming too much memory or storage
 
 
 @dataclass(frozen=True, slots=True)
 class DNSAddress:
     family: str
-    address: str
+    address: str #defines a small object representing a DNS result
 
 
 @dataclass(frozen=True, slots=True)
@@ -32,7 +33,7 @@ class TLSInspection:
     certificate_not_after: str | None = None
     certificate_issuer: str | None = None
     certificate_verified: bool | None = None
-
+#TLS connection, version, encryption method used, website's certificate
 
 class DNSResolver(Protocol):
     async def resolve(
@@ -40,7 +41,7 @@ class DNSResolver(Protocol):
         hostname: str,
         port: int,
         timeout_seconds: float,
-    ) -> Sequence[DNSAddress]: ...
+    ) -> Sequence[DNSAddress]: ...#defines what a DNS resolver must accept - protocol used so that a fake one can come in later
 
 
 class TLSInspector(Protocol):
@@ -49,7 +50,7 @@ class TLSInspector(Protocol):
         hostname: str,
         port: int,
         timeout_seconds: float,
-    ) -> TLSInspection: ...
+    ) -> TLSInspection: ...#similar to resolver
 
 
 class SystemDNSResolver:
@@ -75,7 +76,7 @@ class SystemDNSResolver:
             if not socket_address:
                 continue
             addresses.append(DNSAddress(family=family_name, address=str(socket_address[0])))
-        return addresses
+        return addresses# get the running loop, resolve hostname, examine returned addresses, convert into the current format
 
 
 class SystemTLSInspector:
@@ -87,12 +88,13 @@ class SystemTLSInspector:
     ) -> TLSInspection:
         inspection = asyncio.to_thread(
             self._inspect_sync,
-            hostname,
+            hostname,#need hostname as multiple websites can be hosted on the same ip address
             port,
             timeout_seconds,
         )
         return await asyncio.wait_for(inspection, timeout=timeout_seconds)
-
+#if it takes too long to load timeout
+    
     @staticmethod
     def _inspect_sync(hostname: str, port: int, timeout_seconds: float) -> TLSInspection:
         tls_context = ssl.create_default_context()
@@ -114,7 +116,7 @@ class SystemTLSInspector:
             )
 
 
-class NetworkProbe:
+class NetworkProbe:#url parsing , dns resolution, safety checks, tls inspection
     name = "network"
 
     def __init__(
@@ -141,7 +143,8 @@ class NetworkProbe:
             observations.update(
                 _unknown_tls(
                     "not inspected because DNS was not confirmed globally routable",
-                    outcome=ObservationOutcome.SKIPPED,
+                    outcome=ObservationOutcome.SKIPPED,#budget,policy or Na
+                    
                 )
             )
         else:
@@ -159,7 +162,7 @@ class NetworkProbe:
             resolved = await self.dns_resolver.resolve(
                 hostname,
                 port,
-                context.config.timeout_seconds,
+                context.config.timeout_seconds,#good name into an IP address
             )
         except Exception as exc:
             context.shared["network_destination_safe"] = False
