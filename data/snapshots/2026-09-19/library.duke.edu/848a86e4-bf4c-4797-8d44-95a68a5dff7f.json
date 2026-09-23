@@ -1,0 +1,1869 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "848a86e4-bf4c-4797-8d44-95a68a5dff7f",
+  "domain": "library.duke.edu",
+  "origin": "https://library.duke.edu",
+  "started_at": "2026-09-19T11:08:05.117882Z",
+  "completed_at": "2026-09-19T11:08:08.338165Z",
+  "collector_version": "0.1.0",
+  "request_count": 4,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.128784Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "152.3.80.200"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.128784Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 1,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.128784Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.128784Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.128784Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.3",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "protocol": "TLSv1.3",
+        "bits": 128
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "Aug  8 00:00:00 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Nov  6 23:59:59 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=GB, organizationName=Sectigo Limited, commonName=Sectigo Public Server Authentication CA OV R36",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.134543Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "dns-auth-01.oit.duke.edu",
+        "dns-auth-02.oit.duke.edu",
+        "dns-nc1-01.oit.duke.edu"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for duke.edu; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "dns-auth-01.oit.duke.edu",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for duke.edu",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.duke.edu; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu",
+          "observed_at": "2026-09-19T11:08:05.198691Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [
+        "*"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt user-agent matching",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": true,
+        "anthropic-ai": true,
+        "bytespider": true,
+        "ccbot": true,
+        "chatgpt-user": true,
+        "claude-web": true,
+        "cohere-ai": true,
+        "google-extended": true,
+        "gptbot": true,
+        "meta-externalagent": true,
+        "perplexitybot": true
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for known AI crawler user agents",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt sitemap directives",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for WebOpennessObservatory",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "valid sitemap XML document",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_document_type": {
+      "value": "urlset",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "sitemap XML root element",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_url_count": {
+      "value": 1307,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct URL entries; linked documents were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": 0,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct sitemap entries; child sitemaps were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_accessible": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response status; browser validation not yet applied",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_final_url": {
+      "value": "https://library.duke.edu/",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP redirect resolution",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_content_type": {
+      "value": "text/html; charset=UTF-8",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "network.http_version": {
+      "value": "HTTP/2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP protocol reported by the HTTP client",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_headers": {
+      "value": {
+        "cache-control": "max-age=3600, public",
+        "content-encoding": "gzip",
+        "content-language": "en",
+        "content-type": "text/html; charset=UTF-8",
+        "date": "Sat, 19 Sep 2026 11:08:08 GMT",
+        "etag": "\"1789816088-gzip\"",
+        "last-modified": "Sat, 19 Sep 2026 11:08:08 GMT",
+        "server": "Apache",
+        "vary": "Cookie,Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted homepage response headers",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.server_header": {
+      "value": "Apache",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Server response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.security_headers": {
+      "value": [
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "presence of common browser security response headers",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_headers": {
+      "value": {
+        "cache-control": "max-age=3600, public"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted cache response headers",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response-header hints; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage headers; provider attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_response_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage edge headers; role is not inferred",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.waf": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific WAF or challenge response headers; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit edge challenge or block response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_status": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific cache outcome for this homepage response",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_location_hints": {
+      "value": {},
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific edge request identifier suffix",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.http3_advertised": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "h3 protocol token in the homepage Alt-Svc response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.content_encoding": {
+      "value": "gzip",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Content-Encoding response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized Set-Cookie names only; cookie values were discarded",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.bot_management_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized infrastructure cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized load-balancer cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.acceleration_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response acceleration header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.http_access_disposition": {
+      "value": "reachable",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage HTTP status class",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.authentication_challenge": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "HTTP 401 or WWW-Authenticate response header",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP authentication challenge; form-based login not yet evaluated",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.rate_limited": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 observed in homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP 451 in the homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "preservation.cache_header_hints": {
+      "value": {
+        "cache-control": "max-age=3600, public"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "cache-related homepage response headers; does not establish cache behavior",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "metadata.json_ld": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage JSON-LD script tag detection",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.json_ld_types": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no JSON-LD script tag was observed",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.open_graph": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage Open Graph tag detection",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.feeds": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage alternate-link feed discovery",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_title": {
+      "value": "Duke University Libraries | Duke University Libraries",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage title element",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_language": {
+      "value": "en",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage html lang attribute",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.canonical_url": {
+      "value": "https://library.duke.edu/",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage canonical link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.generator": {
+      "value": "Drupal 10 (https://www.drupal.org)",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage generator meta tag",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.web_manifest_url": {
+      "value": "https://library.duke.edu/themes/contrib/dulcet_theme/images/favicon/site.webmanifest",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage web manifest link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage OpenSearch description link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.interface_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit service relations and strongly named homepage links; not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.openapi": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.graphql": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.oauth_metadata": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.mcp": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.a2a": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.agent_card": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "agent.api_documentation": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "legal.policy_links": {
+      "value": [
+        {
+          "url": "https://library.duke.edu/about/privacy",
+          "text": "Privacy"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "legal.license_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.pricing_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_links": {
+      "value": [
+        {
+          "url": "https://library.duke.edu/about/newsletter",
+          "text": "Sign Up for Our Newsletter"
+        },
+        {
+          "url": "https://library.duke.edu/saml/login",
+          "text": "Log In"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no homepage structured-data declaration or known paywall markup/resource marker",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage consent-management markup or resource marker; visual state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage CAPTCHA markup or resource marker; challenge state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit bounded homepage noscript instruction; browser behavior not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "legal.license": {
+      "value": [
+        "https://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "explicit homepage rel=license link or JSON-LD license declaration",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit homepage JSON-LD requiresSubscription declaration",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on scraping or automated access in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on AI/model training or use in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit registration requirement declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit numeric quota or metered-access declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit API price, free tier, or contact-sales declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": null
+        }
+      ]
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/llms.txt",
+          "observed_at": "2026-09-19T11:08:08.254131Z",
+          "http_status": 404,
+          "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+          "note": null
+        }
+      ]
+    },
+    "metadata.llms_txt_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "llms.txt returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/llms.txt",
+          "observed_at": "2026-09-19T11:08:08.254131Z",
+          "http_status": 404,
+          "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+          "note": null
+        }
+      ]
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 3,
+        "404": 1
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/llms.txt",
+          "observed_at": "2026-09-19T11:08:08.254131Z",
+          "http_status": 404,
+          "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 4,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/llms.txt",
+          "observed_at": "2026-09-19T11:08:08.254131Z",
+          "http_status": 404,
+          "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 4,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://library.duke.edu/robots.txt",
+          "observed_at": "2026-09-19T11:08:05.214362Z",
+          "http_status": 200,
+          "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-19T11:08:06.252277Z",
+          "http_status": 200,
+          "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/",
+          "observed_at": "2026-09-19T11:08:07.254530Z",
+          "http_status": 200,
+          "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://library.duke.edu/llms.txt",
+          "observed_at": "2026-09-19T11:08:08.254131Z",
+          "http_status": 404,
+          "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://library.duke.edu/robots.txt",
+      "final_url": "https://library.duke.edu/robots.txt",
+      "started_at": "2026-09-19T11:08:05.214362Z",
+      "elapsed_ms": 27.81680599999703,
+      "status_code": 200,
+      "response_bytes": 2027,
+      "response_truncated": false,
+      "content_sha256": "773fb8d35bb9a39d35335ee6db8dc5c912d2aacbfb823152d9c61cd647dd902d",
+      "error": null
+    },
+    {
+      "requested_url": "https://library.duke.edu/sitemap.xml",
+      "final_url": "https://library.duke.edu/sitemap.xml",
+      "started_at": "2026-09-19T11:08:06.252277Z",
+      "elapsed_ms": 92.23779199999882,
+      "status_code": 200,
+      "response_bytes": 209335,
+      "response_truncated": false,
+      "content_sha256": "84593122da84bd711e4679237e99ff4ea9031528ebefb48d346da4640c353f2c",
+      "error": null
+    },
+    {
+      "requested_url": "https://library.duke.edu/",
+      "final_url": "https://library.duke.edu/",
+      "started_at": "2026-09-19T11:08:07.254530Z",
+      "elapsed_ms": 98.04710799999583,
+      "status_code": 200,
+      "response_bytes": 51336,
+      "response_truncated": false,
+      "content_sha256": "7ee79be40a45d7f312a23f3b991a93f1e3f55b5cdd24db80f04d031b890af38e",
+      "error": null
+    },
+    {
+      "requested_url": "https://library.duke.edu/llms.txt",
+      "final_url": "https://library.duke.edu/llms.txt",
+      "started_at": "2026-09-19T11:08:08.254131Z",
+      "elapsed_ms": 64.4326549999974,
+      "status_code": 404,
+      "response_bytes": 190,
+      "response_truncated": false,
+      "content_sha256": "76caddea17952d05d15c607f08cc97531e97840f83255373c0db5049b6a221e4",
+      "error": null
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1205 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "796bd8ee-9093-4fe7-bb26-02fe82f92815",
+  "domain": "www.reddit.com",
+  "origin": "https://www.reddit.com",
+  "started_at": "2026-09-19T11:09:35.035121Z",
+  "completed_at": "2026-09-19T11:09:35.542859Z",
+  "collector_version": "0.1.0",
+  "request_count": 1,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.047845Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "146.75.37.140"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.047845Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 1,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.047845Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.047845Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.047845Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.3",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "protocol": "TLSv1.3",
+        "bits": 128
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "Aug 21 00:00:00 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Feb 16 23:59:59 2027 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=US, organizationName=DigiCert Inc, commonName=DigiCert Global G2 TLS RSA SHA256 2020 CA1",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.076454Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": "reddit.map.fastly.net",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "ns-1029.awsdns-00.org",
+        "ns-1887.awsdns-43.co.uk",
+        "ns-378.awsdns-47.com",
+        "ns-557.awsdns-05.net"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for reddit.com; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "ns-557.awsdns-05.net",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for reddit.com",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": [
+        "fastly"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": [
+        "amazon_route_53"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": {
+        "hostname": "tollbit.reddit.com",
+        "record_types": [
+          "A",
+          "CNAME"
+        ],
+        "canonical_name": "reddit.map.fastly.net"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.reddit.com; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com",
+          "observed_at": "2026-09-19T11:09:35.330660Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [
+        "*"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt user-agent matching",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": false,
+        "anthropic-ai": false,
+        "bytespider": false,
+        "ccbot": false,
+        "chatgpt-user": false,
+        "claude-web": false,
+        "cohere-ai": false,
+        "google-extended": false,
+        "gptbot": false,
+        "meta-externalagent": false,
+        "perplexitybot": false
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for known AI crawler user agents",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt sitemap directives",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for WebOpennessObservatory",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "metadata.sitemap_status": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "metadata.sitemap_document_type": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "metadata.sitemap_url_count": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "human.homepage_accessible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "human.homepage_status": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "human.homepage_final_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "human.homepage_content_type": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "network.http_version": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.response_headers": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.server_header": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.security_headers": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.cache_headers": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.cdn_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.cdn": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.edge_response_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.waf": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.cache_status": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.edge_location_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.http3_advertised": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.content_encoding": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.bot_management_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "infrastructure.acceleration_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "human.http_access_disposition": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "human.authentication_challenge": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "human.rate_limited": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "preservation.cache_header_hints": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage response was unavailable",
+      "evidence": []
+    },
+    "metadata.json_ld": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.json_ld_types": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.open_graph": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.feeds": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.html_title": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.html_language": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.canonical_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.generator": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.web_manifest_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.interface_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.openapi": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.graphql": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.oauth_metadata": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.mcp": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.a2a": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.agent_card": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "agent.api_documentation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.policy_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.license_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.pricing_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.registration_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.license": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.registration_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_exists": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "skipped because crawler policy was not affirmatively allowed",
+      "evidence": []
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 1
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 1,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 1,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.reddit.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:35.418456Z",
+          "http_status": 200,
+          "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://www.reddit.com/robots.txt",
+      "final_url": "https://www.reddit.com/robots.txt",
+      "started_at": "2026-09-19T11:09:35.418456Z",
+      "elapsed_ms": 99.6573629999773,
+      "status_code": 200,
+      "response_bytes": 538,
+      "response_truncated": false,
+      "content_sha256": "41aea42110242175c7b4247f222fa95ac6caee62044af686b684785832781857",
+      "error": null
+    }
+  ],
+  "errors": []
+}

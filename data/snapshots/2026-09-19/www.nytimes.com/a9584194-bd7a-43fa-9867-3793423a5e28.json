@@ -1,0 +1,1939 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "a9584194-bd7a-43fa-9867-3793423a5e28",
+  "domain": "www.nytimes.com",
+  "origin": "https://www.nytimes.com",
+  "started_at": "2026-09-19T11:09:19.991613Z",
+  "completed_at": "2026-09-19T11:09:23.523894Z",
+  "collector_version": "0.1.0",
+  "request_count": 4,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.008541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "146.75.29.164"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.008541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 1,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.008541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.008541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.008541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.3",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "protocol": "TLSv1.3",
+        "bits": 128
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "Sep  2 00:00:00 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Mar 19 23:59:59 2027 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=US, organizationName=DigiCert Inc, organizationalUnitName=www.digicert.com, commonName=Thawte TLS RSA CA G1",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.138099Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": "www.prd.map.nytimes.com",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "dns1.p06.nsone.net",
+        "dns2.p06.nsone.net",
+        "dns3.p06.nsone.net",
+        "dns4.p06.nsone.net",
+        "ns-1328.awsdns-38.org",
+        "ns-1652.awsdns-14.co.uk",
+        "ns-244.awsdns-30.com",
+        "ns-635.awsdns-15.net"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for nytimes.com; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "dns1.p06.nsone.net",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for nytimes.com",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": [
+        "amazon_route_53",
+        "ns1"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.nytimes.com; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com",
+          "observed_at": "2026-09-19T11:09:20.298448Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [
+        "*",
+        "aliyunsecbot",
+        "amazonadbot",
+        "amazonbot",
+        "anthropic-ai",
+        "applebot-extended",
+        "archive.org_bot",
+        "audigentadbot",
+        "awariorssbot",
+        "awariosmartbot",
+        "blexbot",
+        "brightbot",
+        "bytespider",
+        "ccbot",
+        "chatgpt-user",
+        "claude-searchbot",
+        "claude-user",
+        "claude-web",
+        "claudebot",
+        "cohere-ai",
+        "dataforseobot",
+        "diffbot",
+        "diffbot-user",
+        "duckassistbot",
+        "echoboxbot",
+        "exabot",
+        "exasearchbot",
+        "facebookbot",
+        "facebookexternalhit",
+        "firecrawlagent",
+        "friendlycrawler",
+        "google-cloudvertexbot",
+        "google-extended",
+        "googlebot",
+        "gptbot",
+        "imagesiftbot",
+        "jetslide",
+        "magpie-crawler",
+        "meta-externalagent",
+        "meta-externalfetcher",
+        "meta-webindexer",
+        "meta-webindexer/1.1",
+        "mycentralaiscraperbot",
+        "news-please",
+        "newsnow",
+        "oai-searchbot",
+        "omgili",
+        "omgilibot",
+        "peer39_crawler",
+        "peer39_crawler/1.0",
+        "perplexity-user",
+        "perplexitybot",
+        "poseidon research crawler",
+        "quillbot.com",
+        "quora-bot",
+        "redditbot",
+        "scrapy",
+        "seekrbot",
+        "seznamhomepagecrawler",
+        "shapbot",
+        "taragroup intelligent bot",
+        "timpibot",
+        "turnitinbot",
+        "twitterbot",
+        "viennatinybot",
+        "youbot"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [
+        "amazonbot",
+        "anthropic-ai",
+        "bytespider",
+        "ccbot",
+        "chatgpt-user",
+        "claude-web",
+        "cohere-ai",
+        "google-extended",
+        "gptbot",
+        "meta-externalagent",
+        "perplexitybot"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt user-agent matching",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": true,
+        "anthropic-ai": false,
+        "bytespider": false,
+        "ccbot": false,
+        "chatgpt-user": false,
+        "claude-web": false,
+        "cohere-ai": false,
+        "google-extended": false,
+        "gptbot": false,
+        "meta-externalagent": false,
+        "perplexitybot": false
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for known AI crawler user agents",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [
+        "https://www.nytimes.com/athletic/sitemap-authors.xml",
+        "https://www.nytimes.com/athletic/sitemap-cities.xml",
+        "https://www.nytimes.com/athletic/sitemap-players.xml",
+        "https://www.nytimes.com/athletic/sitemap-roster.xml",
+        "https://www.nytimes.com/athletic/sitemap-schedule.xml",
+        "https://www.nytimes.com/athletic/sitemap-stats.xml",
+        "https://www.nytimes.com/athletic/sitemap-tags.xml",
+        "https://www.nytimes.com/athletic/sitemap-teams.xml",
+        "https://www.nytimes.com/athletic/sitemap-verticals.xml",
+        "https://www.nytimes.com/athletic/sitemap-videos-index.xml",
+        "https://www.nytimes.com/athletic/sitemap.xml",
+        "https://www.nytimes.com/games-assets/v2/assets/sitemap/games.xml",
+        "https://www.nytimes.com/sitemaps/new/best-sellers.xml",
+        "https://www.nytimes.com/sitemaps/new/collections.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/cooking.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/espanol-collects.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/espanol.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/news.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/recipe-collects.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/regions.xml",
+        "https://www.nytimes.com/sitemaps/new/sitemap.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/subscription-landing-pages.xml",
+        "https://www.nytimes.com/sitemaps/new/video.xml.gz",
+        "https://www.nytimes.com/sitemaps/new/weather.xml.gz",
+        "https://www.nytimes.com/wirecutter/sitemapindex.xml"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt sitemap directives",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for WebOpennessObservatory",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "valid sitemap XML document",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_document_type": {
+      "value": "urlset",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "sitemap XML root element",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_url_count": {
+      "value": 859,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct URL entries; linked documents were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": 0,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct sitemap entries; child sitemaps were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_accessible": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response status; browser validation not yet applied",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_status": {
+      "value": 403,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_final_url": {
+      "value": "https://www.nytimes.com/",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP redirect resolution",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_content_type": {
+      "value": "text/html;charset=utf-8",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "network.http_version": {
+      "value": "HTTP/2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP protocol reported by the HTTP client",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_headers": {
+      "value": {
+        "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+        "content-length": "774",
+        "content-security-policy": "upgrade-insecure-requests; default-src data: 'unsafe-inline' 'unsafe-eval' https: nytresource:; script-src data: 'unsafe-inline' 'unsafe-eval' https: blob: nytresource:; style-src data: 'unsafe-inline' https: nytresource:; img-src data: https: blob: android-webview-video-poster: nytresource:; font-src data: https: nytresource:; connect-src data: https: wss: blob: nytresource:; media-src data: https: blob: nytresource:; object-src https:; child-src https: data: blob: nytresource:; form-action https: nytimes: nytcooking: nytxwd:; report-uri https://csp.nytimes.com/report;",
+        "content-type": "text/html;charset=utf-8",
+        "date": "Sat, 19 Sep 2026 11:09:23 GMT",
+        "permissions-policy": "browsing-topics=()",
+        "server": "DataDome",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "vary": "Fastly-SSL",
+        "x-cache": "MISS, MISS",
+        "x-frame-options": "DENY",
+        "x-served-by": "cache-iad-kcgs7200138-IAD, cache-iad-kcgs7200138-IAD, cache-iad-kcgs7200138-IAD"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted homepage response headers",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.server_header": {
+      "value": "DataDome",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Server response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.security_headers": {
+      "value": [
+        "content-security-policy",
+        "permissions-policy",
+        "strict-transport-security",
+        "x-frame-options"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "presence of common browser security response headers",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_headers": {
+      "value": {
+        "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+        "x-cache": "MISS, MISS"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted cache response headers",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response-header hints; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage headers; provider attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_response_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage edge headers; role is not inferred",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.waf": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific WAF or challenge response headers; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit edge challenge or block response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_status": {
+      "value": [
+        {
+          "provider": "unspecified",
+          "status": "MISS, MISS"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "provider-specific cache outcome for this homepage response",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_location_hints": {
+      "value": {},
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific edge request identifier suffix",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.http3_advertised": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "h3 protocol token in the homepage Alt-Svc response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.content_encoding": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage Content-Encoding response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": [
+        "datadome:datadome"
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "recognized Set-Cookie names only; cookie values were discarded",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.bot_management_hints": {
+      "value": [
+        "datadome"
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "recognized infrastructure cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized load-balancer cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.acceleration_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response acceleration header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.http_access_disposition": {
+      "value": "forbidden",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage HTTP status class",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.authentication_challenge": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "HTTP 401 or WWW-Authenticate response header",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP authentication challenge; form-based login not yet evaluated",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.rate_limited": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 observed in homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP 451 in the homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "preservation.cache_header_hints": {
+      "value": {
+        "cache-control": "max-age=0, private, no-cache, no-store, must-revalidate",
+        "x-cache": "MISS, MISS"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "cache-related homepage response headers; does not establish cache behavior",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "metadata.json_ld": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.json_ld_types": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.open_graph": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.feeds": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_title": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_language": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.canonical_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.generator": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.web_manifest_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.interface_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.openapi": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.graphql": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.oauth_metadata": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.mcp": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.a2a": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.agent_card": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "agent.api_documentation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "legal.policy_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "legal.license_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "economic.pricing_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_links": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "legal.license": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": null
+        }
+      ]
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.registration_required": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "homepage HTML was unavailable",
+      "evidence": []
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/llms.txt",
+          "observed_at": "2026-09-19T11:09:23.460571Z",
+          "http_status": 404,
+          "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+          "note": null
+        }
+      ]
+    },
+    "metadata.llms_txt_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "llms.txt returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/llms.txt",
+          "observed_at": "2026-09-19T11:09:23.460571Z",
+          "http_status": 404,
+          "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+          "note": null
+        }
+      ]
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 2,
+        "403": 1,
+        "404": 1
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/llms.txt",
+          "observed_at": "2026-09-19T11:09:23.460571Z",
+          "http_status": 404,
+          "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 1,
+        "response_count": 4,
+        "rate": 0.25
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/llms.txt",
+          "observed_at": "2026-09-19T11:09:23.460571Z",
+          "http_status": 404,
+          "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 4,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://www.nytimes.com/robots.txt",
+          "observed_at": "2026-09-19T11:09:20.334402Z",
+          "http_status": 200,
+          "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+          "observed_at": "2026-09-19T11:09:21.460848Z",
+          "http_status": 200,
+          "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/",
+          "observed_at": "2026-09-19T11:09:22.473539Z",
+          "http_status": 403,
+          "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://www.nytimes.com/llms.txt",
+          "observed_at": "2026-09-19T11:09:23.460571Z",
+          "http_status": 404,
+          "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://www.nytimes.com/robots.txt",
+      "final_url": "https://www.nytimes.com/robots.txt",
+      "started_at": "2026-09-19T11:09:20.334402Z",
+      "elapsed_ms": 89.22513900000695,
+      "status_code": 200,
+      "response_bytes": 8547,
+      "response_truncated": false,
+      "content_sha256": "543e2314ebeee347c8aa9ef3b5d6f9fdf4d502995970d7767f0bc2596bdec985",
+      "error": null
+    },
+    {
+      "requested_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+      "final_url": "https://www.nytimes.com/athletic/sitemap-authors.xml",
+      "started_at": "2026-09-19T11:09:21.460848Z",
+      "elapsed_ms": 198.14218000000494,
+      "status_code": 200,
+      "response_bytes": 117260,
+      "response_truncated": false,
+      "content_sha256": "9319402e4eaa17ec8f7dda3bf95f0581733a9063c9e859ba4eadc42d06b40c52",
+      "error": null
+    },
+    {
+      "requested_url": "https://www.nytimes.com/",
+      "final_url": "https://www.nytimes.com/",
+      "started_at": "2026-09-19T11:09:22.473539Z",
+      "elapsed_ms": 66.34643299999254,
+      "status_code": 403,
+      "response_bytes": 774,
+      "response_truncated": false,
+      "content_sha256": "e863a83fbe7a3b7d18baea979e59305f5ad23175c16edac09076b5f8b83a775b",
+      "error": null
+    },
+    {
+      "requested_url": "https://www.nytimes.com/llms.txt",
+      "final_url": "https://www.nytimes.com/llms.txt",
+      "started_at": "2026-09-19T11:09:23.460571Z",
+      "elapsed_ms": 45.15290999999877,
+      "status_code": 404,
+      "response_bytes": 68678,
+      "response_truncated": false,
+      "content_sha256": "e9e5717f2113fdd93ab6545310cac13501e00127141790c5d718686c46d166fe",
+      "error": null
+    }
+  ],
+  "errors": []
+}

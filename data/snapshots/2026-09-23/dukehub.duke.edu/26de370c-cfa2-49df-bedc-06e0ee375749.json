@@ -1,0 +1,2247 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "26de370c-cfa2-49df-bedc-06e0ee375749",
+  "domain": "dukehub.duke.edu",
+  "origin": "https://dukehub.duke.edu",
+  "started_at": "2026-09-23T19:55:30.035625Z",
+  "completed_at": "2026-09-23T19:55:35.238840Z",
+  "collector_version": "0.1.0",
+  "request_count": 6,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.054815Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "152.3.72.161"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.054815Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 1,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.054815Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.054815Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.054815Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "ECDHE-RSA-AES128-GCM-SHA256",
+        "protocol": "TLSv1.2",
+        "bits": 128
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "Sep 21 00:00:00 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Dec 20 23:59:59 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=GB, organizationName=Sectigo Limited, commonName=Sectigo Public Server Authentication CA OV R36",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.064584Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "dns-auth-01.oit.duke.edu",
+        "dns-auth-02.oit.duke.edu",
+        "dns-nc1-01.oit.duke.edu"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for duke.edu; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "dns-auth-01.oit.duke.edu",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for duke.edu",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.duke.edu; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu",
+          "observed_at": "2026-09-23T19:55:30.155778Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt was not present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt was not present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": true,
+        "anthropic-ai": true,
+        "bytespider": true,
+        "ccbot": true,
+        "chatgpt-user": true,
+        "claude-web": true,
+        "cohere-ai": true,
+        "google-extended": true,
+        "gptbot": true,
+        "meta-externalagent": true,
+        "perplexitybot": true
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "no robots.txt restrictions were present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt was not present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt was not present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "no robots.txt restrictions were present",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_document_type": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_url_count": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_accessible": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response status; browser validation not yet applied",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_final_url": {
+      "value": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP redirect resolution",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_content_type": {
+      "value": "text/html; CHARSET=UTF-8",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "network.http_version": {
+      "value": "HTTP/1.1",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP protocol reported by the HTTP client",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_headers": {
+      "value": {
+        "cache-control": "no-cache, no-store",
+        "content-encoding": "gzip",
+        "content-length": "5292",
+        "content-type": "text/html; CHARSET=UTF-8",
+        "date": "Wed, 23 Sep 2026 19:55:35 GMT",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "Apache/2.4.62 (Oracle Linux Server) OpenSSL/3.5.5"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted homepage response headers",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.server_header": {
+      "value": "Apache/2.4.62 (Oracle Linux Server) OpenSSL/3.5.5",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Server response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.security_headers": {
+      "value": [
+        "referrer-policy"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "presence of common browser security response headers",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_headers": {
+      "value": {
+        "cache-control": "no-cache, no-store"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted cache response headers",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response-header hints; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage headers; provider attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_response_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage edge headers; role is not inferred",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.waf": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific WAF or challenge response headers; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit edge challenge or block response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_status": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific cache outcome for this homepage response",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_location_hints": {
+      "value": {},
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific edge request identifier suffix",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.http3_advertised": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "h3 protocol token in the homepage Alt-Svc response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.content_encoding": {
+      "value": "gzip",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Content-Encoding response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized Set-Cookie names only; cookie values were discarded",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.bot_management_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized infrastructure cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized load-balancer cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.acceleration_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response acceleration header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.http_access_disposition": {
+      "value": "reachable",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage HTTP status class",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.authentication_challenge": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "HTTP 401 or WWW-Authenticate response header",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP authentication challenge; form-based login not yet evaluated",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.rate_limited": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 observed in homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP 451 in the homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "preservation.cache_header_hints": {
+      "value": {
+        "cache-control": "no-cache, no-store"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "cache-related homepage response headers; does not establish cache behavior",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "metadata.json_ld": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage JSON-LD script tag detection",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.json_ld_types": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no JSON-LD script tag was observed",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.open_graph": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage Open Graph tag detection",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.feeds": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage alternate-link feed discovery",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_title": {
+      "value": "SIS Home",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage title element",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_language": {
+      "value": "en",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage html lang attribute",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.canonical_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage canonical link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.generator": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage generator meta tag",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.web_manifest_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage web manifest link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage OpenSearch description link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.interface_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit service relations and strongly named homepage links; not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.openapi": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.graphql": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.oauth_metadata": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.mcp": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.a2a": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.agent_card": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "agent.api_documentation": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "legal.policy_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "legal.license_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.pricing_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no homepage structured-data declaration or known paywall markup/resource marker",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage consent-management markup or resource marker; visual state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage CAPTCHA markup or resource marker; challenge state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit bounded homepage noscript instruction; browser behavior not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "legal.license": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit homepage rel=license link or JSON-LD license declaration",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit homepage JSON-LD requiresSubscription declaration",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on scraping or automated access in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on AI/model training or use in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit registration requirement declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit numeric quota or metered-access declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit API price, free tier, or contact-sales declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": null
+        }
+      ]
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/llms.txt",
+          "observed_at": "2026-09-23T19:55:35.224898Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "metadata.llms_txt_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "llms.txt returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/llms.txt",
+          "observed_at": "2026-09-23T19:55:35.224898Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": null
+        }
+      ]
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 1,
+        "302": 2,
+        "404": 3
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/llms.txt",
+          "observed_at": "2026-09-23T19:55:35.224898Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 6,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/llms.txt",
+          "observed_at": "2026-09-23T19:55:35.224898Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 6,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://dukehub.duke.edu/robots.txt",
+          "observed_at": "2026-09-23T19:55:30.171902Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/sitemap.xml",
+          "observed_at": "2026-09-23T19:55:31.222708Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/",
+          "observed_at": "2026-09-23T19:55:32.224521Z",
+          "http_status": 302,
+          "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+          "observed_at": "2026-09-23T19:55:33.225000Z",
+          "http_status": 302,
+          "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+          "observed_at": "2026-09-23T19:55:34.224685Z",
+          "http_status": 200,
+          "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://dukehub.duke.edu/llms.txt",
+          "observed_at": "2026-09-23T19:55:35.224898Z",
+          "http_status": 404,
+          "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://dukehub.duke.edu/robots.txt",
+      "final_url": "https://dukehub.duke.edu/robots.txt",
+      "started_at": "2026-09-23T19:55:30.171902Z",
+      "elapsed_ms": 43.0711999979394,
+      "status_code": 404,
+      "response_bytes": 196,
+      "response_truncated": false,
+      "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+      "error": null
+    },
+    {
+      "requested_url": "https://dukehub.duke.edu/sitemap.xml",
+      "final_url": "https://dukehub.duke.edu/sitemap.xml",
+      "started_at": "2026-09-23T19:55:31.222708Z",
+      "elapsed_ms": 10.660940999514423,
+      "status_code": 404,
+      "response_bytes": 196,
+      "response_truncated": false,
+      "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+      "error": null
+    },
+    {
+      "requested_url": "https://dukehub.duke.edu/",
+      "final_url": "https://dukehub.duke.edu/",
+      "started_at": "2026-09-23T19:55:32.224521Z",
+      "elapsed_ms": 17.183566000312567,
+      "status_code": 302,
+      "response_bytes": 306,
+      "response_truncated": false,
+      "content_sha256": "a03dc961b41cdd103a6a09efb98a49f26557b54c9997965210f10f4380b3f44b",
+      "error": null
+    },
+    {
+      "requested_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+      "final_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU",
+      "started_at": "2026-09-23T19:55:33.225000Z",
+      "elapsed_ms": 14.287230002082651,
+      "status_code": 302,
+      "response_bytes": 451,
+      "response_truncated": false,
+      "content_sha256": "edaa0d9fdb48770368ab9bed3ea6bad198120c68a5e84e77e2689411bd26033e",
+      "error": null
+    },
+    {
+      "requested_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+      "final_url": "https://dukehub.duke.edu/psc/CSPRD01/EMPLOYEE/SA/s/WEBLIB_HCX_GN.H_SPRINGBOARD.FieldFormula.IScript_Main?institution=DUKEU&",
+      "started_at": "2026-09-23T19:55:34.224685Z",
+      "elapsed_ms": 225.89602899824968,
+      "status_code": 200,
+      "response_bytes": 13997,
+      "response_truncated": false,
+      "content_sha256": "1be18653152ce4177523684552095a14bc5041e5942726e98383f677050e441a",
+      "error": null
+    },
+    {
+      "requested_url": "https://dukehub.duke.edu/llms.txt",
+      "final_url": "https://dukehub.duke.edu/llms.txt",
+      "started_at": "2026-09-23T19:55:35.224898Z",
+      "elapsed_ms": 8.22279799831449,
+      "status_code": 404,
+      "response_bytes": 196,
+      "response_truncated": false,
+      "content_sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+      "error": null
+    }
+  ],
+  "errors": []
+}
