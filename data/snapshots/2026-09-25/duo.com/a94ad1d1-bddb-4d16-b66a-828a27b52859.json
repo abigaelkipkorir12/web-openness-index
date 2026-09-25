@@ -1,0 +1,2103 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "a94ad1d1-bddb-4d16-b66a-828a27b52859",
+  "domain": "duo.com",
+  "origin": "https://duo.com",
+  "started_at": "2026-09-25T12:22:13.739312Z",
+  "completed_at": "2026-09-25T12:22:20.095162Z",
+  "collector_version": "0.1.0",
+  "request_count": 6,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.795704Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "3.171.38.100"
+        },
+        {
+          "family": "IPv4",
+          "address": "3.171.38.115"
+        },
+        {
+          "family": "IPv4",
+          "address": "3.171.38.19"
+        },
+        {
+          "family": "IPv4",
+          "address": "3.171.38.67"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.795704Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 4,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.795704Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.795704Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.795704Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.3",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "TLS_AES_128_GCM_SHA256",
+        "protocol": "TLSv1.3",
+        "bits": 128
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "May 22 00:00:00 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Dec  5 23:59:59 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=US, organizationName=Amazon, commonName=Amazon RSA 2048 M04",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:13.839749Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "ns-1365.awsdns-42.org",
+        "ns-1733.awsdns-24.co.uk",
+        "ns-55.awsdns-06.com",
+        "ns-932.awsdns-52.net"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for duo.com; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "ns-55.awsdns-06.com",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for duo.com",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": [
+        "amazon_route_53"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.duo.com; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://duo.com",
+          "observed_at": "2026-09-25T12:22:14.473666Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [
+        "*"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt user-agent matching",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": true,
+        "anthropic-ai": true,
+        "bytespider": true,
+        "ccbot": true,
+        "chatgpt-user": true,
+        "claude-web": true,
+        "cohere-ai": true,
+        "google-extended": true,
+        "gptbot": true,
+        "meta-externalagent": true,
+        "perplexitybot": true
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for known AI crawler user agents",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [
+        "https://duo.com/sitemap_index.xml"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt sitemap directives",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for WebOpennessObservatory",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "valid sitemap XML document",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_document_type": {
+      "value": "sitemapindex",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "sitemap XML root element",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_url_count": {
+      "value": 0,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct URL entries; linked documents were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": 8,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of direct sitemap entries; child sitemaps were not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_accessible": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response status; browser validation not yet applied",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_final_url": {
+      "value": "https://duo.com/",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP redirect resolution",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_content_type": {
+      "value": "text/html; charset=utf-8",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "network.http_version": {
+      "value": "HTTP/2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP protocol reported by the HTTP client",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_headers": {
+      "value": {
+        "cache-control": "max-age=300",
+        "content-encoding": "gzip",
+        "content-security-policy": "frame-ancestors 'self' resources.duo.com learn-cloudsecurity.cisco.com;",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 25 Sep 2026 12:22:17 GMT",
+        "etag": "W/\"6ab572d8-20838\"",
+        "last-modified": "Thu, 24 Sep 2026 18:58:32 GMT",
+        "referrer-policy": "no-referrer-when-downgrade",
+        "server": "Duo/1.0",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "via": "1.1 2598e53a6b5e9952dfa18ffa0f4931f2.cloudfront.net (CloudFront)",
+        "x-amz-cf-id": "moh4occhpG6qQKm85L85Hdfho3GUXrTr-wzHi66hlbkjDoHEk0Cseg==",
+        "x-cache": "Miss from cloudfront",
+        "x-content-type-options": "nosniff"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted homepage response headers",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.server_header": {
+      "value": "Duo/1.0",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Server response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.security_headers": {
+      "value": [
+        "content-security-policy",
+        "referrer-policy",
+        "strict-transport-security",
+        "x-content-type-options"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "presence of common browser security response headers",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_headers": {
+      "value": {
+        "cache-control": "max-age=300",
+        "x-cache": "Miss from cloudfront"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted cache response headers",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn_hints": {
+      "value": [
+        "amazon_cloudfront"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific response-header hints; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn": {
+      "value": [
+        "amazon_cloudfront"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific homepage headers; provider attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_response_hints": {
+      "value": [
+        "amazon_cloudfront"
+      ],
+      "outcome": "observed",
+      "confidence": "likely",
+      "confidence_score": 0.8,
+      "method": "provider-specific homepage edge headers; role is not inferred",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.waf": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific WAF or challenge response headers; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit edge challenge or block response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_status": {
+      "value": [
+        {
+          "provider": "amazon_cloudfront",
+          "status": "Miss from cloudfront"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "provider-specific cache outcome for this homepage response",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_location_hints": {
+      "value": {},
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific edge request identifier suffix",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.http3_advertised": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "h3 protocol token in the homepage Alt-Svc response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.content_encoding": {
+      "value": "gzip",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Content-Encoding response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized Set-Cookie names only; cookie values were discarded",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.bot_management_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized infrastructure cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized load-balancer cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.acceleration_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response acceleration header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.http_access_disposition": {
+      "value": "reachable",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage HTTP status class",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.authentication_challenge": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "HTTP 401 or WWW-Authenticate response header",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP authentication challenge; form-based login not yet evaluated",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.rate_limited": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 observed in homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP 451 in the homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "preservation.cache_header_hints": {
+      "value": {
+        "cache-control": "max-age=300",
+        "x-cache": "Miss from cloudfront"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "cache-related homepage response headers; does not establish cache behavior",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "metadata.json_ld": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage JSON-LD script tag detection",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.json_ld_types": {
+      "value": [
+        "Brand",
+        "ContactPoint",
+        "ImageObject",
+        "Offer",
+        "Organization",
+        "Person",
+        "Product",
+        "Review",
+        "SoftwareApplication",
+        "Thing",
+        "WebPage",
+        "WebSite"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "bounded JSON-LD parsing",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.open_graph": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Open Graph tag detection",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.feeds": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage alternate-link feed discovery",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_title": {
+      "value": "IAM & MFA Identity Security for Business, Humans, AI | Cisco Duo",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage title element",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_language": {
+      "value": "en",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage html lang attribute",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.canonical_url": {
+      "value": "https://duo.com",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage canonical link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.generator": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage generator meta tag",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.web_manifest_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage web manifest link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage OpenSearch description link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.interface_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit service relations and strongly named homepage links; not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.openapi": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.graphql": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.oauth_metadata": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.mcp": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.a2a": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.agent_card": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "agent.api_documentation": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "legal.policy_links": {
+      "value": [
+        {
+          "url": "https://duo.com/solutions/legal",
+          "text": "Legal"
+        },
+        {
+          "url": "https://duo.com/legal/terms",
+          "text": "Terms of Service"
+        },
+        {
+          "url": "https://duo.com/legal/cisco-online-privacy-statement",
+          "text": "Privacy Statement"
+        },
+        {
+          "url": "https://duo.com/legal/sla",
+          "text": "Service Level Agreement"
+        },
+        {
+          "url": "https://www.cisco.com/c/en/us/about/legal/terms-conditions.html",
+          "text": "Copyright Dispute Policy"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "legal.license_links": {
+      "value": [
+        {
+          "url": "https://www.cisco.com/c/en/us/about/legal/terms-conditions.html",
+          "text": "Copyright Dispute Policy"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "economic.pricing_links": {
+      "value": [
+        {
+          "url": "https://duo.com/editions-and-pricing/roi-calculator",
+          "text": "Duo ROI Calculator"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing",
+          "text": "Pricing"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/ready-to-buy-now",
+          "text": "Buy Now"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/duo-essentials",
+          "text": "DuoEssentials"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/duo-advantage",
+          "text": "DuoAdvantage"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/duo-premier",
+          "text": "DuoPremier"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/duo-free",
+          "text": "Duo Free for teams of 10 or less"
+        },
+        {
+          "url": "https://duo.com/editions-and-pricing/duo-federal-editions",
+          "text": "Federal, State & Local Government"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_links": {
+      "value": [
+        {
+          "url": "https://admin.duosecurity.com/",
+          "text": "Admin Login"
+        },
+        {
+          "url": "https://signup.duo.com/",
+          "text": "Free sign up"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no homepage structured-data declaration or known paywall markup/resource marker",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage consent-management markup or resource marker; visual state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage CAPTCHA markup or resource marker; challenge state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit bounded homepage noscript instruction; browser behavior not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "legal.license": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit homepage rel=license link or JSON-LD license declaration",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit homepage JSON-LD requiresSubscription declaration",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        }
+      ]
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on scraping or automated access in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "bounded public policy or pricing text analysis"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on AI/model training or use in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "bounded public policy or pricing text analysis"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.registration_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit registration requirement declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "bounded public policy or pricing text analysis"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit numeric quota or metered-access declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "bounded public policy or pricing text analysis"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit API price, free tier, or contact-sales declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": null
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "bounded public policy or pricing text analysis"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/llms.txt",
+          "observed_at": "2026-09-25T12:22:19.937236Z",
+          "http_status": 200,
+          "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+          "note": null
+        }
+      ]
+    },
+    "metadata.llms_txt_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "llms.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/llms.txt",
+          "observed_at": "2026-09-25T12:22:19.937236Z",
+          "http_status": 200,
+          "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+          "note": null
+        }
+      ]
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 6
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/llms.txt",
+          "observed_at": "2026-09-25T12:22:19.937236Z",
+          "http_status": 200,
+          "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 6,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/llms.txt",
+          "observed_at": "2026-09-25T12:22:19.937236Z",
+          "http_status": 200,
+          "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 6,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://duo.com/robots.txt",
+          "observed_at": "2026-09-25T12:22:14.534715Z",
+          "http_status": 200,
+          "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/sitemap_index.xml",
+          "observed_at": "2026-09-25T12:22:15.914137Z",
+          "http_status": 200,
+          "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/",
+          "observed_at": "2026-09-25T12:22:16.912724Z",
+          "http_status": 200,
+          "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/legal/terms",
+          "observed_at": "2026-09-25T12:22:17.909478Z",
+          "http_status": 200,
+          "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/editions-and-pricing",
+          "observed_at": "2026-09-25T12:22:18.914824Z",
+          "http_status": 200,
+          "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://duo.com/llms.txt",
+          "observed_at": "2026-09-25T12:22:19.937236Z",
+          "http_status": 200,
+          "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://duo.com/robots.txt",
+      "final_url": "https://duo.com/robots.txt",
+      "started_at": "2026-09-25T12:22:14.534715Z",
+      "elapsed_ms": 351.1855170072522,
+      "status_code": 200,
+      "response_bytes": 80,
+      "response_truncated": false,
+      "content_sha256": "202198a7a45dff5c665942581cb6d2f9995d89c68bfd95840057246c7b4f956c",
+      "error": null
+    },
+    {
+      "requested_url": "https://duo.com/sitemap_index.xml",
+      "final_url": "https://duo.com/sitemap_index.xml",
+      "started_at": "2026-09-25T12:22:15.914137Z",
+      "elapsed_ms": 112.42548099835403,
+      "status_code": 200,
+      "response_bytes": 42601,
+      "response_truncated": false,
+      "content_sha256": "53f3ef054cb2b94437b85c56ec550fdd0a9d1b542e9cb313e2a56bbdfe267c89",
+      "error": null
+    },
+    {
+      "requested_url": "https://duo.com/",
+      "final_url": "https://duo.com/",
+      "started_at": "2026-09-25T12:22:16.912724Z",
+      "elapsed_ms": 185.11216899787541,
+      "status_code": 200,
+      "response_bytes": 133176,
+      "response_truncated": false,
+      "content_sha256": "55f012b66382200b5180a72893efbd815964d2ec5de062776c560015e5f9dd71",
+      "error": null
+    },
+    {
+      "requested_url": "https://duo.com/legal/terms",
+      "final_url": "https://duo.com/legal/terms",
+      "started_at": "2026-09-25T12:22:17.909478Z",
+      "elapsed_ms": 111.3128900033189,
+      "status_code": 200,
+      "response_bytes": 66300,
+      "response_truncated": false,
+      "content_sha256": "f97bca0068e74681c39eed3d01746a4a275f9f93ffbc76dfead50071a9cc64b4",
+      "error": null
+    },
+    {
+      "requested_url": "https://duo.com/editions-and-pricing",
+      "final_url": "https://duo.com/editions-and-pricing",
+      "started_at": "2026-09-25T12:22:18.914824Z",
+      "elapsed_ms": 126.30303800688125,
+      "status_code": 200,
+      "response_bytes": 242734,
+      "response_truncated": false,
+      "content_sha256": "a2ee315831df97cfafceb2a0446b18b747a5066d66a236f59033d85bdcf5c0ae",
+      "error": null
+    },
+    {
+      "requested_url": "https://duo.com/llms.txt",
+      "final_url": "https://duo.com/llms.txt",
+      "started_at": "2026-09-25T12:22:19.937236Z",
+      "elapsed_ms": 128.19185100670438,
+      "status_code": 200,
+      "response_bytes": 265586,
+      "response_truncated": false,
+      "content_sha256": "6e24827e533394fbec4657391417c62b7936b3c29fe3539c03bc4c548067824f",
+      "error": null
+    }
+  ],
+  "errors": []
+}

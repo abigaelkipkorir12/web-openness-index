@@ -1,0 +1,2370 @@
+{
+  "schema_version": "0.2.0",
+  "run_id": "18f4dd58-4f7a-4dee-a495-e80b6d8536c9",
+  "domain": "accounts.google.com",
+  "origin": "https://accounts.google.com",
+  "started_at": "2026-09-25T12:23:02.408052Z",
+  "completed_at": "2026-09-25T12:23:09.882871Z",
+  "collector_version": "0.1.0",
+  "request_count": 8,
+  "observations": {
+    "network.dns_resolved": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.444278Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses": {
+      "value": [
+        {
+          "family": "IPv4",
+          "address": "64.233.176.84"
+        },
+        {
+          "family": "IPv6",
+          "address": "2607:f8b0:4002:c05::54"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution; capped at 16 unique addresses",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.444278Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_address_count": {
+      "value": 2,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "count of unique resolved addresses before storage cap",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.444278Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_ip_families": {
+      "value": [
+        "IPv4",
+        "IPv6"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "system address resolution",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.444278Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.dns_addresses_truncated": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "address evidence storage bound",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.444278Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "system DNS lookup"
+        }
+      ]
+    },
+    "network.tls_handshake": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "TLS handshake",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_version": {
+      "value": "TLSv1.3",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS protocol",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_cipher": {
+      "value": {
+        "name": "TLS_AES_256_GCM_SHA384",
+        "protocol": "TLSv1.3",
+        "bits": 256
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "negotiated TLS cipher",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_before": {
+      "value": "Sep 10 19:24:15 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity start",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_not_after": {
+      "value": "Dec  3 19:24:14 2026 GMT",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate validity end",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_issuer": {
+      "value": "countryName=US, organizationName=Google Trust Services, commonName=WE2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "peer certificate issuer",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.tls_certificate_verified": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "certificate verification result",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.470625Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "direct TLS handshake"
+        }
+      ]
+    },
+    "network.dns_canonical_name": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public CNAME lookup for the scanned hostname",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_nameservers": {
+      "value": [
+        "ns1.google.com",
+        "ns2.google.com",
+        "ns3.google.com",
+        "ns4.google.com"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public NS lookup for google.com; capped at 32",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "network.dns_soa_primary": {
+      "value": "ns1.google.com",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "public SOA lookup for google.com",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.edge_service_hints": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "service-specific public edge hostname suffix; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.dns_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in authoritative nameserver hostnames; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "infrastructure.hosting_provider": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific suffix in the public CNAME chain; attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "agent.tollbit_gateway": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "public A, CNAME, and NS discovery for tollbit.google.com; requires CNAME or delegated NS evidence and does not establish active enforcement",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com",
+          "observed_at": "2026-09-25T12:23:02.659541Z",
+          "http_status": null,
+          "content_sha256": null,
+          "note": "bounded public DNS metadata lookup"
+        }
+      ]
+    },
+    "crawler.robots_exists": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt returned HTTP 200",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.robots_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.user_agents": {
+      "value": [
+        "*"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_specific_user_agents": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt user-agent matching",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.ai_homepage_policies": {
+      "value": {
+        "amazonbot": true,
+        "anthropic-ai": true,
+        "bytespider": true,
+        "ccbot": true,
+        "chatgpt-user": true,
+        "claude-web": true,
+        "cohere-ai": true,
+        "google-extended": true,
+        "gptbot": true,
+        "meta-externalagent": true,
+        "perplexitybot": true
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for known AI crawler user agents",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.crawl_delays": {
+      "value": {},
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt directive parsing",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.sitemaps": {
+      "value": [],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt sitemap directives",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "crawler.homepage_policy_allowed": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "robots.txt evaluation for WebOpennessObservatory",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_document_type": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_url_count": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": null
+        }
+      ]
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 0.0,
+      "method": "sitemap returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_accessible": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response status; browser validation not yet applied",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_status": {
+      "value": 200,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_final_url": {
+      "value": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP redirect resolution",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.homepage_content_type": {
+      "value": "text/html; charset=utf-8",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "network.http_version": {
+      "value": "HTTP/2",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP protocol reported by the HTTP client",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_headers": {
+      "value": {
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
+        "content-encoding": "gzip",
+        "content-security-policy": "require-trusted-types-for 'script';report-uri /v3/signin/_/AccountsSignInUi/cspreport, script-src 'report-sample' 'nonce-1yueE-ZobmTozX2b1xMAUg' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /v3/signin/_/AccountsSignInUi/cspreport;worker-src 'self'",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Fri, 25 Sep 2026 12:23:07 GMT",
+        "permissions-policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+        "server": "ESF",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted homepage response headers",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.server_header": {
+      "value": "ESF",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Server response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.security_headers": {
+      "value": [
+        "content-security-policy",
+        "permissions-policy",
+        "strict-transport-security",
+        "x-content-type-options",
+        "x-frame-options"
+      ],
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "presence of common browser security response headers",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_headers": {
+      "value": {
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "allowlisted cache response headers",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response-header hints; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cdn": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage headers; provider attribution is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_response_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific homepage edge headers; role is not inferred",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.waf": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific WAF or challenge response headers; not definitive attribution",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.challenge_response": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit edge challenge or block response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.cache_status": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific cache outcome for this homepage response",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.edge_location_hints": {
+      "value": {},
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific edge request identifier suffix",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.http3_advertised": {
+      "value": true,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "h3 protocol token in the homepage Alt-Svc response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.content_encoding": {
+      "value": "gzip",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage Content-Encoding response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized Set-Cookie names only; cookie values were discarded",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.bot_management_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized infrastructure cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.load_balancer_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "recognized load-balancer cookie names; product use is probabilistic",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "infrastructure.acceleration_hints": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "provider-specific response acceleration header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.http_access_disposition": {
+      "value": "reachable",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage HTTP status class",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.authentication_challenge": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "HTTP 401 or WWW-Authenticate response header",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.login_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP authentication challenge; form-based login not yet evaluated",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.rate_limited": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 observed in homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "human.geographic_restriction": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no HTTP 451 in the homepage request attempts",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "preservation.cache_header_hints": {
+      "value": {
+        "cache-control": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "cache-related homepage response headers; does not establish cache behavior",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt in the homepage redirect/retry chain"
+        }
+      ]
+    },
+    "metadata.json_ld": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage JSON-LD script tag detection",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.json_ld_types": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no JSON-LD script tag was observed",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.open_graph": {
+      "value": false,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage Open Graph tag detection",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.feeds": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage alternate-link feed discovery",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_title": {
+      "value": "Sign in - Google Accounts",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage title element",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.html_language": {
+      "value": "en-US",
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "homepage html lang attribute",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.canonical_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage canonical link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.generator": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage generator meta tag",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.web_manifest_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage web manifest link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "metadata.opensearch_url": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "homepage OpenSearch description link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.interface_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit service relations and strongly named homepage links; not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.openapi": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.graphql": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.oauth_metadata": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.mcp": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.a2a": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.agent_card": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "agent.api_documentation": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "strongly named public homepage link; candidate was not fetched",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "legal.policy_links": {
+      "value": [
+        {
+          "url": "https://accounts.google.com/TOS?loc=US&hl=en-US&privacy=true",
+          "text": "Privacy"
+        },
+        {
+          "url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+          "text": "Terms"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "legal.license_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "economic.pricing_links": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "economic.registration_links": {
+      "value": [
+        {
+          "url": "https://accounts.google.com/lifecycle/flows/signup?continue=https://accounts.google.com/&dsh=S1459843751:1790338986832592&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https://accounts.google.com/",
+          "text": "Create account"
+        }
+      ],
+      "outcome": "observed",
+      "confidence": "possible",
+      "confidence_score": 0.6,
+      "method": "candidate discovery from a strongly named homepage link",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.paywall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no homepage structured-data declaration or known paywall markup/resource marker",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.cookie_wall_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage consent-management markup or resource marker; visual state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.captcha_detected": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no known homepage CAPTCHA markup or resource marker; challenge state not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "human.javascript_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit bounded homepage noscript instruction; browser behavior not evaluated",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "legal.license": {
+      "value": [],
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "explicit homepage rel=license link or JSON-LD license declaration",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "economic.subscription_required": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit homepage JSON-LD requiresSubscription declaration",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        }
+      ]
+    },
+    "legal.scraping_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on scraping or automated access in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "legal.ai_restrictions": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit public prohibition on AI/model training or use in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.registration_required": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "explicit public registration requirement declaration",
+      "evidence": [
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.metering": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit numeric quota or metered-access declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "economic.api_pricing": {
+      "value": null,
+      "outcome": "no_evidence",
+      "confidence": "no_evidence",
+      "confidence_score": 1.0,
+      "method": "no explicit API price, free tier, or contact-sales declaration in bounded examined sources",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": null
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "bounded public policy or pricing text analysis"
+        }
+      ]
+    },
+    "crawler.browser_http_difference": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.navigation": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.rendered_document": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "browser.network_summary": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_login_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_paywall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "human.browser_captcha_marker_visible": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "browser collection is disabled",
+      "evidence": []
+    },
+    "metadata.llms_txt_status": {
+      "value": 404,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/llms.txt",
+          "observed_at": "2026-09-25T12:23:09.822840Z",
+          "http_status": 404,
+          "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+          "note": null
+        }
+      ]
+    },
+    "metadata.llms_txt_exists": {
+      "value": false,
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "llms.txt returned a not-found status",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/llms.txt",
+          "observed_at": "2026-09-25T12:23:09.822840Z",
+          "http_status": 404,
+          "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+          "note": null
+        }
+      ]
+    },
+    "preservation.archive_coverage": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.archive_blocked": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "third-party archive lookup is disabled",
+      "evidence": []
+    },
+    "preservation.cache_behavior": {
+      "value": null,
+      "outcome": "skipped",
+      "confidence": "unknown",
+      "confidence_score": 0.0,
+      "method": "conditional cache validation is disabled",
+      "evidence": []
+    },
+    "crawler.http_status_distribution": {
+      "value": {
+        "200": 3,
+        "302": 3,
+        "404": 2
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "status distribution across all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:07.842945Z",
+          "http_status": 302,
+          "content_sha256": "a1a1ff0472d87da1e4a55943c1aed99b670f84598a9e25b739ff2a1a2f6d6583",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/llms.txt",
+          "observed_at": "2026-09-25T12:23:09.822840Z",
+          "http_status": 404,
+          "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_403_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 8,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 403 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:07.842945Z",
+          "http_status": 302,
+          "content_sha256": "a1a1ff0472d87da1e4a55943c1aed99b670f84598a9e25b739ff2a1a2f6d6583",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/llms.txt",
+          "observed_at": "2026-09-25T12:23:09.822840Z",
+          "http_status": 404,
+          "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    },
+    "crawler.http_429_frequency": {
+      "value": {
+        "count": 0,
+        "response_count": 8,
+        "rate": 0.0
+      },
+      "outcome": "observed",
+      "confidence": "confirmed",
+      "confidence_score": 1.0,
+      "method": "HTTP 429 responses divided by all HTTP responses in this scan",
+      "evidence": [
+        {
+          "source_url": "https://accounts.google.com/robots.txt",
+          "observed_at": "2026-09-25T12:23:02.700722Z",
+          "http_status": 200,
+          "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/sitemap.xml",
+          "observed_at": "2026-09-25T12:23:03.823443Z",
+          "http_status": 404,
+          "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/",
+          "observed_at": "2026-09-25T12:23:04.824489Z",
+          "http_status": 302,
+          "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+          "observed_at": "2026-09-25T12:23:05.826813Z",
+          "http_status": 302,
+          "content_sha256": null,
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+          "observed_at": "2026-09-25T12:23:06.821427Z",
+          "http_status": 200,
+          "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:07.842945Z",
+          "http_status": 302,
+          "content_sha256": "a1a1ff0472d87da1e4a55943c1aed99b670f84598a9e25b739ff2a1a2f6d6583",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+          "observed_at": "2026-09-25T12:23:08.826312Z",
+          "http_status": 200,
+          "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+          "note": "HTTP attempt included in the scan-level status summary"
+        },
+        {
+          "source_url": "https://accounts.google.com/llms.txt",
+          "observed_at": "2026-09-25T12:23:09.822840Z",
+          "http_status": 404,
+          "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+          "note": "HTTP attempt included in the scan-level status summary"
+        }
+      ]
+    }
+  },
+  "requests": [
+    {
+      "requested_url": "https://accounts.google.com/robots.txt",
+      "final_url": "https://accounts.google.com/robots.txt",
+      "started_at": "2026-09-25T12:23:02.700722Z",
+      "elapsed_ms": 103.67510399373714,
+      "status_code": 200,
+      "response_bytes": 187,
+      "response_truncated": false,
+      "content_sha256": "a4c44b7edbb7ec714e1a5e74705fd061b5c0424959f0bb708477f897c41e864d",
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/sitemap.xml",
+      "final_url": "https://accounts.google.com/sitemap.xml",
+      "started_at": "2026-09-25T12:23:03.823443Z",
+      "elapsed_ms": 57.50001399428584,
+      "status_code": 404,
+      "response_bytes": 1652,
+      "response_truncated": false,
+      "content_sha256": "94914e8a84215dec16ae1b865bfbb66ac64089987b390e9cd19a447aa7a4960b",
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/",
+      "final_url": "https://accounts.google.com/",
+      "started_at": "2026-09-25T12:23:04.824489Z",
+      "elapsed_ms": 46.10921599669382,
+      "status_code": 302,
+      "response_bytes": 365,
+      "response_truncated": false,
+      "content_sha256": "03b7f126583760419292bc271d833d00fd4f2f484bf4583db575156f88254e4a",
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+      "final_url": "https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F",
+      "started_at": "2026-09-25T12:23:05.826813Z",
+      "elapsed_ms": 38.06466799869668,
+      "status_code": 302,
+      "response_bytes": 0,
+      "response_truncated": false,
+      "content_sha256": null,
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+      "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S1459843751:1790338986832592",
+      "started_at": "2026-09-25T12:23:06.821427Z",
+      "elapsed_ms": 210.90663800714538,
+      "status_code": 200,
+      "response_bytes": 941609,
+      "response_truncated": false,
+      "content_sha256": "8f1529a6d57f5f91f8b4a7ea2916478bc9c99623a91e3a24b7231dc191705132",
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+      "final_url": "https://accounts.google.com/TOS?loc=US&hl=en-US",
+      "started_at": "2026-09-25T12:23:07.842945Z",
+      "elapsed_ms": 30.89076701144222,
+      "status_code": 302,
+      "response_bytes": 261,
+      "response_truncated": false,
+      "content_sha256": "a1a1ff0472d87da1e4a55943c1aed99b670f84598a9e25b739ff2a1a2f6d6583",
+      "error": null
+    },
+    {
+      "requested_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+      "final_url": "https://policies.google.com/terms?gl=US&hl=en-US",
+      "started_at": "2026-09-25T12:23:08.826312Z",
+      "elapsed_ms": 300.39975700492505,
+      "status_code": 200,
+      "response_bytes": 598613,
+      "response_truncated": false,
+      "content_sha256": "b12c1548132abbd76fa43b3ee25a029fc4471486288ca00e3e6e1d5ff33f4068",
+      "error": null
+    },
+    {
+      "requested_url": "https://accounts.google.com/llms.txt",
+      "final_url": "https://accounts.google.com/llms.txt",
+      "started_at": "2026-09-25T12:23:09.822840Z",
+      "elapsed_ms": 33.63929799525067,
+      "status_code": 404,
+      "response_bytes": 1652,
+      "response_truncated": false,
+      "content_sha256": "4bafc5500e17b5b0be2551e083f2cec1129ab5dd5aa4d621760592dfd1b869af",
+      "error": null
+    }
+  ],
+  "errors": []
+}
