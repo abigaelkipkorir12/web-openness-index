@@ -1,437 +1,477 @@
 {
-  "domain_count": 4,
+  "domain_count": 9,
   "longitudinal": {
-    "changed_count": 0,
-    "comparison_count": 0,
-    "unchanged_count": 0
+    "changed_count": 4,
+    "comparison_count": 220,
+    "unchanged_count": 216
   },
   "outcomes": {
-    "no_evidence": 115,
-    "observed": 180,
-    "skipped": 145
+    "error": 56,
+    "no_evidence": 389,
+    "observed": 543,
+    "skipped": 222
   },
   "signal_count": 110,
   "signal_outcomes": {
     "agent.a2a": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "agent.agent_card": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "agent.api_documentation": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "agent.graphql": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "agent.interface_links": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "agent.mcp": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "agent.oauth_metadata": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "agent.openapi": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "agent.tollbit_gateway": {
-      "no_evidence": 3,
-      "observed": 1
-    },
-    "browser.navigation": {
-      "skipped": 4
-    },
-    "browser.network_summary": {
-      "skipped": 4
-    },
-    "browser.rendered_document": {
-      "skipped": 4
-    },
-    "crawler.ai_homepage_policies": {
-      "observed": 4
-    },
-    "crawler.ai_specific_user_agents": {
-      "observed": 4
-    },
-    "crawler.browser_http_difference": {
-      "skipped": 4
-    },
-    "crawler.crawl_delays": {
-      "observed": 4
-    },
-    "crawler.homepage_policy_allowed": {
-      "observed": 4
-    },
-    "crawler.http_403_frequency": {
-      "observed": 4
-    },
-    "crawler.http_429_frequency": {
-      "observed": 4
-    },
-    "crawler.http_status_distribution": {
-      "observed": 4
-    },
-    "crawler.robots_exists": {
-      "observed": 4
-    },
-    "crawler.robots_status": {
-      "observed": 4
-    },
-    "crawler.sitemaps": {
-      "observed": 4
-    },
-    "crawler.user_agents": {
-      "observed": 4
-    },
-    "economic.api_pricing": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "economic.metering": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "economic.pricing_links": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "economic.registration_links": {
-      "no_evidence": 1,
+      "error": 2,
+      "no_evidence": 6,
       "observed": 1,
       "skipped": 2
     },
+    "agent.mcp": {
+      "error": 2,
+      "no_evidence": 6,
+      "observed": 1,
+      "skipped": 2
+    },
+    "agent.oauth_metadata": {
+      "error": 2,
+      "no_evidence": 7,
+      "skipped": 2
+    },
+    "agent.openapi": {
+      "error": 2,
+      "no_evidence": 7,
+      "skipped": 2
+    },
+    "agent.tollbit_gateway": {
+      "no_evidence": 10,
+      "observed": 1
+    },
+    "browser.navigation": {
+      "skipped": 11
+    },
+    "browser.network_summary": {
+      "skipped": 11
+    },
+    "browser.rendered_document": {
+      "skipped": 11
+    },
+    "crawler.ai_homepage_policies": {
+      "observed": 11
+    },
+    "crawler.ai_specific_user_agents": {
+      "observed": 11
+    },
+    "crawler.browser_http_difference": {
+      "skipped": 11
+    },
+    "crawler.crawl_delays": {
+      "observed": 11
+    },
+    "crawler.homepage_policy_allowed": {
+      "observed": 11
+    },
+    "crawler.http_403_frequency": {
+      "observed": 11
+    },
+    "crawler.http_429_frequency": {
+      "observed": 11
+    },
+    "crawler.http_status_distribution": {
+      "observed": 11
+    },
+    "crawler.robots_exists": {
+      "observed": 11
+    },
+    "crawler.robots_status": {
+      "observed": 11
+    },
+    "crawler.sitemaps": {
+      "observed": 11
+    },
+    "crawler.user_agents": {
+      "observed": 11
+    },
+    "economic.api_pricing": {
+      "error": 2,
+      "no_evidence": 7,
+      "skipped": 2
+    },
+    "economic.metering": {
+      "error": 2,
+      "no_evidence": 7,
+      "skipped": 2
+    },
+    "economic.pricing_links": {
+      "no_evidence": 5,
+      "observed": 4,
+      "skipped": 2
+    },
+    "economic.registration_links": {
+      "no_evidence": 3,
+      "observed": 6,
+      "skipped": 2
+    },
     "economic.registration_required": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 6,
+      "observed": 1,
       "skipped": 2
     },
     "economic.subscription_required": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "human.authentication_challenge": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "human.browser_captcha_marker_visible": {
-      "skipped": 4
+      "skipped": 11
     },
     "human.browser_cookie_wall_marker_visible": {
-      "skipped": 4
+      "skipped": 11
     },
     "human.browser_login_marker_visible": {
-      "skipped": 4
+      "skipped": 11
     },
     "human.browser_paywall_marker_visible": {
-      "skipped": 4
+      "skipped": 11
     },
     "human.captcha_detected": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "human.cookie_wall_detected": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "human.geographic_restriction": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "human.homepage_accessible": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "human.homepage_content_type": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "human.homepage_final_url": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "human.homepage_status": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "human.http_access_disposition": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "human.javascript_required": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "human.login_required": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "human.paywall_detected": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "human.rate_limited": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "infrastructure.acceleration_hints": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "infrastructure.bot_management_hints": {
-      "no_evidence": 2,
+      "no_evidence": 9,
       "observed": 1,
       "skipped": 1
     },
     "infrastructure.cache_headers": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "infrastructure.cache_status": {
-      "no_evidence": 1,
-      "observed": 2,
+      "no_evidence": 5,
+      "observed": 5,
       "skipped": 1
     },
     "infrastructure.cdn": {
-      "no_evidence": 2,
-      "observed": 1,
+      "no_evidence": 6,
+      "observed": 4,
       "skipped": 1
     },
     "infrastructure.cdn_hints": {
-      "no_evidence": 2,
-      "observed": 1,
+      "no_evidence": 6,
+      "observed": 4,
       "skipped": 1
     },
     "infrastructure.challenge_response": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "infrastructure.content_encoding": {
       "no_evidence": 1,
-      "observed": 2,
+      "observed": 9,
       "skipped": 1
     },
     "infrastructure.dns_provider": {
-      "no_evidence": 1,
-      "observed": 3
+      "no_evidence": 4,
+      "observed": 7
     },
     "infrastructure.edge_location_hints": {
-      "no_evidence": 2,
-      "observed": 1,
+      "no_evidence": 7,
+      "observed": 3,
       "skipped": 1
     },
     "infrastructure.edge_provider": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "observed": 1
     },
     "infrastructure.edge_response_hints": {
-      "no_evidence": 2,
-      "observed": 1,
+      "no_evidence": 6,
+      "observed": 4,
       "skipped": 1
     },
     "infrastructure.edge_service_hints": {
-      "no_evidence": 4
+      "no_evidence": 11
     },
     "infrastructure.hosting_provider": {
-      "no_evidence": 4
+      "no_evidence": 11
     },
     "infrastructure.http3_advertised": {
-      "no_evidence": 3,
+      "no_evidence": 7,
+      "observed": 3,
       "skipped": 1
     },
     "infrastructure.load_balancer_hints": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "infrastructure.response_cookie_fingerprints": {
-      "no_evidence": 2,
+      "no_evidence": 9,
       "observed": 1,
       "skipped": 1
     },
     "infrastructure.response_headers": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "infrastructure.security_headers": {
       "no_evidence": 1,
-      "observed": 2,
+      "observed": 9,
       "skipped": 1
     },
     "infrastructure.server_header": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "infrastructure.waf": {
-      "no_evidence": 3,
+      "no_evidence": 10,
       "skipped": 1
     },
     "legal.ai_restrictions": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "legal.license": {
-      "no_evidence": 1,
+      "error": 2,
+      "no_evidence": 6,
       "observed": 1,
       "skipped": 2
     },
     "legal.license_links": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 6,
+      "observed": 1,
       "skipped": 2
     },
     "legal.policy_links": {
-      "no_evidence": 1,
-      "observed": 1,
+      "error": 2,
+      "no_evidence": 3,
+      "observed": 4,
       "skipped": 2
     },
     "legal.scraping_restrictions": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "metadata.canonical_url": {
-      "no_evidence": 1,
-      "observed": 1,
+      "no_evidence": 4,
+      "observed": 5,
       "skipped": 2
     },
     "metadata.feeds": {
-      "no_evidence": 2,
+      "error": 2,
+      "no_evidence": 7,
       "skipped": 2
     },
     "metadata.generator": {
-      "no_evidence": 1,
-      "observed": 1,
+      "no_evidence": 6,
+      "observed": 3,
       "skipped": 2
     },
     "metadata.html_language": {
-      "observed": 2,
+      "observed": 9,
       "skipped": 2
     },
     "metadata.html_title": {
-      "observed": 2,
+      "observed": 9,
       "skipped": 2
     },
     "metadata.json_ld": {
-      "no_evidence": 2,
+      "no_evidence": 6,
+      "observed": 3,
       "skipped": 2
     },
     "metadata.json_ld_types": {
-      "no_evidence": 2,
+      "no_evidence": 6,
+      "observed": 3,
       "skipped": 2
     },
     "metadata.llms_txt_exists": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "metadata.llms_txt_status": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "metadata.open_graph": {
-      "no_evidence": 2,
+      "no_evidence": 5,
+      "observed": 4,
       "skipped": 2
     },
     "metadata.opensearch_url": {
-      "no_evidence": 2,
-      "skipped": 2
-    },
-    "metadata.sitemap_child_sitemap_count": {
-      "no_evidence": 1,
-      "observed": 2,
-      "skipped": 1
-    },
-    "metadata.sitemap_document_type": {
-      "no_evidence": 1,
-      "observed": 2,
-      "skipped": 1
-    },
-    "metadata.sitemap_exists": {
-      "observed": 3,
-      "skipped": 1
-    },
-    "metadata.sitemap_status": {
-      "observed": 3,
-      "skipped": 1
-    },
-    "metadata.sitemap_url_count": {
-      "no_evidence": 1,
-      "observed": 2,
-      "skipped": 1
-    },
-    "metadata.web_manifest_url": {
-      "no_evidence": 1,
+      "error": 2,
+      "no_evidence": 6,
       "observed": 1,
       "skipped": 2
     },
+    "metadata.sitemap_child_sitemap_count": {
+      "error": 2,
+      "no_evidence": 5,
+      "observed": 3,
+      "skipped": 1
+    },
+    "metadata.sitemap_document_type": {
+      "error": 2,
+      "no_evidence": 5,
+      "observed": 3,
+      "skipped": 1
+    },
+    "metadata.sitemap_exists": {
+      "error": 2,
+      "no_evidence": 1,
+      "observed": 7,
+      "skipped": 1
+    },
+    "metadata.sitemap_status": {
+      "observed": 10,
+      "skipped": 1
+    },
+    "metadata.sitemap_url_count": {
+      "error": 2,
+      "no_evidence": 5,
+      "observed": 3,
+      "skipped": 1
+    },
+    "metadata.web_manifest_url": {
+      "error": 2,
+      "no_evidence": 5,
+      "observed": 2,
+      "skipped": 2
+    },
     "network.dns_address_count": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_addresses": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_addresses_truncated": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_canonical_name": {
-      "no_evidence": 2,
+      "no_evidence": 9,
       "observed": 2
     },
     "network.dns_ip_families": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_nameservers": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_resolved": {
-      "observed": 4
+      "observed": 11
     },
     "network.dns_soa_primary": {
-      "observed": 4
+      "observed": 11
     },
     "network.http_version": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     },
     "network.tls_certificate_issuer": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_certificate_not_after": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_certificate_not_before": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_certificate_verified": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_cipher": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_handshake": {
-      "observed": 4
+      "observed": 11
     },
     "network.tls_version": {
-      "observed": 4
+      "observed": 11
     },
     "preservation.archive_blocked": {
-      "skipped": 4
+      "skipped": 11
     },
     "preservation.archive_coverage": {
-      "skipped": 4
+      "skipped": 11
     },
     "preservation.cache_behavior": {
-      "skipped": 4
+      "skipped": 11
     },
     "preservation.cache_header_hints": {
-      "observed": 3,
+      "observed": 10,
       "skipped": 1
     }
   },
-  "snapshot_count": 4
+  "snapshot_count": 11
 }

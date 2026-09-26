@@ -1,5 +1,12 @@
 run_id,domain,origin,started_at,completed_at,collector_version,http_requests,browser_requests,observed,no_evidence,skipped,errors,probe_errors
+18f4dd58-4f7a-4dee-a495-e80b6d8536c9,accounts.google.com,https://accounts.google.com,2026-09-25T12:23:02.408052+00:00,2026-09-25T12:23:09.882871+00:00,0.1.0,8,0,48,51,11,0,0
+26de370c-cfa2-49df-bedc-06e0ee375749,dukehub.duke.edu,https://dukehub.duke.edu,2026-09-23T19:55:30.035625+00:00,2026-09-23T19:55:35.238840+00:00,0.1.0,6,0,44,55,11,0,0
+7a8dba28-baaf-4068-b7fb-85660fa68ef1,dukehub.duke.edu,https://dukehub.duke.edu,2026-09-23T19:56:11.589904+00:00,2026-09-23T19:56:16.853545+00:00,0.1.0,6,0,44,55,11,0,0
+a94ad1d1-bddb-4d16-b66a-828a27b52859,duo.com,https://duo.com,2026-09-25T12:22:13.739312+00:00,2026-09-25T12:22:20.095162+00:00,0.1.0,6,0,60,39,11,0,0
 c5bad397-adce-4d06-af1a-2df4c9d7557e,example.org,https://example.org,2026-09-14T17:14:56.340167+00:00,2026-09-14T17:15:00.724361+00:00,0.1.0,4,0,49,50,11,0,0
+e0234fd0-027d-4ad3-9bd9-5d0acff7481c,github.com,https://github.com,2026-09-25T12:21:10.034267+00:00,2026-09-25T12:21:16.701114+00:00,0.1.0,7,0,53,46,11,0,0
 848a86e4-bf4c-4797-8d44-95a68a5dff7f,library.duke.edu,https://library.duke.edu,2026-09-19T11:08:05.117882+00:00,2026-09-19T11:08:08.338165+00:00,0.1.0,4,0,53,46,11,0,0
+bff7e036-8707-4951-8b52-0a16516920ca,www.cloudflare.com,https://www.cloudflare.com,2026-09-22T12:49:59.760540+00:00,2026-09-22T12:50:04.254008+00:00,0.1.0,5,0,57,14,11,28,2
+5ea81fc6-f651-4005-805b-d37ca9ebe64e,www.cloudflare.com,https://www.cloudflare.com,2026-09-22T12:50:59.881226+00:00,2026-09-22T12:51:04.388735+00:00,0.1.0,5,0,57,14,11,28,2
 a9584194-bd7a-43fa-9867-3793423a5e28,www.nytimes.com,https://www.nytimes.com,2026-09-19T11:09:19.991613+00:00,2026-09-19T11:09:23.523894+00:00,0.1.0,4,0,49,17,44,0,0
 796bd8ee-9093-4fe7-bb26-02fe82f92815,www.reddit.com,https://www.reddit.com,2026-09-19T11:09:35.035121+00:00,2026-09-19T11:09:35.542859+00:00,0.1.0,1,0,29,2,79,0,0
