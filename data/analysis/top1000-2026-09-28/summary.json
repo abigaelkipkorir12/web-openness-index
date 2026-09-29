@@ -1,0 +1,575 @@
+{
+  "domain_count": 713,
+  "longitudinal": {
+    "changed_count": 775,
+    "comparison_count": 35691,
+    "unchanged_count": 34916
+  },
+  "outcomes": {
+    "error": 4953,
+    "no_evidence": 31743,
+    "observed": 42874,
+    "skipped": 30672
+  },
+  "signal_count": 110,
+  "signal_outcomes": {
+    "agent.a2a": {
+      "error": 62,
+      "no_evidence": 586,
+      "skipped": 345
+    },
+    "agent.agent_card": {
+      "error": 62,
+      "no_evidence": 586,
+      "skipped": 345
+    },
+    "agent.api_documentation": {
+      "error": 62,
+      "no_evidence": 584,
+      "observed": 2,
+      "skipped": 345
+    },
+    "agent.graphql": {
+      "error": 62,
+      "no_evidence": 585,
+      "observed": 1,
+      "skipped": 345
+    },
+    "agent.interface_links": {
+      "error": 61,
+      "no_evidence": 556,
+      "observed": 31,
+      "skipped": 345
+    },
+    "agent.mcp": {
+      "error": 61,
+      "no_evidence": 559,
+      "observed": 28,
+      "skipped": 345
+    },
+    "agent.oauth_metadata": {
+      "error": 62,
+      "no_evidence": 584,
+      "observed": 2,
+      "skipped": 345
+    },
+    "agent.openapi": {
+      "error": 62,
+      "no_evidence": 586,
+      "skipped": 345
+    },
+    "agent.tollbit_gateway": {
+      "error": 28,
+      "no_evidence": 975,
+      "observed": 52
+    },
+    "browser.navigation": {
+      "skipped": 993
+    },
+    "browser.network_summary": {
+      "skipped": 993
+    },
+    "browser.rendered_document": {
+      "skipped": 993
+    },
+    "crawler.ai_homepage_policies": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.ai_specific_user_agents": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.browser_http_difference": {
+      "skipped": 993
+    },
+    "crawler.crawl_delays": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.homepage_policy_allowed": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.http_403_frequency": {
+      "no_evidence": 103,
+      "observed": 952
+    },
+    "crawler.http_429_frequency": {
+      "no_evidence": 103,
+      "observed": 952
+    },
+    "crawler.http_status_distribution": {
+      "no_evidence": 103,
+      "observed": 952
+    },
+    "crawler.robots_exists": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.robots_status": {
+      "error": 111,
+      "observed": 944
+    },
+    "crawler.sitemaps": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "crawler.user_agents": {
+      "error": 111,
+      "no_evidence": 80,
+      "observed": 864
+    },
+    "economic.api_pricing": {
+      "error": 75,
+      "no_evidence": 504,
+      "observed": 1,
+      "skipped": 413
+    },
+    "economic.metering": {
+      "error": 75,
+      "no_evidence": 501,
+      "observed": 4,
+      "skipped": 413
+    },
+    "economic.pricing_links": {
+      "error": 41,
+      "no_evidence": 391,
+      "observed": 216,
+      "skipped": 345
+    },
+    "economic.registration_links": {
+      "error": 43,
+      "no_evidence": 329,
+      "observed": 276,
+      "skipped": 345
+    },
+    "economic.registration_required": {
+      "error": 80,
+      "no_evidence": 465,
+      "observed": 24,
+      "skipped": 424
+    },
+    "economic.subscription_required": {
+      "error": 62,
+      "no_evidence": 586,
+      "skipped": 345
+    },
+    "human.authentication_challenge": {
+      "error": 23,
+      "no_evidence": 720,
+      "skipped": 250
+    },
+    "human.browser_captcha_marker_visible": {
+      "skipped": 993
+    },
+    "human.browser_cookie_wall_marker_visible": {
+      "skipped": 993
+    },
+    "human.browser_login_marker_visible": {
+      "skipped": 993
+    },
+    "human.browser_paywall_marker_visible": {
+      "skipped": 993
+    },
+    "human.captcha_detected": {
+      "error": 62,
+      "no_evidence": 559,
+      "observed": 27,
+      "skipped": 345
+    },
+    "human.cookie_wall_detected": {
+      "error": 60,
+      "no_evidence": 527,
+      "observed": 61,
+      "skipped": 345
+    },
+    "human.geographic_restriction": {
+      "error": 23,
+      "no_evidence": 720,
+      "skipped": 250
+    },
+    "human.homepage_accessible": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "human.homepage_content_type": {
+      "error": 23,
+      "no_evidence": 5,
+      "observed": 715,
+      "skipped": 250
+    },
+    "human.homepage_final_url": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "human.homepage_status": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "human.http_access_disposition": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "human.javascript_required": {
+      "error": 62,
+      "no_evidence": 563,
+      "observed": 23,
+      "skipped": 345
+    },
+    "human.login_required": {
+      "error": 23,
+      "no_evidence": 720,
+      "skipped": 250
+    },
+    "human.paywall_detected": {
+      "error": 62,
+      "no_evidence": 583,
+      "observed": 3,
+      "skipped": 345
+    },
+    "human.rate_limited": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "infrastructure.acceleration_hints": {
+      "error": 23,
+      "no_evidence": 720,
+      "skipped": 250
+    },
+    "infrastructure.bot_management_hints": {
+      "error": 23,
+      "no_evidence": 695,
+      "observed": 25,
+      "skipped": 250
+    },
+    "infrastructure.cache_headers": {
+      "error": 23,
+      "no_evidence": 140,
+      "observed": 580,
+      "skipped": 250
+    },
+    "infrastructure.cache_status": {
+      "error": 23,
+      "no_evidence": 400,
+      "observed": 320,
+      "skipped": 250
+    },
+    "infrastructure.cdn": {
+      "error": 23,
+      "no_evidence": 393,
+      "observed": 327,
+      "skipped": 250
+    },
+    "infrastructure.cdn_hints": {
+      "error": 23,
+      "no_evidence": 393,
+      "observed": 327,
+      "skipped": 250
+    },
+    "infrastructure.challenge_response": {
+      "error": 23,
+      "no_evidence": 700,
+      "observed": 20,
+      "skipped": 250
+    },
+    "infrastructure.content_encoding": {
+      "error": 23,
+      "no_evidence": 120,
+      "observed": 600,
+      "skipped": 250
+    },
+    "infrastructure.dns_provider": {
+      "error": 26,
+      "no_evidence": 358,
+      "observed": 671
+    },
+    "infrastructure.edge_location_hints": {
+      "error": 23,
+      "no_evidence": 515,
+      "observed": 205,
+      "skipped": 250
+    },
+    "infrastructure.edge_provider": {
+      "error": 28,
+      "no_evidence": 1024,
+      "observed": 3
+    },
+    "infrastructure.edge_response_hints": {
+      "error": 23,
+      "no_evidence": 391,
+      "observed": 329,
+      "skipped": 250
+    },
+    "infrastructure.edge_service_hints": {
+      "error": 28,
+      "no_evidence": 1025,
+      "observed": 2
+    },
+    "infrastructure.hosting_provider": {
+      "error": 28,
+      "no_evidence": 1027
+    },
+    "infrastructure.http3_advertised": {
+      "error": 23,
+      "no_evidence": 417,
+      "observed": 303,
+      "skipped": 250
+    },
+    "infrastructure.load_balancer_hints": {
+      "error": 23,
+      "no_evidence": 719,
+      "observed": 1,
+      "skipped": 250
+    },
+    "infrastructure.response_cookie_fingerprints": {
+      "error": 23,
+      "no_evidence": 694,
+      "observed": 26,
+      "skipped": 250
+    },
+    "infrastructure.response_headers": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "infrastructure.security_headers": {
+      "error": 23,
+      "no_evidence": 139,
+      "observed": 581,
+      "skipped": 250
+    },
+    "infrastructure.server_header": {
+      "error": 23,
+      "no_evidence": 119,
+      "observed": 601,
+      "skipped": 250
+    },
+    "infrastructure.waf": {
+      "error": 23,
+      "no_evidence": 700,
+      "observed": 20,
+      "skipped": 250
+    },
+    "legal.ai_restrictions": {
+      "error": 69,
+      "no_evidence": 543,
+      "observed": 4,
+      "skipped": 377
+    },
+    "legal.license": {
+      "error": 62,
+      "no_evidence": 579,
+      "observed": 7,
+      "skipped": 345
+    },
+    "legal.license_links": {
+      "error": 52,
+      "no_evidence": 534,
+      "observed": 62,
+      "skipped": 345
+    },
+    "legal.policy_links": {
+      "error": 40,
+      "no_evidence": 159,
+      "observed": 449,
+      "skipped": 345
+    },
+    "legal.scraping_restrictions": {
+      "error": 69,
+      "no_evidence": 529,
+      "observed": 18,
+      "skipped": 377
+    },
+    "metadata.canonical_url": {
+      "error": 27,
+      "no_evidence": 204,
+      "observed": 417,
+      "skipped": 345
+    },
+    "metadata.feeds": {
+      "error": 60,
+      "no_evidence": 528,
+      "observed": 60,
+      "skipped": 345
+    },
+    "metadata.generator": {
+      "error": 58,
+      "no_evidence": 496,
+      "observed": 94,
+      "skipped": 345
+    },
+    "metadata.html_language": {
+      "error": 23,
+      "no_evidence": 77,
+      "observed": 548,
+      "skipped": 345
+    },
+    "metadata.html_title": {
+      "error": 24,
+      "no_evidence": 29,
+      "observed": 595,
+      "skipped": 345
+    },
+    "metadata.json_ld": {
+      "error": 36,
+      "no_evidence": 323,
+      "observed": 289,
+      "skipped": 345
+    },
+    "metadata.json_ld_types": {
+      "error": 37,
+      "no_evidence": 323,
+      "observed": 288,
+      "skipped": 345
+    },
+    "metadata.llms_txt_exists": {
+      "error": 23,
+      "no_evidence": 13,
+      "observed": 462,
+      "skipped": 256
+    },
+    "metadata.llms_txt_status": {
+      "error": 23,
+      "observed": 475,
+      "skipped": 256
+    },
+    "metadata.open_graph": {
+      "error": 26,
+      "no_evidence": 188,
+      "observed": 434,
+      "skipped": 345
+    },
+    "metadata.opensearch_url": {
+      "error": 61,
+      "no_evidence": 568,
+      "observed": 19,
+      "skipped": 345
+    },
+    "metadata.sitemap_child_sitemap_count": {
+      "error": 167,
+      "no_evidence": 217,
+      "observed": 408,
+      "skipped": 258
+    },
+    "metadata.sitemap_document_type": {
+      "error": 167,
+      "no_evidence": 217,
+      "observed": 408,
+      "skipped": 258
+    },
+    "metadata.sitemap_exists": {
+      "error": 167,
+      "no_evidence": 27,
+      "observed": 598,
+      "skipped": 258
+    },
+    "metadata.sitemap_status": {
+      "error": 21,
+      "observed": 771,
+      "skipped": 258
+    },
+    "metadata.sitemap_url_count": {
+      "error": 167,
+      "no_evidence": 217,
+      "observed": 408,
+      "skipped": 258
+    },
+    "metadata.web_manifest_url": {
+      "error": 50,
+      "no_evidence": 475,
+      "observed": 123,
+      "skipped": 345
+    },
+    "network.dns_address_count": {
+      "observed": 1055
+    },
+    "network.dns_addresses": {
+      "observed": 1055
+    },
+    "network.dns_addresses_truncated": {
+      "observed": 1055
+    },
+    "network.dns_canonical_name": {
+      "error": 28,
+      "no_evidence": 1017,
+      "observed": 10
+    },
+    "network.dns_ip_families": {
+      "observed": 1055
+    },
+    "network.dns_nameservers": {
+      "error": 26,
+      "no_evidence": 4,
+      "observed": 1025
+    },
+    "network.dns_resolved": {
+      "observed": 1055
+    },
+    "network.dns_soa_primary": {
+      "error": 26,
+      "no_evidence": 4,
+      "observed": 1025
+    },
+    "network.http_version": {
+      "error": 23,
+      "observed": 720,
+      "skipped": 250
+    },
+    "network.tls_certificate_issuer": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_certificate_not_after": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_certificate_not_before": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_certificate_verified": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_cipher": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_handshake": {
+      "error": 94,
+      "observed": 961
+    },
+    "network.tls_version": {
+      "error": 94,
+      "observed": 961
+    },
+    "preservation.archive_blocked": {
+      "skipped": 754
+    },
+    "preservation.archive_coverage": {
+      "skipped": 754
+    },
+    "preservation.cache_behavior": {
+      "skipped": 754
+    },
+    "preservation.cache_header_hints": {
+      "error": 23,
+      "no_evidence": 140,
+      "observed": 580,
+      "skipped": 250
+    }
+  },
+  "snapshot_count": 1055
+}
