@@ -1,6 +1,6 @@
 signal,domain_count,observed_count,no_evidence_count,skipped_count,error_count,unique_values,most_common_value,most_common_count,similarity_score
-infrastructure.response_headers,672,720,0,250,23,718,"{""alt-svc"": ""h3=\"":443\""; ma=2592000,h3-29=\"":443\""; ma=2592000"", ""content-length"": ""1561"", ""content-type"": ""text/html; charset=UTF-8"", ""date"": ""Mon, 28 Sep 2026 18:52:30 GMT"", ""referrer-policy"": ""no-referrer""}",2,0.002777777777777778
-network.dns_addresses,713,1055,0,0,0,728,"[{""address"": ""141.193.213.20"", ""family"": ""IPv4""}, {""address"": ""141.193.213.21"", ""family"": ""IPv4""}]",11,0.01042654028436019
+infrastructure.response_headers,672,720,0,250,23,718,"{""alt-svc"": ""h3=\"":443\""; ma=2592000,h3-29=\"":443\""; ma=2592000"", ""content-length"": ""1561"", ""content-type"": ""text/html; charset=UTF-8"", ""date"": ""Mon, 28 Sep 2026 18:52:30 GMT"", ""referrer-policy"": ""no-referrer""}",2,0.002777778
+network.dns_addresses,713,1055,0,0,0,728,"[{""address"": ""141.193.213.20"", ""family"": ""IPv4""}, {""address"": ""141.193.213.21"", ""family"": ""IPv4""}]",11,0.01042654
 metadata.canonical_url,672,417,204,345,27,274,https://discord.com,6,0.014388489208633094
 network.tls_certificate_not_after,713,961,0,0,94,480,Oct  4 23:59:59 2026 GMT,14,0.014568158168574402
 network.tls_certificate_not_before,713,961,0,0,94,516,Jul  6 00:00:00 2026 GMT,15,0.015608740894901144
@@ -9,17 +9,17 @@ economic.registration_links,672,276,329,345,43,173,"[{""text"": ""Log In"", ""ur
 metadata.web_manifest_url,672,123,475,345,50,85,https://bunny.net/manifest.webmanifest,4,0.032520325203252036
 agent.tollbit_gateway,713,52,975,0,28,38,"{""canonical_name"": ""redirect.acrobat.com"", ""hostname"": ""tollbit.acrobat.com"", ""record_types"": [""A"", ""CNAME""]}",2,0.038461538461538464
 human.homepage_final_url,672,720,0,250,23,465,https://www.google.com/,31,0.043055555555555555
-legal.license_links,672,62,534,345,52,39,"[{""text"": ""Pricing and Billing"", ""url"": ""https://www.atlassian.com/company/contact/purchasing-licensing""}, {""text"": ""Purchasing and Licensing"", ""url"": ""https://www.atlassian.com/licensing/purchase-licensing""}]",3,0.04838709677419355
-metadata.json_ld_types,672,288,323,345,37,146,"[""BreadcrumbList"", ""EntryPoint"", ""ImageObject"", ""ListItem"", ""Organization"", ""PropertyValueSpecification"", ""ReadAction"", ""SearchAction"", ""WebPage"", ""WebSite""]",14,0.04861111111111111
+legal.license_links,672,62,534,345,52,39,"[{""text"": ""Pricing and Billing"", ""url"": ""https://www.atlassian.com/company/contact/purchasing-licensing""}, {""text"": ""Purchasing and Licensing"", ""url"": ""https://www.atlassian.com/licensing/purchase-licensing""}]",3,0.048387097
+metadata.json_ld_types,672,288,323,345,37,146,"[""BreadcrumbList"", ""EntryPoint"", ""ImageObject"", ""ListItem"", ""Organization"", ""PropertyValueSpecification"", ""ReadAction"", ""SearchAction"", ""WebPage"", ""WebSite""]",14,0.048611111
 metadata.html_title,672,595,29,345,24,369,Google,35,0.058823529411764705
-metadata.feeds,672,60,528,345,60,38,"[""https://www.docker.com/feed/"", ""https://www.docker.com/wp-json/wp/v2/pages/69521""]",4,0.06666666666666667
-infrastructure.cache_headers,672,580,140,250,23,358,"{""cache-control"": ""private, max-age=0""}",39,0.06724137931034482
-preservation.cache_header_hints,672,580,140,250,23,358,"{""cache-control"": ""private, max-age=0""}",39,0.06724137931034482
-network.dns_soa_primary,713,1025,4,0,26,473,ns1.google.com,72,0.0702439024390244
-network.dns_nameservers,713,1025,4,0,26,518,"[""ns1.google.com"", ""ns2.google.com"", ""ns3.google.com"", ""ns4.google.com""]",72,0.0702439024390244
-legal.policy_links,672,449,159,345,40,274,"[{""text"": ""Privacy"", ""url"": ""https://www.google.com/intl/en/policies/privacy/""}, {""text"": ""Terms"", ""url"": ""https://www.google.com/intl/en/policies/terms/""}]",33,0.07349665924276169
-crawler.http_status_distribution,713,952,103,0,0,171,"{""200"": 5, ""301"": 3}",73,0.07668067226890757
-metadata.generator,672,94,496,345,58,46,HubSpot,9,0.09574468085106383
+metadata.feeds,672,60,528,345,60,38,"[""https://www.docker.com/feed/"", ""https://www.docker.com/wp-json/wp/v2/pages/69521""]",4,0.066666667
+infrastructure.cache_headers,672,580,140,250,23,358,"{""cache-control"": ""private, max-age=0""}",39,0.067241379
+preservation.cache_header_hints,672,580,140,250,23,358,"{""cache-control"": ""private, max-age=0""}",39,0.067241379
+network.dns_soa_primary,713,1025,4,0,26,473,ns1.google.com,72,0.070243902
+network.dns_nameservers,713,1025,4,0,26,518,"[""ns1.google.com"", ""ns2.google.com"", ""ns3.google.com"", ""ns4.google.com""]",72,0.070243902
+legal.policy_links,672,449,159,345,40,274,"[{""text"": ""Privacy"", ""url"": ""https://www.google.com/intl/en/policies/privacy/""}, {""text"": ""Terms"", ""url"": ""https://www.google.com/intl/en/policies/terms/""}]",33,0.073496659
+crawler.http_status_distribution,713,952,103,0,0,171,"{""200"": 5, ""301"": 3}",73,0.076680672
+metadata.generator,672,94,496,345,58,46,HubSpot,9,0.095744681
 metadata.opensearch_url,672,19,568,345,61,14,https://firebase.google.com/s/opensearch.xml,2,0.10526315789473684
 infrastructure.security_headers,672,581,139,250,23,40,"[""strict-transport-security""]",64,0.11015490533562823
 agent.interface_links,672,31,556,345,61,17,"[{""rel"": [], ""tag"": ""a"", ""type"": null, ""url"": ""https://www.docker.com/products/mcp-enterprise-gateway/""}]",4,0.12903225806451613
@@ -49,9 +49,9 @@ metadata.sitemap_document_type,710,408,217,258,167,2,sitemapindex,250,0.61274509
 network.dns_ip_families,713,1055,0,0,0,3,"[""IPv4""]",651,0.6170616113744076
 metadata.llms_txt_status,506,475,0,256,23,4,404,316,0.6652631578947369
 infrastructure.edge_provider,713,3,1024,0,28,2,"[""akamai""]",2,0.6666666666666666
-economic.registration_required,672,24,465,424,80,2,True,16,0.6666666666666666
-metadata.sitemap_exists,710,598,27,258,167,2,True,408,0.6822742474916388
-metadata.llms_txt_exists,506,462,13,256,23,2,False,316,0.683982683982684
+economic.registration_required,672,24,465,424,80,2,TRUE,16,0.6666666666666666
+metadata.sitemap_exists,710,598,27,258,167,2,TRUE,408,0.6822742474916388
+metadata.llms_txt_exists,506,462,13,256,23,2,FALSE,316,0.683982684
 metadata.html_language,672,548,77,345,23,20,en,375,0.6843065693430657
 infrastructure.response_cookie_fingerprints,672,26,694,250,23,6,"[""cloudflare:__cf_bm""]",18,0.6923076923076923
 metadata.sitemap_status,710,771,0,258,21,6,200,554,0.7185473411154345
@@ -59,36 +59,36 @@ infrastructure.bot_management_hints,672,25,695,250,23,5,"[""cloudflare""]",18,0.
 crawler.robots_status,713,944,0,0,111,13,200,726,0.7690677966101694
 human.captcha_detected,672,27,559,345,62,5,"{""detected"": true, ""markers"": [""resource:google.com/recaptcha""]}",21,0.7777777777777778
 crawler.ai_specific_user_agents,713,864,80,0,111,66,[],718,0.8310185185185185
-crawler.robots_exists,713,864,80,0,111,2,True,726,0.8402777777777778
+crawler.robots_exists,713,864,80,0,111,2,TRUE,726,0.8402777777777778
 crawler.ai_homepage_policies,713,864,80,0,111,37,"{""amazonbot"": true, ""anthropic-ai"": true, ""bytespider"": true, ""ccbot"": true, ""chatgpt-user"": true, ""claude-web"": true, ""cohere-ai"": true, ""google-extended"": true, ""gptbot"": true, ""meta-externalagent"": true, ""perplexitybot"": true}",737,0.8530092592592593
 network.tls_version,713,961,0,0,94,2,TLSv1.3,827,0.8605619146722164
 human.homepage_status,672,720,0,250,23,7,200,633,0.8791666666666667
-human.homepage_accessible,672,720,0,250,23,2,True,638,0.8861111111111111
+human.homepage_accessible,672,720,0,250,23,2,TRUE,638,0.8861111111111111
 human.http_access_disposition,672,720,0,250,23,4,reachable,638,0.8861111111111111
 network.http_version,672,720,0,250,23,2,HTTP/2,657,0.9125
 infrastructure.edge_location_hints,672,205,515,250,23,6,"{""cloudflare"": ""IAD""}",189,0.9219512195121952
-crawler.homepage_policy_allowed,713,864,80,0,111,2,True,805,0.9317129629629629
+crawler.homepage_policy_allowed,713,864,80,0,111,2,TRUE,805,0.9317129629629629
 crawler.crawl_delays,713,864,80,0,111,27,{},811,0.9386574074074074
-network.dns_addresses_truncated,713,1055,0,0,0,2,False,1050,0.995260663507109
-infrastructure.load_balancer_hints,672,1,719,250,23,1,"[""cloudflare""]",1,1.0
-economic.api_pricing,672,1,504,413,75,1,"{""declarations"": [{""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/legal/code-of-conduct""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/products/scraper-api/web/pricings""}], ""detected"": true}",1,1.0
-agent.api_documentation,672,2,584,345,62,1,"[""https://developers.zoom.us/docs/mcp/""]",2,1.0
-agent.oauth_metadata,672,2,584,345,62,1,"[""https://dashboard.stripe.com/login/oauth/google/init""]",2,1.0
-agent.graphql,672,1,585,345,62,1,"[""https://web.np.playstation.com/api/graphql/v1""]",1,1.0
-human.paywall_detected,672,3,583,345,62,1,"{""detected"": true, ""markers"": [""dom:paywall""]}",3,1.0
-human.javascript_required,672,23,563,345,62,1,"{""detected"": true, ""markers"": [""noscript:javascript-required""]}",23,1.0
-human.rate_limited,672,720,0,250,23,1,False,720,1.0
-infrastructure.http3_advertised,672,303,417,250,23,1,True,303,1.0
-metadata.json_ld,672,289,323,345,36,1,True,289,1.0
-infrastructure.waf,672,20,700,250,23,1,"[""cloudflare""]",20,1.0
-legal.ai_restrictions,672,4,543,377,69,1,"{""declarations"": [{""rule"": ""ai_training_prohibited"", ""source_url"": ""https://www.docker.com/legal/docker-terms-use/""}], ""detected"": true}",4,1.0
-infrastructure.challenge_response,672,20,700,250,23,1,"{""provider"": ""cloudflare"", ""type"": ""challenge""}",20,1.0
-infrastructure.content_encoding,672,600,120,250,23,1,gzip,600,1.0
-infrastructure.edge_service_hints,713,2,1025,0,28,1,"[""akamai_standard_tls_edge_hostname""]",2,1.0
-network.dns_resolved,713,1055,0,0,0,1,True,1055,1.0
-metadata.open_graph,672,434,188,345,26,1,True,434,1.0
-network.tls_handshake,713,961,0,0,94,1,True,961,1.0
-network.tls_certificate_verified,713,961,0,0,94,1,True,961,1.0
+network.dns_addresses_truncated,713,1055,0,0,0,2,FALSE,1050,0.995260664
+infrastructure.load_balancer_hints,672,1,719,250,23,1,"[""cloudflare""]",1,1
+economic.api_pricing,672,1,504,413,75,1,"{""declarations"": [{""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/legal/code-of-conduct""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/products/scraper-api/web/pricings""}], ""detected"": true}",1,1
+agent.api_documentation,672,2,584,345,62,1,"[""https://developers.zoom.us/docs/mcp/""]",2,1
+agent.oauth_metadata,672,2,584,345,62,1,"[""https://dashboard.stripe.com/login/oauth/google/init""]",2,1
+agent.graphql,672,1,585,345,62,1,"[""https://web.np.playstation.com/api/graphql/v1""]",1,1
+human.paywall_detected,672,3,583,345,62,1,"{""detected"": true, ""markers"": [""dom:paywall""]}",3,1
+human.javascript_required,672,23,563,345,62,1,"{""detected"": true, ""markers"": [""noscript:javascript-required""]}",23,1
+human.rate_limited,672,720,0,250,23,1,FALSE,720,1
+infrastructure.http3_advertised,672,303,417,250,23,1,TRUE,303,1
+metadata.json_ld,672,289,323,345,36,1,TRUE,289,1
+infrastructure.waf,672,20,700,250,23,1,"[""cloudflare""]",20,1
+legal.ai_restrictions,672,4,543,377,69,1,"{""declarations"": [{""rule"": ""ai_training_prohibited"", ""source_url"": ""https://www.docker.com/legal/docker-terms-use/""}], ""detected"": true}",4,1
+infrastructure.challenge_response,672,20,700,250,23,1,"{""provider"": ""cloudflare"", ""type"": ""challenge""}",20,1
+infrastructure.content_encoding,672,600,120,250,23,1,gzip,600,1
+infrastructure.edge_service_hints,713,2,1025,0,28,1,"[""akamai_standard_tls_edge_hostname""]",2,1
+network.dns_resolved,713,1055,0,0,0,1,TRUE,1055,1
+metadata.open_graph,672,434,188,345,26,1,TRUE,434,1
+network.tls_handshake,713,961,0,0,94,1,TRUE,961,1
+network.tls_certificate_verified,713,961,0,0,94,1,TRUE,961,1
 agent.a2a,672,0,586,345,62,0,,0,
 agent.agent_card,672,0,586,345,62,0,,0,
 agent.openapi,672,0,586,345,62,0,,0,
