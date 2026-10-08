@@ -1,0 +1,4219 @@
+{
+  "signal": "crawler.browser_http_difference",
+  "group": "Crawler",
+  "domain_count": 324,
+  "domains": [
+    {
+      "domain": "163.com",
+      "run_id": "18c70488-2ea9-489e-8d6a-81b9ce8f71f3",
+      "completed_at": "2026-10-04T00:00:41.870171Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "33across.com",
+      "run_id": "14d98fac-5480-4439-9bf7-a2b3a7b0ea13",
+      "completed_at": "2026-10-04T00:00:32.144522Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "360yield.com",
+      "run_id": "434c77c7-5682-42a7-8ea0-d25312d66e13",
+      "completed_at": "2026-10-04T00:00:36.778889Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "3lift.com",
+      "run_id": "3ca59b38-5590-4c75-8fc6-420d71e923c4",
+      "completed_at": "2026-10-04T00:00:32.790913Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "a-mo.net",
+      "run_id": "efd73c09-1af8-441f-a8fe-19e1266c0161",
+      "completed_at": "2026-10-04T00:00:33.452439Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adblockplus.org",
+      "run_id": "d2c301df-fe1e-454b-aa5a-6ce52d739571",
+      "completed_at": "2026-10-04T00:00:39.557436Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adform.net",
+      "run_id": "387d4b02-d25d-497f-b193-a749514a8fef",
+      "completed_at": "2026-10-04T00:00:37.792087Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adjust.com",
+      "run_id": "5a6765da-580c-4f79-bc58-dedee5b08eaf",
+      "completed_at": "2026-10-04T00:00:40.387054Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adnxs.com",
+      "run_id": "3b9faf68-56c8-4f1f-9195-1384a1daa3d2",
+      "completed_at": "2026-10-04T00:00:43.263109Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adobe.com",
+      "run_id": "bdcf110b-ba86-4b93-a706-a318c83f8d9c",
+      "completed_at": "2026-10-04T00:00:49.405478Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adobe.io",
+      "run_id": "367aacd6-0eb7-487d-b481-3be3d086123e",
+      "completed_at": "2026-10-04T00:00:50.311066Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adsafeprotected.com",
+      "run_id": "58976c61-f8d0-4111-afda-8dc951ae5446",
+      "completed_at": "2026-10-04T00:00:50.686471Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adsrvr.org",
+      "run_id": "19882392-b701-4d44-b3cd-87e9a46d91d9",
+      "completed_at": "2026-10-04T00:00:50.107472Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adtrafficquality.google",
+      "run_id": "9de006bc-0d24-4c36-8aef-aee552560ac1",
+      "completed_at": "2026-10-04T00:00:55.192775Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "alibaba.com",
+      "run_id": "7413a0b3-555f-4eb4-af77-eff09fed2e45",
+      "completed_at": "2026-10-04T00:00:58.798896Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "alicdn.com",
+      "run_id": "424663b5-ca7f-46fc-bd42-1c695bc4dbe5",
+      "completed_at": "2026-10-04T00:01:37.191595Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "aliyuncs.com",
+      "run_id": "90df490b-fa88-4b54-8f0e-0143d717caf8",
+      "completed_at": "2026-10-04T00:01:05.239813Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "alphonso.tv",
+      "run_id": "dc22871c-06f2-4c4a-ba18-a0c10a19d8fd",
+      "completed_at": "2026-10-04T00:01:11.952754Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amazon-adsystem.com",
+      "run_id": "1679807f-b18b-4af8-ae1c-883e416cda97",
+      "completed_at": "2026-10-04T00:01:23.663016Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amazon.com",
+      "run_id": "7d797495-58fd-4b16-ad4c-fa543370a3cc",
+      "completed_at": "2026-10-04T00:01:25.139730Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amazonaws.com",
+      "run_id": "6c8b69b0-85ef-498f-b73f-44377a5cb949",
+      "completed_at": "2026-10-04T00:01:35.451792Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amazontrust.com",
+      "run_id": "ef86e636-f6f1-4b0b-90be-b9c70adea464",
+      "completed_at": "2026-10-04T00:02:08.000568Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amemv.com",
+      "run_id": "8e4ceece-18f5-456d-b28f-241ac233384c",
+      "completed_at": "2026-10-04T00:01:47.511930Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amplitude.com",
+      "run_id": "b52e7dd0-25b2-4902-b185-3dc5ba522c0b",
+      "completed_at": "2026-10-04T00:01:45.798112Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "android.com",
+      "run_id": "aded0015-16ef-4c70-b20a-21891d764520",
+      "completed_at": "2026-10-04T00:01:55.045955Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "anthropic.com",
+      "run_id": "e1861902-c373-4de0-9983-9926d30c179a",
+      "completed_at": "2026-10-04T00:02:00.210751Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "anydesk.com",
+      "run_id": "1810a383-7825-49d5-b8d7-14eca1f20531",
+      "completed_at": "2026-10-04T00:01:55.756279Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "app-ads-services.com",
+      "run_id": "40807daa-4b3b-4de6-8b13-411a93cd54db",
+      "completed_at": "2026-10-04T00:01:58.573034Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "app-analytics-services-att.com",
+      "run_id": "e1f1618c-1ec0-4610-ba7d-ef3e2b9248e3",
+      "completed_at": "2026-10-04T00:02:02.160987Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "app-analytics-services.com",
+      "run_id": "eaa04e7c-f4d1-4412-b83d-5743fb384d3b",
+      "completed_at": "2026-10-04T00:02:03.758094Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "app-measurement.com",
+      "run_id": "865ebe97-7ab5-4890-9aaa-2d535fc0f9e3",
+      "completed_at": "2026-10-04T00:02:05.837011Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "appcenter.ms",
+      "run_id": "471ede8e-5b84-4f03-a427-87181c833ecf",
+      "completed_at": "2026-10-04T00:02:08.255466Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "apple.com",
+      "run_id": "a220e247-eabb-4b63-b670-f6c9f18d013e",
+      "completed_at": "2026-10-04T00:02:14.052073Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "applovin.com",
+      "run_id": "b796f3e0-377c-4181-8d74-b0f3b6883f28",
+      "completed_at": "2026-10-04T00:02:14.584368Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "appsflyer.com",
+      "run_id": "79971dc0-6323-4eaa-a4b0-3ae9a9b9dd57",
+      "completed_at": "2026-10-04T00:02:15.876371Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "appsflyersdk.com",
+      "run_id": "a0623eec-c93c-42dc-ba35-cfd734a21764",
+      "completed_at": "2026-10-04T00:02:14.468856Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "autodesk.com",
+      "run_id": "5067f409-db10-41b8-aa4a-9abb4b81268b",
+      "completed_at": "2026-10-04T00:02:16.001273Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "avast.com",
+      "run_id": "a3f7c105-f405-4b39-bed8-b5a9b2b50b5b",
+      "completed_at": "2026-10-04T00:02:22.425881Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "avsxappcaptiveportal.com",
+      "run_id": "2a92b1b5-a102-472f-974f-1e642154886f",
+      "completed_at": "2026-10-04T00:03:02.175748Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "b-cdn.net",
+      "run_id": "d172bf89-f618-4ccc-a48a-e5fc836ebb0d",
+      "completed_at": "2026-10-04T00:02:26.901612Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "baidu.com",
+      "run_id": "5cffdb59-5ee8-4fcc-ac93-bb7d739b71fc",
+      "completed_at": "2026-10-04T00:02:26.711478Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "beyondwickedmapping.org",
+      "run_id": "c19245af-8d8f-4dce-9171-a04b4a7dcd31",
+      "completed_at": "2026-10-04T00:02:30.230286Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "bidmachine.io",
+      "run_id": "dab012ce-b2bc-478b-ab25-12521f14601f",
+      "completed_at": "2026-10-04T00:02:32.018917Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "binance.com",
+      "run_id": "965a9097-4041-47c0-9b8a-533a73b7a507",
+      "completed_at": "2026-10-04T00:02:37.500615Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "bing-pe.com",
+      "run_id": "94218500-c62d-476b-9529-1f1ad9cfe783",
+      "completed_at": "2026-10-04T00:02:37.308942Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "bing.com",
+      "run_id": "ec7bd2be-179f-4869-a9fe-4ca1955609d8",
+      "completed_at": "2026-10-04T00:02:44.268872Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "blackberry.com",
+      "run_id": "30954fb0-9292-43e9-a229-3eddf537e1d2",
+      "completed_at": "2026-10-04T00:02:50.327204Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "branch.io",
+      "run_id": "46cb34b6-2519-4bc9-a071-15b7a1e6ae2c",
+      "completed_at": "2026-10-04T00:02:56.100449Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "brave.com",
+      "run_id": "81fe75b0-4f10-4a2d-8079-e2185de3bdc5",
+      "completed_at": "2026-10-04T00:02:57.079469Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "braze.com",
+      "run_id": "96a95ed4-be3e-4b35-bb53-6447e45a1cdd",
+      "completed_at": "2026-10-04T00:03:02.972533Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "browser-intake-datadoghq.com",
+      "run_id": "cdc33fc2-4308-492e-8947-f404eb8045ef",
+      "completed_at": "2026-10-04T00:02:57.545476Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "btloader.com",
+      "run_id": "4c33cc4b-02d2-4287-9c94-324c0460a3e9",
+      "completed_at": "2026-10-04T00:02:57.908110Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "bugsnag.com",
+      "run_id": "6956549f-c60f-4eff-bb10-ca99ecf2950e",
+      "completed_at": "2026-10-04T00:03:05.861931Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "canva.com",
+      "run_id": "85f0d7a9-7879-4e6e-8cd5-3e2a1fc9cdd3",
+      "completed_at": "2026-10-04T00:03:09.597086Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "capcut.com",
+      "run_id": "1448e86f-97da-4973-9815-5af9d95fea55",
+      "completed_at": "2026-10-04T00:03:11.012133Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "chatgpt.com",
+      "run_id": "ad78c7a0-d517-45b8-8bc8-5450aa1171d0",
+      "completed_at": "2026-10-04T00:03:12.217511Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "checkpoint.com",
+      "run_id": "2f342ec7-3b0e-42a8-992e-2053ea58dc78",
+      "completed_at": "2026-10-04T00:03:20.874246Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cisco.com",
+      "run_id": "c7d2a4e5-333b-4df4-aa01-3f68e8f07045",
+      "completed_at": "2026-10-04T00:03:18.830468Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "clarity.ms",
+      "run_id": "438109e7-5920-43c1-a04f-bf93d27c2094",
+      "completed_at": "2026-10-04T00:03:29.113979Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "claude.ai",
+      "run_id": "cb77fec4-5f98-4695-8687-36d1b359790f",
+      "completed_at": "2026-10-04T00:03:22.347604Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cloud.microsoft",
+      "run_id": "ff29932c-c63b-4c21-8d27-b8870ceeb8bf",
+      "completed_at": "2026-10-04T00:03:28.924616Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cloudflare-dns.com",
+      "run_id": "c69924c0-ef97-4712-b458-2a7477758934",
+      "completed_at": "2026-10-04T00:03:26.143647Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cloudflare.com",
+      "run_id": "aac29e6d-b820-4bd1-a297-963f93922fd1",
+      "completed_at": "2026-10-04T00:03:33.679767Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cloudflare.net",
+      "run_id": "48e784af-7877-497a-8d6d-13d26f5e9b73",
+      "completed_at": "2026-10-04T00:03:29.821961Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cloudflareinsights.com",
+      "run_id": "7768d15a-6282-43a9-8ddc-be8ce5bafca9",
+      "completed_at": "2026-10-04T00:03:32.555456Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "comcast.net",
+      "run_id": "45eb868b-ad32-4dfe-a733-cf7dae4573ba",
+      "completed_at": "2026-10-04T00:03:31.956930Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cookielaw.org",
+      "run_id": "e7be7299-7abf-4f5b-ae2b-0f2d7a2926f7",
+      "completed_at": "2026-10-04T00:03:33.726274Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cootlogix.com",
+      "run_id": "30afcaf4-e208-43bb-8922-a5b7fc20512e",
+      "completed_at": "2026-10-04T00:03:36.259731Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "crashlytics.com",
+      "run_id": "d4bc0151-0749-4adb-a902-e0960d564fc5",
+      "completed_at": "2026-10-04T00:03:38.933517Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "creativecdn.com",
+      "run_id": "9d94b788-f0bc-413a-9cb9-f9eeff506098",
+      "completed_at": "2026-10-04T00:03:34.544765Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "criteo.com",
+      "run_id": "763fe045-1d09-492a-a421-f28f519f3c98",
+      "completed_at": "2026-10-04T00:03:42.948311Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "crwdcntrl.net",
+      "run_id": "b50504c6-238c-4c9d-a08e-be26e3c41f5e",
+      "completed_at": "2026-10-04T00:04:22.842358Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cspserver.net",
+      "run_id": "f6f4dc2d-185b-4c40-bbab-bd6e0a36278d",
+      "completed_at": "2026-10-04T00:03:43.461006Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cursor.sh",
+      "run_id": "ffaf8281-223c-4775-bb55-d1b75e0541dd",
+      "completed_at": "2026-10-04T00:03:47.907645Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "datadoghq.com",
+      "run_id": "08102703-853e-41af-ad79-06fb96113b0d",
+      "completed_at": "2026-10-04T00:03:51.026475Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dell.com",
+      "run_id": "fabe3a9c-8b42-4bcb-9f37-9868ed9ed77f",
+      "completed_at": "2026-10-04T00:03:56.397457Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "digicert.com",
+      "run_id": "6e99eacc-8f0a-47c4-b71e-f7dd43e4c2e6",
+      "completed_at": "2026-10-04T00:03:58.403087Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "discord.com",
+      "run_id": "11c5183f-2cba-4667-9074-1673d984e164",
+      "completed_at": "2026-10-04T00:04:04.899735Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "discordapp.com",
+      "run_id": "26a245c6-57c2-4730-8e4b-032d2a13a357",
+      "completed_at": "2026-10-04T00:04:07.004271Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dns.google",
+      "run_id": "83958873-6d30-4632-b678-f5a0e2d3e3c5",
+      "completed_at": "2026-10-04T00:04:08.623057Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "docker.io",
+      "run_id": "d839a817-d976-4241-a5a9-95653478edbf",
+      "completed_at": "2026-10-04T00:04:12.801522Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dotomi.com",
+      "run_id": "4aea5a38-9295-4a0a-b322-aa50017a19fc",
+      "completed_at": "2026-10-04T00:04:14.051971Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "doubleclick.net",
+      "run_id": "494e89e1-5833-49a2-904d-d7cc11e9b5c2",
+      "completed_at": "2026-10-04T00:04:17.008975Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "doubleverify.com",
+      "run_id": "8d65a73b-74b3-48e7-bfe8-d3363305675b",
+      "completed_at": "2026-10-04T00:04:18.773585Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dropbox.com",
+      "run_id": "6198c692-6866-4a0c-abf0-67e4ec6c92d6",
+      "completed_at": "2026-10-04T00:04:25.111886Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "duckdns.org",
+      "run_id": "a9ca96f2-720a-4473-952d-b1c060c072c1",
+      "completed_at": "2026-10-04T00:04:26.034263Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "duckduckgo.com",
+      "run_id": "76101313-8b30-44e1-b235-8c0d9b428460",
+      "completed_at": "2026-10-04T00:04:27.263072Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "duolingo.com",
+      "run_id": "20840fe0-881a-4bd1-9d1c-48eeb3a19f97",
+      "completed_at": "2026-10-04T00:04:31.696131Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dv.tech",
+      "run_id": "92589835-efae-4fb2-b1ce-15b4cc28605a",
+      "completed_at": "2026-10-04T00:04:27.535817Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dynatrace.com",
+      "run_id": "5ac760b9-6959-4bfd-bf72-92a51b1adc4b",
+      "completed_at": "2026-10-04T00:04:35.886118Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ea.com",
+      "run_id": "39e60231-0aab-4c42-9187-b370d3a805f5",
+      "completed_at": "2026-10-04T00:04:35.713104Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ebay.com",
+      "run_id": "04137a59-585c-4c28-9be6-064af68eff8f",
+      "completed_at": "2026-10-04T00:04:42.231956Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "epicgames.com",
+      "run_id": "32691fec-b285-403b-b97f-3e125deb77c7",
+      "completed_at": "2026-10-04T00:04:39.392326Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "epicgames.dev",
+      "run_id": "2e30e7b6-aa60-4469-937a-d098860e5b84",
+      "completed_at": "2026-10-04T00:04:38.459592Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "eset.com",
+      "run_id": "f0349fd7-7da3-4de9-9088-cfe8df14d07e",
+      "completed_at": "2026-10-04T00:04:47.103770Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "eu-1-id5-sync.com",
+      "run_id": "6859bfde-0f79-4afc-a030-a340bcb79966",
+      "completed_at": "2026-10-04T00:05:11.205008Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "example.com",
+      "run_id": "e0158604-61a2-441f-ba6a-d378ba6191a5",
+      "completed_at": "2026-10-04T00:04:45.711829Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "eye4.cn",
+      "run_id": "eebe0a79-778b-4d77-a890-442f5503c449",
+      "completed_at": "2026-10-04T00:04:48.511895Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "facebook.com",
+      "run_id": "beb40141-492d-404e-96b2-ddfe20604f13",
+      "completed_at": "2026-10-04T00:04:47.582360Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fast.com",
+      "run_id": "d2758a87-bb23-4901-8772-452c5071d3fe",
+      "completed_at": "2026-10-04T00:04:51.745726Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fastly.net",
+      "run_id": "78c39401-ef41-43ae-9a59-e18adfde283f",
+      "completed_at": "2026-10-04T00:04:54.040867Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fbcdn.net",
+      "run_id": "2c57e168-6807-4b15-adb3-12fb711a310f",
+      "completed_at": "2026-10-04T00:04:52.189184Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fbsbx.com",
+      "run_id": "0a581b80-077e-4ce4-9c60-53117555ecc6",
+      "completed_at": "2026-10-04T00:04:55.721971Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "featureassets.org",
+      "run_id": "b1ad15d4-f562-41b4-be81-616eb253b226",
+      "completed_at": "2026-10-04T00:04:54.493204Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "firefox-portal-detection.com",
+      "run_id": "a4a6883e-40ac-423f-8214-8ae1bfdecc59",
+      "completed_at": "2026-10-04T00:04:57.996912Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "firefox.com",
+      "run_id": "8b7a948a-9665-41a6-92a7-2fc4465c20f2",
+      "completed_at": "2026-10-04T00:05:03.419367Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "firetvcaptiveportal.com",
+      "run_id": "c526c226-8af6-43eb-8c12-307f0787e20e",
+      "completed_at": "2026-10-04T00:05:44.317371Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "flashtalking.com",
+      "run_id": "c545a8f6-752e-4705-8216-05306747faea",
+      "completed_at": "2026-10-04T00:05:04.936919Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "forter.com",
+      "run_id": "90d028e3-0234-4c83-9bc0-1d262442be19",
+      "completed_at": "2026-10-04T00:05:05.704737Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gamepass.com",
+      "run_id": "4533456b-779f-44c9-9164-e776a7a77393",
+      "completed_at": "2026-10-04T00:05:13.520036Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gcdn.co",
+      "run_id": "0ef69eef-a152-4106-817c-b0e48ca7b2f9",
+      "completed_at": "2026-10-04T00:05:14.479570Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "github.com",
+      "run_id": "bd3612df-c878-414c-985f-cbaf6cf33489",
+      "completed_at": "2026-10-04T00:05:20.258747Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "globalsign.com",
+      "run_id": "a3906351-e827-4033-ad77-be83f26b30d4",
+      "completed_at": "2026-10-04T00:05:22.587108Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "globo.com",
+      "run_id": "ca2d49dc-096f-433d-9163-6ebd1389c70a",
+      "completed_at": "2026-10-04T00:05:29.594306Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gmail.com",
+      "run_id": "265b6e01-cb33-499a-a411-4cb512e2379a",
+      "completed_at": "2026-10-04T00:05:28.422308Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "google-analytics.com",
+      "run_id": "670d08a5-d714-43de-a421-237e024db292",
+      "completed_at": "2026-10-04T00:05:34.421985Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "google.cn",
+      "run_id": "c1c1660e-bea7-4b47-8580-96a16a140571",
+      "completed_at": "2026-10-04T00:05:34.226752Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "google.com",
+      "run_id": "12bbf919-ae7f-426c-a2ef-3fd560d6637f",
+      "completed_at": "2026-10-04T00:05:44.343827Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "google.com.br",
+      "run_id": "65494fee-e213-406d-9397-e66d4214688f",
+      "completed_at": "2026-10-04T00:05:43.388374Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "google.com.hk",
+      "run_id": "10dab021-a859-4381-a412-a11806a8f313",
+      "completed_at": "2026-10-04T00:05:48.993961Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googleadservices.com",
+      "run_id": "5a8d93cf-15a0-4604-a83f-863be477a171",
+      "completed_at": "2026-10-04T00:05:47.912361Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googleapis.com",
+      "run_id": "8548535b-8013-45e7-b11e-51b97657faa6",
+      "completed_at": "2026-10-04T00:05:48.212172Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googlesyndication.com",
+      "run_id": "3ea86e39-67af-4393-982a-b85b4bbea6dc",
+      "completed_at": "2026-10-04T00:05:51.641155Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googletagmanager.com",
+      "run_id": "ed66be44-f1fc-44a3-8291-31793ac9804c",
+      "completed_at": "2026-10-04T00:05:51.758201Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googleusercontent.com",
+      "run_id": "a44ae37d-11f3-4b6a-b00a-608c9c58c049",
+      "completed_at": "2026-10-04T00:05:52.425569Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "googlevideo.com",
+      "run_id": "0b5bec48-4447-43c0-aeb9-3bfa6c1ce8b3",
+      "completed_at": "2026-10-04T00:05:53.112082Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gotinder.com",
+      "run_id": "f660623d-7ff0-4ab6-9a8d-4ca783f12e32",
+      "completed_at": "2026-10-04T00:05:59.094024Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "grammarly.com",
+      "run_id": "074a395a-94e8-410d-bb44-6d02c1b0c2ce",
+      "completed_at": "2026-10-04T00:05:59.930663Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gstatic.com",
+      "run_id": "0f87c39d-06d1-4b9f-8a6b-a1bba35bd20a",
+      "completed_at": "2026-10-04T00:05:54.693092Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gumgum.com",
+      "run_id": "019bdc54-d83c-4ddb-affa-4442a764f750",
+      "completed_at": "2026-10-04T00:05:59.218415Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gvt1-cn.com",
+      "run_id": "eea5c4cc-907f-4e7d-828e-623e6d57dbcd",
+      "completed_at": "2026-10-04T00:06:02.963610Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hcaptcha.com",
+      "run_id": "15aa3d09-810d-4230-966b-e11148cc7c53",
+      "completed_at": "2026-10-04T00:06:06.778626Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "heytapmobi.com",
+      "run_id": "f058d335-0476-40b4-9f19-f69159dcebba",
+      "completed_at": "2026-10-04T00:06:05.032279Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hihonorcloud.com",
+      "run_id": "e8036644-a994-4faa-b190-f17bc7842274",
+      "completed_at": "2026-10-04T00:06:06.408621Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hotjar.com",
+      "run_id": "ff13367e-5c4b-492e-becd-974f3b82d260",
+      "completed_at": "2026-10-04T00:06:11.570497Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hp.com",
+      "run_id": "e9371061-c4e4-4e09-a545-cfceeb0a2b9e",
+      "completed_at": "2026-10-04T00:06:10.315729Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hubspot.com",
+      "run_id": "4643fa9b-9acc-4cac-8d62-4a20b30006b9",
+      "completed_at": "2026-10-04T00:06:14.367023Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "icanhazip.com",
+      "run_id": "822115f2-08f7-4305-b631-9ea329cb0a0a",
+      "completed_at": "2026-10-04T00:06:14.277906Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "icloud-content.com",
+      "run_id": "f419669a-65e8-428e-adad-8c25903d4b57",
+      "completed_at": "2026-10-04T00:06:16.015850Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "icloud.com",
+      "run_id": "691fb887-f15a-42d3-b4df-d28fc7490140",
+      "completed_at": "2026-10-04T00:06:21.331025Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "inmobi.com",
+      "run_id": "59e6d537-39c2-4a6b-844a-f525c223dc86",
+      "completed_at": "2026-10-04T00:06:22.734246Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "inner-active.mobi",
+      "run_id": "cb49ac41-a122-4b53-9b01-370a50e184e1",
+      "completed_at": "2026-10-04T00:07:06.895689Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "instagram.com",
+      "run_id": "227d4a49-8fe6-4d37-a3ac-d2d403b93196",
+      "completed_at": "2026-10-04T00:06:23.023913Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "intel.com",
+      "run_id": "b9c2b646-8998-493b-807b-ef78a94f43c4",
+      "completed_at": "2026-10-04T00:06:31.016386Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "intercom.io",
+      "run_id": "26a8dc34-260d-4680-8782-72ba61ce4d68",
+      "completed_at": "2026-10-04T00:06:28.382643Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ip-api.com",
+      "run_id": "ab4b65a6-3fdf-449b-8aec-05fd6ad66f58",
+      "completed_at": "2026-10-04T00:06:35.182469Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ipify.org",
+      "run_id": "d7009949-ad4d-4872-8e6d-28ba05e33adc",
+      "completed_at": "2026-10-04T00:06:38.760152Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ipinfo.io",
+      "run_id": "de99f04e-c5b2-4c4c-92c3-6ce7acc95a6e",
+      "completed_at": "2026-10-04T00:06:40.705050Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "jquery.com",
+      "run_id": "98b44308-8ca8-4ba4-9187-7ecf6e94b854",
+      "completed_at": "2026-10-04T00:06:42.447048Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "jsdelivr.net",
+      "run_id": "7b5ecd9f-50d4-4bae-856a-015c6c0d610d",
+      "completed_at": "2026-10-04T00:07:27.020309Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "klaviyo.com",
+      "run_id": "1ef5ef1c-f9ec-4be6-8fb4-2df3114f093b",
+      "completed_at": "2026-10-04T00:06:51.348079Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "kueezrtb.com",
+      "run_id": "3c1c6b5b-dbac-4e45-937d-1852a252e86e",
+      "completed_at": "2026-10-04T00:06:55.881099Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "kwai.com",
+      "run_id": "708e10e3-3f90-4329-8fc7-fe3b95d8d1d7",
+      "completed_at": "2026-10-04T00:07:06.824575Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "kwai.net",
+      "run_id": "8c2546ca-922a-466d-b6c8-b498fa6ca9c7",
+      "completed_at": "2026-10-04T00:07:53.189747Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "launchdarkly.com",
+      "run_id": "25620a5a-a2d5-4525-b3c5-6928fee99124",
+      "completed_at": "2026-10-04T00:07:12.910874Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "leiniao.com",
+      "run_id": "323f8374-8b01-4cd0-a984-b8c6e14c420a",
+      "completed_at": "2026-10-04T00:07:59.490475Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "lge.com",
+      "run_id": "5a7ef6fc-a179-423a-a5e2-7229fc70e43a",
+      "completed_at": "2026-10-04T00:07:42.071575Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "life360.com",
+      "run_id": "c41c74c0-bb5e-4f79-9a8a-9714222b0874",
+      "completed_at": "2026-10-04T00:07:43.731478Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "liftoff.io",
+      "run_id": "a5a78db5-7ce0-4e26-9517-fd5cd1f2579a",
+      "completed_at": "2026-10-04T00:07:45.091869Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "lijit.com",
+      "run_id": "0e4683eb-95f8-4448-8b0c-0fc4fd2bd005",
+      "completed_at": "2026-10-04T00:07:45.535730Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "linkedin.com",
+      "run_id": "320f464c-fa8c-4ea8-9834-f70cf5b1784b",
+      "completed_at": "2026-10-04T00:07:47.258143Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "live-video.net",
+      "run_id": "7b267b24-7aa1-48da-ba1b-c1a52c474e7c",
+      "completed_at": "2026-10-04T00:07:47.843038Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ltwebstatic.com",
+      "run_id": "07979392-aa4d-43f6-b59a-3d3d54821542",
+      "completed_at": "2026-10-04T00:07:57.618502Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mail.ru",
+      "run_id": "0b133092-7ca7-4b46-b287-03f5eda52715",
+      "completed_at": "2026-10-04T00:08:00.557660Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mcafee.com",
+      "run_id": "c1ce5df9-2f19-4b68-ad4f-b7749a9e4d5e",
+      "completed_at": "2026-10-04T00:08:00.482652Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "me.com",
+      "run_id": "7377a061-f339-4c09-a89f-4f6530924476",
+      "completed_at": "2026-10-04T00:08:03.650351Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "media.net",
+      "run_id": "b8b28008-a8aa-48b9-a124-c9b4f2dac5d4",
+      "completed_at": "2026-10-04T00:08:08.289566Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mediatek.com",
+      "run_id": "cb4c4852-5913-415b-ae9e-1e9de63e8a3c",
+      "completed_at": "2026-10-04T00:08:11.551430Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "meethue.com",
+      "run_id": "7048f24e-ca36-4827-9be0-6261f681178f",
+      "completed_at": "2026-10-04T00:08:09.224561Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "meraki.com",
+      "run_id": "dd9b79f1-d1f0-4a60-a2e2-cec47b25198a",
+      "completed_at": "2026-10-04T00:08:09.549404Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "meta.com",
+      "run_id": "85a91781-4be1-4181-85a6-bc4401beff22",
+      "completed_at": "2026-10-04T00:08:17.083460Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mi.com",
+      "run_id": "1a5d009a-4b4f-4031-a890-0088ec1f518f",
+      "completed_at": "2026-10-04T00:08:19.788754Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "microsoft.com",
+      "run_id": "56f48595-26b9-4deb-bf36-6af2ed3a4f3b",
+      "completed_at": "2026-10-04T00:08:19.496046Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mikrotik.com",
+      "run_id": "80a6c311-ef17-46b0-96e2-240dff55d2dd",
+      "completed_at": "2026-10-04T00:08:22.398212Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "miui.com",
+      "run_id": "42edba11-85a6-43b6-a316-3711e3d664fc",
+      "completed_at": "2026-10-04T00:08:26.906829Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "miwifi.com",
+      "run_id": "70c47406-cc3c-4d2c-9919-86a8023245f7",
+      "completed_at": "2026-10-04T00:08:28.738717Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mixpanel.com",
+      "run_id": "ca31ca1b-24f2-4e8d-a796-8476c49e65d6",
+      "completed_at": "2026-10-04T00:08:30.048047Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mmechocaptiveportal.com",
+      "run_id": "9fe305a9-f7ed-440a-b839-273347613b83",
+      "completed_at": "2026-10-04T00:09:13.254577Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "moloco.com",
+      "run_id": "0b0ed67d-49ef-40b5-ba75-7c83e54ab946",
+      "completed_at": "2026-10-04T00:08:36.426597Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mona.co",
+      "run_id": "57a90ab9-d5d7-4947-b202-67a4e902aa61",
+      "completed_at": "2026-10-04T00:09:01.654765Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mozilla.com",
+      "run_id": "cf01cf1b-12df-43e4-806b-92e966d251a5",
+      "completed_at": "2026-10-04T00:08:41.211467Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mozilla.org",
+      "run_id": "cef52d16-0d57-437e-a92d-7c155e48f886",
+      "completed_at": "2026-10-04T00:08:49.102023Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "msedge.net",
+      "run_id": "e6cb1b0b-fa8c-4121-b2f2-d747ad6fea3c",
+      "completed_at": "2026-10-04T00:09:35.430200Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "msn.com",
+      "run_id": "712c5f0a-7bff-4cae-8099-0b91dd39858e",
+      "completed_at": "2026-10-04T00:09:08.614741Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "myshopify.com",
+      "run_id": "72a2731e-ee9a-4ed9-a52b-c196ceb3202b",
+      "completed_at": "2026-10-04T00:09:12.577038Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mzstatic.com",
+      "run_id": "9be6482a-035c-4792-810d-d6e1e24ab67c",
+      "completed_at": "2026-10-04T00:09:16.644811Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "naver.com",
+      "run_id": "35af2b53-a24f-4d33-abd4-e564aa3bf333",
+      "completed_at": "2026-10-04T00:09:18.368661Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netflix.com",
+      "run_id": "eaa1dc85-4660-4308-9f86-e3a7a6fb2762",
+      "completed_at": "2026-10-04T00:09:18.497470Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netflix.net",
+      "run_id": "859a3b3f-eee1-4914-905a-581fe19eae8d",
+      "completed_at": "2026-10-04T00:09:19.648932Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netgear.com",
+      "run_id": "62a45152-1c2d-4f57-ada7-3edbaf1c92ef",
+      "completed_at": "2026-10-04T00:09:26.712606Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "newrelic.com",
+      "run_id": "fdbcceec-e2a8-495b-9930-dbf6e91b597b",
+      "completed_at": "2026-10-04T00:09:25.372380Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nextcloud.com",
+      "run_id": "f2965e07-1a33-4094-91bb-332b575b238b",
+      "completed_at": "2026-10-04T00:09:33.557300Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nflximg.com",
+      "run_id": "3b0293b1-811e-49e7-b395-b33333709dec",
+      "completed_at": "2026-10-04T00:10:13.022747Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nflxvideo.net",
+      "run_id": "b5d11afe-c2db-42b7-9bf0-2586e958cc5e",
+      "completed_at": "2026-10-04T00:09:35.314780Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nist.gov",
+      "run_id": "53a9c115-6601-40fa-8014-56797f154f25",
+      "completed_at": "2026-10-04T00:09:41.876814Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ntp.org",
+      "run_id": "6ab9593d-9f71-4495-b599-bf14b58b8c52",
+      "completed_at": "2026-10-04T00:09:43.835716Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nvidia.com",
+      "run_id": "e49a6006-8882-4c1c-9c0b-c5252aacd688",
+      "completed_at": "2026-10-04T00:09:49.419917Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "office365.com",
+      "run_id": "19e20918-9a84-486c-be21-de78d18d4924",
+      "completed_at": "2026-10-04T00:09:50.240963Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "okcdn.ru",
+      "run_id": "1527a65c-bc3f-4a5c-b3ee-c8a2ca704b08",
+      "completed_at": "2026-10-04T00:09:58.747495Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "one.one",
+      "run_id": "91d59144-1ba0-46ff-8add-1da84dd3e51d",
+      "completed_at": "2026-10-04T00:09:56.424580Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "onesignal.com",
+      "run_id": "2d2d9d36-0354-455f-a0d1-c098e69a492b",
+      "completed_at": "2026-10-04T00:10:04.367324Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "onetag-sys.com",
+      "run_id": "4cb2b477-5f08-4da3-af5c-39a8ad788ef5",
+      "completed_at": "2026-10-04T00:10:04.932966Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "onetrust.com",
+      "run_id": "710bdac0-1797-48f9-aad9-95440b153488",
+      "completed_at": "2026-10-04T00:10:12.280878Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "openai.com",
+      "run_id": "b8e5a9e5-d8b2-4177-8bec-ca1c975d0fe7",
+      "completed_at": "2026-10-04T00:10:08.445507Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "openx.net",
+      "run_id": "53bdeb30-294f-4b2d-8a7f-223cd1abaa62",
+      "completed_at": "2026-10-04T00:10:12.189600Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "opera-api.com",
+      "run_id": "fb771a52-2ba3-451a-8940-cc55c04d1789",
+      "completed_at": "2026-10-04T00:10:58.428183Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "opera.com",
+      "run_id": "56253e95-9a00-481b-9623-21ead6d68d98",
+      "completed_at": "2026-10-04T00:10:20.037926Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "optimizely.com",
+      "run_id": "febf9fec-d4ea-48cf-9d21-56a48f2bb7ed",
+      "completed_at": "2026-10-04T00:10:20.710960Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "oracle.com",
+      "run_id": "34a52a85-e184-4371-9a7e-c23efdb9be99",
+      "completed_at": "2026-10-04T00:10:28.172794Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "oraclecloud.com",
+      "run_id": "29ffd807-d193-4377-bdf4-7f715318951b",
+      "completed_at": "2026-10-04T00:10:24.275609Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "orange.fr",
+      "run_id": "648203a6-f7a0-4471-b5b0-3c034d89e1a9",
+      "completed_at": "2026-10-04T00:10:34.275584Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "outbrain.com",
+      "run_id": "3b4bdf73-886d-4180-807e-5c978c4481e2",
+      "completed_at": "2026-10-04T00:10:28.649227Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "oxylabs.io",
+      "run_id": "17be905b-6449-4127-9e44-81b3ca67fe00",
+      "completed_at": "2026-10-04T00:10:40.165458Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "palmplaystore.com",
+      "run_id": "5b26fdb5-9fa1-4fe4-ac34-d658ced63e62",
+      "completed_at": "2026-10-04T00:10:44.939640Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "paloaltonetworks.com",
+      "run_id": "15014445-b325-4853-8fe9-c975442e8a08",
+      "completed_at": "2026-10-04T00:10:48.018857Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "perplexity.ai",
+      "run_id": "de28b6f3-5087-49d2-936e-0e4f79139c92",
+      "completed_at": "2026-10-04T00:10:52.009795Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pinimg.com",
+      "run_id": "cb53789e-dbfa-4726-a38b-e97e5ed3a7ba",
+      "completed_at": "2026-10-04T00:10:49.677570Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pinterest.com",
+      "run_id": "2aa0b973-4bbd-4116-a19d-efd95b975474",
+      "completed_at": "2026-10-04T00:10:51.978858Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pki.goog",
+      "run_id": "962f346d-fe98-44d4-b0a4-722210aea556",
+      "completed_at": "2026-10-04T00:10:55.576579Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "playstation.com",
+      "run_id": "4d5e54f9-bd3f-4c48-a3cb-790603194b39",
+      "completed_at": "2026-10-04T00:11:27.996137Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "presage.io",
+      "run_id": "cb84913a-8852-4667-86bf-4ee9422e5a80",
+      "completed_at": "2026-10-04T00:10:57.806054Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "prodregistryv2.org",
+      "run_id": "32e03d2d-cdd5-474b-96f3-4733184911df",
+      "completed_at": "2026-10-04T00:11:01.280656Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "publicnode.com",
+      "run_id": "827a0b05-4eb4-4612-bcb8-7c49a0d0f255",
+      "completed_at": "2026-10-04T00:11:02.562329Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pubmatic.com",
+      "run_id": "711bd825-95b4-483f-8789-eca65d992686",
+      "completed_at": "2026-10-04T00:11:02.551942Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "px-cloud.net",
+      "run_id": "4c251082-c9ca-47c6-92bd-f38c3cbdb640",
+      "completed_at": "2026-10-04T00:11:06.182312Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "qq.com",
+      "run_id": "816571fd-8b46-4d52-974b-142d5e435913",
+      "completed_at": "2026-10-04T00:11:12.403606Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "quantserve.com",
+      "run_id": "6264bf63-cb5a-4408-bed5-9f152a499635",
+      "completed_at": "2026-10-04T00:11:06.946870Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "recaptcha.net",
+      "run_id": "be0361c1-5e8d-4279-a470-17f590bf8d47",
+      "completed_at": "2026-10-04T00:11:10.652506Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "reddit.com",
+      "run_id": "1daa5109-615a-405e-b5e8-8e097c43c4d9",
+      "completed_at": "2026-10-04T00:11:12.264876Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ring.com",
+      "run_id": "372c0d79-3e5a-46f8-bb6b-e5d4e824d458",
+      "completed_at": "2026-10-04T00:11:18.357676Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "roblox.com",
+      "run_id": "c69e5faa-f3ac-4b8a-82d5-c577f89d08a1",
+      "completed_at": "2026-10-04T00:11:21.377628Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "roku.com",
+      "run_id": "07523d36-f5b4-447e-a1bf-1048888442c8",
+      "completed_at": "2026-10-04T00:11:26.204269Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "rubiconproject.com",
+      "run_id": "65816d7a-42ec-4ceb-a623-40f91bd4c1f2",
+      "completed_at": "2026-10-04T00:11:26.549005Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "run.app",
+      "run_id": "6c687606-44df-4263-bf87-cb7dc85d7e54",
+      "completed_at": "2026-10-04T00:11:30.174107Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "salthasher.com",
+      "run_id": "fb940f4a-d0e8-4355-8b23-c62327b738f1",
+      "completed_at": "2026-10-04T00:11:27.369481Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "samsung.com",
+      "run_id": "b306cad8-4cd5-4fc7-9f49-4121cfdcf555",
+      "completed_at": "2026-10-04T00:11:36.684626Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "samsungapps.com",
+      "run_id": "ac367706-02ce-4864-9c38-907d766ffeae",
+      "completed_at": "2026-10-04T00:12:15.227705Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "samsungcloud.com",
+      "run_id": "b04559cc-c836-42d0-90a2-f54e700fcf85",
+      "completed_at": "2026-10-04T00:11:37.120637Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "scorecardresearch.com",
+      "run_id": "18d9c0dd-bbae-4fda-8105-a3c01b4c5ca1",
+      "completed_at": "2026-10-04T00:11:43.872723Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "seedtag.com",
+      "run_id": "77f9fbdd-e0f3-4afa-b41a-cc3c205eb657",
+      "completed_at": "2026-10-04T00:11:45.032406Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "sentry.io",
+      "run_id": "3b439853-1834-4ed4-83de-41d65890d0d6",
+      "completed_at": "2026-10-04T00:11:50.466517Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "shalltry.com",
+      "run_id": "98f8df68-d5b9-4bef-bae1-d98d342000d8",
+      "completed_at": "2026-10-04T00:11:46.166425Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "sharepoint.com",
+      "run_id": "c23901cd-dd56-4a68-917e-48e8cc8dba35",
+      "completed_at": "2026-10-04T00:11:49.996233Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "sharethrough.com",
+      "run_id": "0edf22c3-2483-4386-947a-45a3a9ef18e1",
+      "completed_at": "2026-10-04T00:11:51.635800Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "shein.com",
+      "run_id": "fab0742a-1018-45cd-8d69-d38930208989",
+      "completed_at": "2026-10-04T00:11:58.487444Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "shopeemobile.com",
+      "run_id": "54fdad44-f624-425e-a596-93947b8381e6",
+      "completed_at": "2026-10-04T00:12:37.882753Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "shopify.com",
+      "run_id": "9225aa6d-3a59-430a-a5f3-9a2704c2afc0",
+      "completed_at": "2026-10-04T00:12:05.935987Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "singular.net",
+      "run_id": "ff96d30d-2dd1-4852-b426-4f5f4fca9cf1",
+      "completed_at": "2026-10-04T00:12:06.801303Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "slack.com",
+      "run_id": "9b3304ca-d90b-4c8f-8a77-b550130bd005",
+      "completed_at": "2026-10-04T00:12:18.247094Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "smartthings.com",
+      "run_id": "626f787c-6d2e-4033-9fbb-baa1ed3018da",
+      "completed_at": "2026-10-04T00:12:24.998163Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "smilewanted.com",
+      "run_id": "bf3aec3d-abe5-46e2-b5a6-e88a7731a734",
+      "completed_at": "2026-10-04T00:12:26.805423Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "snapchat.com",
+      "run_id": "ad80d82e-d0e9-4297-8ae2-2ec7b49d9c48",
+      "completed_at": "2026-10-04T00:12:32.103982Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "spamhaus.org",
+      "run_id": "f576afbd-ff01-4dd2-8c97-85de2fe98905",
+      "completed_at": "2026-10-04T00:12:34.696212Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "speedtest.net",
+      "run_id": "0c0ea313-01b5-4146-bbe9-a7b2bd16ce8f",
+      "completed_at": "2026-10-04T00:12:39.820764Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "spotify.com",
+      "run_id": "ab46cfef-3855-4b5a-8b94-235fac077147",
+      "completed_at": "2026-10-04T00:12:42.309701Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "stackadapt.com",
+      "run_id": "a05656c1-5309-4369-b239-83fb78540ed4",
+      "completed_at": "2026-10-04T00:12:45.810090Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "starlink.com",
+      "run_id": "90a36ae3-0c91-4bb7-bbec-06959a28d8a5",
+      "completed_at": "2026-10-04T00:12:40.675661Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "statsigapi.net",
+      "run_id": "8b7acdce-b64d-4f30-80bd-9d7f74c2ddec",
+      "completed_at": "2026-10-04T00:12:41.139413Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "steamcommunity.com",
+      "run_id": "41730e88-c4cd-497b-971b-8a9b0d5bd07a",
+      "completed_at": "2026-10-04T00:12:46.992044Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "steampowered.com",
+      "run_id": "68df03dc-3472-4a43-a476-996daee8fe6b",
+      "completed_at": "2026-10-04T00:12:50.174780Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "stripe.com",
+      "run_id": "6b973afd-bce8-4cf9-a517-e9a5f43e94cd",
+      "completed_at": "2026-10-04T00:12:51.843941Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "supercell.com",
+      "run_id": "a5839499-b8ae-483d-86b4-e2880a5b97dd",
+      "completed_at": "2026-10-04T00:12:53.735790Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "synology.com",
+      "run_id": "6e050884-86af-4e86-b75a-508ebbbe4281",
+      "completed_at": "2026-10-04T00:12:59.044830Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "taboola.com",
+      "run_id": "c0292a9d-1a63-4541-8eb0-0c0e17dffa38",
+      "completed_at": "2026-10-04T00:12:52.380859Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tailscale.com",
+      "run_id": "b379120d-7b0d-4607-9455-121222b7298b",
+      "completed_at": "2026-10-04T00:12:58.009122Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "taobao.com",
+      "run_id": "603605ac-8b57-444c-84ae-2c42ef02e6a2",
+      "completed_at": "2026-10-04T00:13:04.201475Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tbcache.com",
+      "run_id": "0a41b1f5-202c-45e0-b569-c3483220f92f",
+      "completed_at": "2026-10-04T00:13:44.614726Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "teads.tv",
+      "run_id": "8faa0abf-b7a6-4801-8cb5-ca7f2bcb5de2",
+      "completed_at": "2026-10-04T00:13:07.539471Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "teamviewer.com",
+      "run_id": "bb4a3712-ce37-47c2-b447-219b584d00d7",
+      "completed_at": "2026-10-04T00:13:12.841188Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "telegram.org",
+      "run_id": "a9c31de1-50eb-45ee-a0fb-459a870a60c0",
+      "completed_at": "2026-10-04T00:13:12.336375Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "telephony.goog",
+      "run_id": "21c03f91-9891-40b8-92f7-627da9c1e061",
+      "completed_at": "2026-10-04T00:13:34.401492Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "temu.com",
+      "run_id": "58a9ea43-8cad-4013-b7b7-6dfb559cf104",
+      "completed_at": "2026-10-04T00:13:20.460346Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tiktok.com",
+      "run_id": "892e607f-9f47-4258-a597-2702a2540cb5",
+      "completed_at": "2026-10-04T00:13:28.581952Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tiktokglobalshopv.com",
+      "run_id": "e0a9abe5-dd1b-4630-b913-2c101a548155",
+      "completed_at": "2026-10-04T00:13:32.340726Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tiktokv.com",
+      "run_id": "a98d74d4-e5fb-441c-a0c4-08edf1116ed2",
+      "completed_at": "2026-10-04T00:13:36.734782Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tp-link.com",
+      "run_id": "fdd1b8a9-76b6-4707-9ff4-3f19f1e2f0b2",
+      "completed_at": "2026-10-04T00:13:42.527447Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tradingview.com",
+      "run_id": "c5e954a3-cb0b-4525-afe3-755cca4c733a",
+      "completed_at": "2026-10-04T00:13:50.300210Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tradplusad.com",
+      "run_id": "bc508802-0729-48ee-bd3f-fdf717c05a49",
+      "completed_at": "2026-10-04T00:13:50.702264Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "translate.goog",
+      "run_id": "8d434eae-be02-4a5e-8925-4fe69fd43ead",
+      "completed_at": "2026-10-04T00:13:48.794485Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "trendmicro.com",
+      "run_id": "a693c728-a1f6-457f-ac65-ace3de2dbab7",
+      "completed_at": "2026-10-04T00:13:56.917878Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tsyndicate.com",
+      "run_id": "d33ab6a3-5a40-44bd-8355-8232157e8f96",
+      "completed_at": "2026-10-04T00:13:54.104937Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "twc.com",
+      "run_id": "67bb7a96-02a7-4296-b345-61a5a63f072b",
+      "completed_at": "2026-10-04T00:13:53.670904Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "twitch.tv",
+      "run_id": "cc503a03-b15d-4775-9d04-29ac9f81a0b5",
+      "completed_at": "2026-10-04T00:14:00.632065Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "twitter.com",
+      "run_id": "5a9ed168-5f91-4ae8-8b77-c300e281d8f6",
+      "completed_at": "2026-10-04T00:13:54.494674Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "typekit.net",
+      "run_id": "09ebdf85-7a2e-455e-8436-235533daac16",
+      "completed_at": "2026-10-04T00:14:40.773503Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ubuntu.com",
+      "run_id": "b47fe821-b66c-47a6-9843-80b305a76817",
+      "completed_at": "2026-10-04T00:14:02.252357Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ueiwsp.com",
+      "run_id": "0a3ee6aa-1131-48df-b7fd-456b27dadcfb",
+      "completed_at": "2026-10-04T00:14:01.041716Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ui.com",
+      "run_id": "72b009a6-5ee8-4d04-a44a-2c19cb9709b2",
+      "completed_at": "2026-10-04T00:14:06.153570Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "unity3d.com",
+      "run_id": "9ddbeb45-16c8-4c70-bec8-b12e4c397047",
+      "completed_at": "2026-10-04T00:15:16.795391Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "unpkg.com",
+      "run_id": "84b87377-9a07-411d-80bd-8589cbae7d8f",
+      "completed_at": "2026-10-04T00:14:11.638058Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "unrulymedia.com",
+      "run_id": "8381588d-116e-409f-8fad-203ff12b07a0",
+      "completed_at": "2026-10-04T00:14:15.176208Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "userapi.com",
+      "run_id": "8617b6d3-0527-4fcc-8c5d-65d9147f85b7",
+      "completed_at": "2026-10-04T00:14:24.874547Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "usercentrics.eu",
+      "run_id": "fdeedbfc-792b-4144-a01a-63dff397eed0",
+      "completed_at": "2026-10-04T00:14:32.956677Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "usercontent.goog",
+      "run_id": "c7b3b8aa-aaf7-4a16-8399-acbb72d11483",
+      "completed_at": "2026-10-04T00:14:36.623690Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "verisign.com",
+      "run_id": "97f1bea2-23cc-4684-a2a3-18fbdcd80387",
+      "completed_at": "2026-10-04T00:14:44.480894Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "visualstudio.com",
+      "run_id": "28bb409d-6c7b-42c0-a41f-17b0d0230e46",
+      "completed_at": "2026-10-04T00:14:49.549602Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vivo.com.cn",
+      "run_id": "75c50c5e-5bd7-4713-84a0-ae3010e77318",
+      "completed_at": "2026-10-04T00:14:59.344432Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vivoglobal.com",
+      "run_id": "dd662ea5-b745-4034-8e0b-3844bc9d04ac",
+      "completed_at": "2026-10-04T00:14:55.326426Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vk.com",
+      "run_id": "d535d803-e1b4-436e-b903-217e5a0f1576",
+      "completed_at": "2026-10-04T00:15:01.237881Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vk.ru",
+      "run_id": "ba72ab58-60f3-44d1-a97a-4854479d8ec4",
+      "completed_at": "2026-10-04T00:15:08.412997Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vkuserphoto.ru",
+      "run_id": "9ecd6952-87d5-40d3-a7f8-613825275ba8",
+      "completed_at": "2026-10-04T00:15:05.317085Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vungle.com",
+      "run_id": "e09c922c-304d-4a60-8020-18c6d60dbcfc",
+      "completed_at": "2026-10-04T00:15:05.944157Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "weather.com",
+      "run_id": "fd3c85ac-b212-4489-a550-70b7eab44aa3",
+      "completed_at": "2026-10-04T00:15:06.556486Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "webex.com",
+      "run_id": "cb710dc7-8418-4758-aa8e-08ea5fa3d513",
+      "completed_at": "2026-10-04T00:15:08.281185Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "whatsapp.com",
+      "run_id": "153f5c8c-5ff0-460b-8d7c-c7ace8c349ee",
+      "completed_at": "2026-10-04T00:15:20.686470Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "whatsapp.net",
+      "run_id": "b83a5db6-0954-4c61-b160-4104dd1c354f",
+      "completed_at": "2026-10-04T00:15:18.141101Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "wikimedia.org",
+      "run_id": "24e8e078-cc4f-43f4-bdd7-c54174f8a76b",
+      "completed_at": "2026-10-04T00:15:24.441211Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "wikipedia.org",
+      "run_id": "c47d6bda-a918-45d5-9ad9-4e3f67dc7490",
+      "completed_at": "2026-10-04T00:15:25.670178Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "windows.net",
+      "run_id": "e4dbf85d-34ff-40f1-9f96-4bbbe8a1f2a5",
+      "completed_at": "2026-10-04T00:15:26.568774Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "withgoogle.com",
+      "run_id": "555cd618-fdac-4a00-a748-df9f04fd3da1",
+      "completed_at": "2026-10-04T00:15:29.721572Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "wps.com",
+      "run_id": "8a25bf4c-644a-48fc-923f-641e488a6bfd",
+      "completed_at": "2026-10-04T00:15:36.766287Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "wyzecam.com",
+      "run_id": "6a47ae0e-1532-4c69-aa2a-45151f7d22d6",
+      "completed_at": "2026-10-04T00:15:35.204519Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "x.com",
+      "run_id": "a45cfb07-e749-4d83-b887-3d657f3ead2f",
+      "completed_at": "2026-10-04T00:15:32.250950Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xboxlive.com",
+      "run_id": "8bdb1b4e-fa74-411b-8064-b385d9d33958",
+      "completed_at": "2026-10-04T00:15:35.036319Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xhcdn.com",
+      "run_id": "5093a0d5-7c6c-43ac-93a4-0f23e14c4684",
+      "completed_at": "2026-10-04T00:15:35.867316Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xiaomi.com",
+      "run_id": "9a58a5a5-06e3-47dd-bdde-810c717f328e",
+      "completed_at": "2026-10-04T00:15:44.446501Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xiaomi.net",
+      "run_id": "2fd924c6-2353-4a5c-9ca7-bd61533fb8f6",
+      "completed_at": "2026-10-04T00:15:38.946020Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yahoo.com",
+      "run_id": "02c9fd47-416a-443d-9565-73b7e0b11ba9",
+      "completed_at": "2026-10-04T00:15:43.525456Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yandex.com",
+      "run_id": "1c27a039-7a71-4bee-a0a4-e74d69dd45da",
+      "completed_at": "2026-10-04T00:15:44.535477Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yandex.ru",
+      "run_id": "335db7f0-ae29-468b-ac8c-840e75d7e242",
+      "completed_at": "2026-10-04T00:16:06.632227Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yastatic.net",
+      "run_id": "b3a418f2-7726-4ca0-a503-c2384e83ee5b",
+      "completed_at": "2026-10-04T00:15:51.089928Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yieldmo.com",
+      "run_id": "14463fe4-f506-47cd-96ba-1df8a479bcf8",
+      "completed_at": "2026-10-04T00:15:55.780139Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "youtube.com",
+      "run_id": "68d1e72b-294b-47dd-8c8b-d9b3ebf64922",
+      "completed_at": "2026-10-04T00:15:57.550531Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "zoom.us",
+      "run_id": "43ae52ed-42c5-4da9-8f92-22b4abcd647a",
+      "completed_at": "2026-10-04T00:16:01.662740Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "browser collection is disabled",
+        "evidence": []
+      }
+    }
+  ]
+}

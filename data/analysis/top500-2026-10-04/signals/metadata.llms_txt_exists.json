@@ -1,0 +1,4343 @@
+{
+  "signal": "metadata.llms_txt_exists",
+  "group": "Metadata",
+  "domain_count": 240,
+  "domains": [
+    {
+      "domain": "33across.com",
+      "run_id": "14d98fac-5480-4439-9bf7-a2b3a7b0ea13",
+      "completed_at": "2026-10-04T00:00:32.144522Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "3lift.com",
+      "run_id": "3ca59b38-5590-4c75-8fc6-420d71e923c4",
+      "completed_at": "2026-10-04T00:00:32.790913Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "a-mo.net",
+      "run_id": "efd73c09-1af8-441f-a8fe-19e1266c0161",
+      "completed_at": "2026-10-04T00:00:33.452439Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adblockplus.org",
+      "run_id": "d2c301df-fe1e-454b-aa5a-6ce52d739571",
+      "completed_at": "2026-10-04T00:00:39.557436Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://adblockplus.org/llms.txt",
+            "observed_at": "2026-10-04T00:00:39.470558Z",
+            "http_status": 404,
+            "content_sha256": "a469ab4ca4e55bf547566e9ebfa1b809c933207e9d558156bc0c4252b17533fe",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "adform.net",
+      "run_id": "387d4b02-d25d-497f-b193-a749514a8fef",
+      "completed_at": "2026-10-04T00:00:37.792087Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adjust.com",
+      "run_id": "5a6765da-580c-4f79-bc58-dedee5b08eaf",
+      "completed_at": "2026-10-04T00:00:40.387054Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adnxs.com",
+      "run_id": "3b9faf68-56c8-4f1f-9195-1384a1daa3d2",
+      "completed_at": "2026-10-04T00:00:43.263109Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://adnxs.com/llms.txt",
+            "observed_at": "2026-10-04T00:00:43.217831Z",
+            "http_status": 404,
+            "content_sha256": "aa7f41d067fa6df8c37c71cbb1a6c7f2baa2f70697943313beaa382b8e24181c",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "adobe.com",
+      "run_id": "bdcf110b-ba86-4b93-a706-a318c83f8d9c",
+      "completed_at": "2026-10-04T00:00:49.405478Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.adobe.com/llms.txt",
+            "observed_at": "2026-10-04T00:00:49.123758Z",
+            "http_status": 200,
+            "content_sha256": "811353cb603ff604ecd257b7e24643f1c7e157837015221a951d9d2db0c494d8",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "adsafeprotected.com",
+      "run_id": "58976c61-f8d0-4111-afda-8dc951ae5446",
+      "completed_at": "2026-10-04T00:00:50.686471Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://adsafeprotected.com/skeleton.gif",
+            "observed_at": "2026-10-04T00:00:50.656146Z",
+            "http_status": 200,
+            "content_sha256": "42b976597a2d977d0e300f6d06bc903db389e5c112d33c1c8c249690a522d9f2",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "adsrvr.org",
+      "run_id": "19882392-b701-4d44-b3cd-87e9a46d91d9",
+      "completed_at": "2026-10-04T00:00:50.107472Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "adtrafficquality.google",
+      "run_id": "9de006bc-0d24-4c36-8aef-aee552560ac1",
+      "completed_at": "2026-10-04T00:00:55.192775Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://adtrafficquality.google/llms.txt",
+            "observed_at": "2026-10-04T00:00:55.060259Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "alicdn.com",
+      "run_id": "424663b5-ca7f-46fc-bd42-1c695bc4dbe5",
+      "completed_at": "2026-10-04T00:01:37.191595Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "aliyuncs.com",
+      "run_id": "90df490b-fa88-4b54-8f0e-0143d717caf8",
+      "completed_at": "2026-10-04T00:01:05.239813Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://aliyuncs.com/llms.txt",
+            "observed_at": "2026-10-04T00:01:05.002964Z",
+            "http_status": 404,
+            "content_sha256": "294aa3acaf5b2052f1a1f5c534ec76bdbfe167b7479e11dae034b6404efa4069",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "alphonso.tv",
+      "run_id": "dc22871c-06f2-4c4a-ba18-a0c10a19d8fd",
+      "completed_at": "2026-10-04T00:01:11.952754Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://alphonso.tv/llms.txt",
+            "observed_at": "2026-10-04T00:01:11.507889Z",
+            "http_status": 404,
+            "content_sha256": "a8b004caae11cbe2766baddae1bede580ca54df4fe97fa8690bcbb13ba50442e",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "amazon-adsystem.com",
+      "run_id": "1679807f-b18b-4af8-ae1c-883e416cda97",
+      "completed_at": "2026-10-04T00:01:23.663016Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "amazon.com",
+      "run_id": "7d797495-58fd-4b16-ad4c-fa543370a3cc",
+      "completed_at": "2026-10-04T00:01:25.139730Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.amazon.com/llms.txt",
+            "observed_at": "2026-10-04T00:01:24.990435Z",
+            "http_status": 404,
+            "content_sha256": "34c92fb4c6351b94e5cc16f68bb483b0fcda57ee7c43887214005b87d1888d3a",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "amazontrust.com",
+      "run_id": "ef86e636-f6f1-4b0b-90be-b9c70adea464",
+      "completed_at": "2026-10-04T00:02:08.000568Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://amazontrust.com/llms.txt",
+            "observed_at": "2026-10-04T00:02:08.000262Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "amplitude.com",
+      "run_id": "b52e7dd0-25b2-4902-b185-3dc5ba522c0b",
+      "completed_at": "2026-10-04T00:01:45.798112Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://amplitude.com/llms.txt",
+            "observed_at": "2026-10-04T00:01:45.504592Z",
+            "http_status": 200,
+            "content_sha256": "f7590982c051736ca1cdfaef6f6a88c2fdb95f50afc5e623e6388add045d6461",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "android.com",
+      "run_id": "aded0015-16ef-4c70-b20a-21891d764520",
+      "completed_at": "2026-10-04T00:01:55.045955Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.android.com/llms.txt",
+            "observed_at": "2026-10-04T00:01:54.975469Z",
+            "http_status": 404,
+            "content_sha256": "994c4957c2e1e17e63da543e320df4c9aeac598a7c7393a0f67c46d7dcbbf52f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "anydesk.com",
+      "run_id": "1810a383-7825-49d5-b8d7-14eca1f20531",
+      "completed_at": "2026-10-04T00:01:55.756279Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "app-ads-services.com",
+      "run_id": "40807daa-4b3b-4de6-8b13-411a93cd54db",
+      "completed_at": "2026-10-04T00:01:58.573034Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://app-ads-services.com/llms.txt",
+            "observed_at": "2026-10-04T00:01:58.541666Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "app-analytics-services-att.com",
+      "run_id": "e1f1618c-1ec0-4610-ba7d-ef3e2b9248e3",
+      "completed_at": "2026-10-04T00:02:02.160987Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://app-analytics-services-att.com/llms.txt",
+            "observed_at": "2026-10-04T00:02:02.020926Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "app-analytics-services.com",
+      "run_id": "eaa04e7c-f4d1-4412-b83d-5743fb384d3b",
+      "completed_at": "2026-10-04T00:02:03.758094Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://app-analytics-services.com/llms.txt",
+            "observed_at": "2026-10-04T00:02:03.626540Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "app-measurement.com",
+      "run_id": "865ebe97-7ab5-4890-9aaa-2d535fc0f9e3",
+      "completed_at": "2026-10-04T00:02:05.837011Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://app-measurement.com/llms.txt",
+            "observed_at": "2026-10-04T00:02:05.606590Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "appcenter.ms",
+      "run_id": "471ede8e-5b84-4f03-a427-87181c833ecf",
+      "completed_at": "2026-10-04T00:02:08.255466Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://appcenter.ms/llms.txt",
+            "observed_at": "2026-10-04T00:02:08.203815Z",
+            "http_status": 404,
+            "content_sha256": "a3e8ff7e011ee28df6cd5e38acd91de27d83d346a5b21153cf0f789757613955",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "appsflyersdk.com",
+      "run_id": "a0623eec-c93c-42dc-ba35-cfd734a21764",
+      "completed_at": "2026-10-04T00:02:14.468856Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "autodesk.com",
+      "run_id": "5067f409-db10-41b8-aa4a-9abb4b81268b",
+      "completed_at": "2026-10-04T00:02:16.001273Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "avsxappcaptiveportal.com",
+      "run_id": "2a92b1b5-a102-472f-974f-1e642154886f",
+      "completed_at": "2026-10-04T00:03:02.175748Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "baidu.com",
+      "run_id": "5cffdb59-5ee8-4fcc-ac93-bb7d739b71fc",
+      "completed_at": "2026-10-04T00:02:26.711478Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "beyondwickedmapping.org",
+      "run_id": "c19245af-8d8f-4dce-9171-a04b4a7dcd31",
+      "completed_at": "2026-10-04T00:02:30.230286Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://beyondwickedmapping.org/llms.txt",
+            "observed_at": "2026-10-04T00:02:30.181450Z",
+            "http_status": 404,
+            "content_sha256": "4ff444d1abe117bbe3055e97182351923ce4db715959b733900bb28f72fa0e29",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "binance.com",
+      "run_id": "965a9097-4041-47c0-9b8a-533a73b7a507",
+      "completed_at": "2026-10-04T00:02:37.500615Z",
+      "observation": {
+        "value": null,
+        "outcome": "no_evidence",
+        "confidence": "no_evidence",
+        "confidence_score": 0.0,
+        "method": "llms.txt returned an inconclusive status",
+        "evidence": [
+          {
+            "source_url": "https://www.binance.com/llms.txt",
+            "observed_at": "2026-10-04T00:02:37.462643Z",
+            "http_status": 202,
+            "content_sha256": "29c30b9bd9b0f5270e8a9c93214ab8fa93e61b79733e198b5aa09e532b223fef",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "bing.com",
+      "run_id": "ec7bd2be-179f-4869-a9fe-4ca1955609d8",
+      "completed_at": "2026-10-04T00:02:44.268872Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.bing.com/llms.txt?toWww=1&redig=62C97269887B45C1B6052B18BA16B24B",
+            "observed_at": "2026-10-04T00:02:44.180145Z",
+            "http_status": 404,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "brave.com",
+      "run_id": "81fe75b0-4f10-4a2d-8079-e2185de3bdc5",
+      "completed_at": "2026-10-04T00:02:57.079469Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://brave.com/llms.txt/",
+            "observed_at": "2026-10-04T00:02:56.882384Z",
+            "http_status": 404,
+            "content_sha256": "c257a36262b759b69834275908f710a16795e01878c5ac0a348e79685dd54f4c",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "braze.com",
+      "run_id": "96a95ed4-be3e-4b35-bb53-6447e45a1cdd",
+      "completed_at": "2026-10-04T00:03:02.972533Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://braze.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:02.855392Z",
+            "http_status": 200,
+            "content_sha256": "25657f7d0b20d6a988ab9a10005f63f4404b25438b972b826e844124798bb99a",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "browser-intake-datadoghq.com",
+      "run_id": "cdc33fc2-4308-492e-8947-f404eb8045ef",
+      "completed_at": "2026-10-04T00:02:57.545476Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "btloader.com",
+      "run_id": "4c33cc4b-02d2-4287-9c94-324c0460a3e9",
+      "completed_at": "2026-10-04T00:02:57.908110Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "canva.com",
+      "run_id": "85f0d7a9-7879-4e6e-8cd5-3e2a1fc9cdd3",
+      "completed_at": "2026-10-04T00:03:09.597086Z",
+      "observation": {
+        "value": null,
+        "outcome": "no_evidence",
+        "confidence": "no_evidence",
+        "confidence_score": 0.0,
+        "method": "llms.txt returned an inconclusive status",
+        "evidence": [
+          {
+            "source_url": "https://www.canva.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:09.317756Z",
+            "http_status": 403,
+            "content_sha256": "1455f3f5448bc089081b9ac0a71cd5214b4741f61dfa8d1fc6e27c2d57d2331f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "chatgpt.com",
+      "run_id": "ad78c7a0-d517-45b8-8bc8-5450aa1171d0",
+      "completed_at": "2026-10-04T00:03:12.217511Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "checkpoint.com",
+      "run_id": "2f342ec7-3b0e-42a8-992e-2053ea58dc78",
+      "completed_at": "2026-10-04T00:03:20.874246Z",
+      "observation": {
+        "value": null,
+        "outcome": "no_evidence",
+        "confidence": "no_evidence",
+        "confidence_score": 0.0,
+        "method": "llms.txt returned an inconclusive status",
+        "evidence": [
+          {
+            "source_url": "https://checkpoint.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:20.823439Z",
+            "http_status": 202,
+            "content_sha256": "2f805a90aad9c9da45763a68fd5b9d72793297a98542a13a7dc5ce51c04a3ed1",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cisco.com",
+      "run_id": "c7d2a4e5-333b-4df4-aa01-3f68e8f07045",
+      "completed_at": "2026-10-04T00:03:18.830468Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.cisco.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:18.718590Z",
+            "http_status": 200,
+            "content_sha256": "e47eb32547c6fb01757bfbdc9d99ec33516b91cb99284f1c56540b4651021545",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "clarity.ms",
+      "run_id": "438109e7-5920-43c1-a04f-bf93d27c2094",
+      "completed_at": "2026-10-04T00:03:29.113979Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "claude.ai",
+      "run_id": "cb77fec4-5f98-4695-8687-36d1b359790f",
+      "completed_at": "2026-10-04T00:03:22.347604Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://claude.ai/llms.txt",
+            "observed_at": "2026-10-04T00:03:22.272108Z",
+            "http_status": 200,
+            "content_sha256": "4c615ca5cac2bb8f9ee9ccd81db08ab9676527a2ae3dadc880fa8140d1928b7c",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cloud.microsoft",
+      "run_id": "ff29932c-c63b-4c21-8d27-b8870ceeb8bf",
+      "completed_at": "2026-10-04T00:03:28.924616Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://m365.cloud.microsoft/",
+            "observed_at": "2026-10-04T00:03:28.826091Z",
+            "http_status": 200,
+            "content_sha256": "48d73368e9a41dc3ea45ba16ed1268435a92059af7163b19073810f80fd9d866",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cloudflare-dns.com",
+      "run_id": "c69924c0-ef97-4712-b458-2a7477758934",
+      "completed_at": "2026-10-04T00:03:26.143647Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://one.one.one.one/llms.txt",
+            "observed_at": "2026-10-04T00:03:26.073507Z",
+            "http_status": 404,
+            "content_sha256": "8017fa1f7764a80571cc0a99c7dbdfaa33dad3ec31f19239d56d38b0a6f421fe",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cloudflare.com",
+      "run_id": "aac29e6d-b820-4bd1-a297-963f93922fd1",
+      "completed_at": "2026-10-04T00:03:33.679767Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.cloudflare.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:33.587531Z",
+            "http_status": 200,
+            "content_sha256": "009fbbf1e6525b66978a9fe7a301c483541cf9f6b3d32511f5c1305df358d5e4",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cloudflare.net",
+      "run_id": "48e784af-7877-497a-8d6d-13d26f5e9b73",
+      "completed_at": "2026-10-04T00:03:29.821961Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://cloudflare.net/llms.txt",
+            "observed_at": "2026-10-04T00:03:29.821558Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "cloudflareinsights.com",
+      "run_id": "7768d15a-6282-43a9-8ddc-be8ce5bafca9",
+      "completed_at": "2026-10-04T00:03:32.555456Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://cloudflareinsights.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:32.516478Z",
+            "http_status": 200,
+            "content_sha256": "508d8607891d71e7d33fbec82b11d5aa16817122d5a93673a92ae411bf18d4d7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "comcast.net",
+      "run_id": "45eb868b-ad32-4dfe-a733-cf7dae4573ba",
+      "completed_at": "2026-10-04T00:03:31.956930Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cookielaw.org",
+      "run_id": "e7be7299-7abf-4f5b-ae2b-0f2d7a2926f7",
+      "completed_at": "2026-10-04T00:03:33.726274Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cootlogix.com",
+      "run_id": "30afcaf4-e208-43bb-8922-a5b7fc20512e",
+      "completed_at": "2026-10-04T00:03:36.259731Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://cootlogix.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:36.119359Z",
+            "http_status": 404,
+            "content_sha256": "2be2835b83cf00f5145e190a89e9843d8d6f965b3812d46fac023a28c002059b",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "creativecdn.com",
+      "run_id": "9d94b788-f0bc-413a-9cb9-f9eeff506098",
+      "completed_at": "2026-10-04T00:03:34.544765Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "criteo.com",
+      "run_id": "763fe045-1d09-492a-a421-f28f519f3c98",
+      "completed_at": "2026-10-04T00:03:42.948311Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.criteo.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:42.298355Z",
+            "http_status": 404,
+            "content_sha256": "5a86c47ca14c97cff60c068088a61c2a505c6fb9398cc72709036a51365a913a",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "crwdcntrl.net",
+      "run_id": "b50504c6-238c-4c9d-a08e-be26e3c41f5e",
+      "completed_at": "2026-10-04T00:04:22.842358Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "cspserver.net",
+      "run_id": "f6f4dc2d-185b-4c40-bbab-bd6e0a36278d",
+      "completed_at": "2026-10-04T00:03:43.461006Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://cspserver.net/llms.txt",
+            "observed_at": "2026-10-04T00:03:43.343500Z",
+            "http_status": 404,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "digicert.com",
+      "run_id": "6e99eacc-8f0a-47c4-b71e-f7dd43e4c2e6",
+      "completed_at": "2026-10-04T00:03:58.403087Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.digicert.com/llms.txt",
+            "observed_at": "2026-10-04T00:03:57.894344Z",
+            "http_status": 200,
+            "content_sha256": "02169ec84a351a1d16d7d35ae9186f3edaa67dc827c2a7b55f9cea8f32abd439",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "discord.com",
+      "run_id": "11c5183f-2cba-4667-9074-1673d984e164",
+      "completed_at": "2026-10-04T00:04:04.899735Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://discord.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:04.794934Z",
+            "http_status": 404,
+            "content_sha256": "3393eaebb63a02eadcc4f9e2f300314c8253d53d3b6a104560ee1d24ab82d4c6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "dns.google",
+      "run_id": "83958873-6d30-4632-b678-f5a0e2d3e3c5",
+      "completed_at": "2026-10-04T00:04:08.623057Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://dns.google/llms.txt",
+            "observed_at": "2026-10-04T00:04:08.584224Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "doubleclick.net",
+      "run_id": "494e89e1-5833-49a2-904d-d7cc11e9b5c2",
+      "completed_at": "2026-10-04T00:04:17.008975Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://doubleclick.net/llms.txt",
+            "observed_at": "2026-10-04T00:04:16.978662Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "doubleverify.com",
+      "run_id": "8d65a73b-74b3-48e7-bfe8-d3363305675b",
+      "completed_at": "2026-10-04T00:04:18.773585Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://doubleverify.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:18.684862Z",
+            "http_status": 404,
+            "content_sha256": "ad3e21fe6acfe7a2dd225282034636bcf111c768d784eb1e271a7397abd315be",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "duckduckgo.com",
+      "run_id": "76101313-8b30-44e1-b235-8c0d9b428460",
+      "completed_at": "2026-10-04T00:04:27.263072Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://duckduckgo.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:27.173972Z",
+            "http_status": 200,
+            "content_sha256": "d329c0a67a76beb3f34c91e3699147f7cbbb7898275d895d467d9d4e2ffe8c3c",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "duolingo.com",
+      "run_id": "20840fe0-881a-4bd1-9d1c-48eeb3a19f97",
+      "completed_at": "2026-10-04T00:04:31.696131Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.duolingo.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:31.623279Z",
+            "http_status": 200,
+            "content_sha256": "ab5e72c3e24b960e206b8602895f3b6db756110d81e80828bb0c494df45c073d",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "dv.tech",
+      "run_id": "92589835-efae-4fb2-b1ce-15b4cc28605a",
+      "completed_at": "2026-10-04T00:04:27.535817Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "dynatrace.com",
+      "run_id": "5ac760b9-6959-4bfd-bf72-92a51b1adc4b",
+      "completed_at": "2026-10-04T00:04:35.886118Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.dynatrace.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:34.736858Z",
+            "http_status": 200,
+            "content_sha256": "79355f40b0a12abeb991d19f7bd0926b6abf181c853c49eee8c47f4db4d891a5",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "epicgames.com",
+      "run_id": "32691fec-b285-403b-b97f-3e125deb77c7",
+      "completed_at": "2026-10-04T00:04:39.392326Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "epicgames.dev",
+      "run_id": "2e30e7b6-aa60-4469-937a-d098860e5b84",
+      "completed_at": "2026-10-04T00:04:38.459592Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "eu-1-id5-sync.com",
+      "run_id": "6859bfde-0f79-4afc-a030-a340bcb79966",
+      "completed_at": "2026-10-04T00:05:11.205008Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "example.com",
+      "run_id": "e0158604-61a2-441f-ba6a-d378ba6191a5",
+      "completed_at": "2026-10-04T00:04:45.711829Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://example.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:45.670550Z",
+            "http_status": 404,
+            "content_sha256": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "eye4.cn",
+      "run_id": "eebe0a79-778b-4d77-a890-442f5503c449",
+      "completed_at": "2026-10-04T00:04:48.511895Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "facebook.com",
+      "run_id": "beb40141-492d-404e-96b2-ddfe20604f13",
+      "completed_at": "2026-10-04T00:04:47.582360Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fast.com",
+      "run_id": "d2758a87-bb23-4901-8772-452c5071d3fe",
+      "completed_at": "2026-10-04T00:04:51.745726Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://fast.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:51.389419Z",
+            "http_status": 200,
+            "content_sha256": "b6471f8ddc8d98c81679220c67a7971b2fbc42d35e09ef8c9ad3f464eaac305e",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "fbcdn.net",
+      "run_id": "2c57e168-6807-4b15-adb3-12fb711a310f",
+      "completed_at": "2026-10-04T00:04:52.189184Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "fbsbx.com",
+      "run_id": "0a581b80-077e-4ce4-9c60-53117555ecc6",
+      "completed_at": "2026-10-04T00:04:55.721971Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://fbsbx.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:55.655913Z",
+            "http_status": 404,
+            "content_sha256": "5a5e6fcc42e2ddddb4b338526b9b600b008dc3a7c2aee42140fc48cbef6e5de3",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "featureassets.org",
+      "run_id": "b1ad15d4-f562-41b4-be81-616eb253b226",
+      "completed_at": "2026-10-04T00:04:54.493204Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "firefox-portal-detection.com",
+      "run_id": "a4a6883e-40ac-423f-8214-8ae1bfdecc59",
+      "completed_at": "2026-10-04T00:04:57.996912Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://firefox-portal-detection.com/llms.txt",
+            "observed_at": "2026-10-04T00:04:57.959053Z",
+            "http_status": 404,
+            "content_sha256": "493fda53120050f85836032324409be6c6484f90a0755ae0c6a673ba7626818b",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "firetvcaptiveportal.com",
+      "run_id": "c526c226-8af6-43eb-8c12-307f0787e20e",
+      "completed_at": "2026-10-04T00:05:44.317371Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "flashtalking.com",
+      "run_id": "c545a8f6-752e-4705-8216-05306747faea",
+      "completed_at": "2026-10-04T00:05:04.936919Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "forter.com",
+      "run_id": "90d028e3-0234-4c83-9bc0-1d262442be19",
+      "completed_at": "2026-10-04T00:05:05.704737Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://forter.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:05.704227Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "gamepass.com",
+      "run_id": "4533456b-779f-44c9-9164-e776a7a77393",
+      "completed_at": "2026-10-04T00:05:13.520036Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gcdn.co",
+      "run_id": "0ef69eef-a152-4106-817c-b0e48ca7b2f9",
+      "completed_at": "2026-10-04T00:05:14.479570Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "github.com",
+      "run_id": "bd3612df-c878-414c-985f-cbaf6cf33489",
+      "completed_at": "2026-10-04T00:05:20.258747Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://github.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:20.183658Z",
+            "http_status": 200,
+            "content_sha256": "71d217ec3186152052ca1050932c0e6e48e766d3bc5a1359b50aa140436d297f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "globo.com",
+      "run_id": "ca2d49dc-096f-433d-9163-6ebd1389c70a",
+      "completed_at": "2026-10-04T00:05:29.594306Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.globo.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:29.391602Z",
+            "http_status": 404,
+            "content_sha256": "41038beb75dcf6c5e6e8b5180f3e08982f9f32ea59a9b9c1edca7d3245f4e8cd",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "google-analytics.com",
+      "run_id": "670d08a5-d714-43de-a421-237e024db292",
+      "completed_at": "2026-10-04T00:05:34.421985Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://google-analytics.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:34.392445Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "google.cn",
+      "run_id": "c1c1660e-bea7-4b47-8580-96a16a140571",
+      "completed_at": "2026-10-04T00:05:34.226752Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://google.cn/llms.txt",
+            "observed_at": "2026-10-04T00:05:34.091438Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "google.com",
+      "run_id": "12bbf919-ae7f-426c-a2ef-3fd560d6637f",
+      "completed_at": "2026-10-04T00:05:44.343827Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://google.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:44.167514Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "google.com.br",
+      "run_id": "65494fee-e213-406d-9397-e66d4214688f",
+      "completed_at": "2026-10-04T00:05:43.388374Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://google.com.br/llms.txt",
+            "observed_at": "2026-10-04T00:05:43.254363Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "google.com.hk",
+      "run_id": "10dab021-a859-4381-a412-a11806a8f313",
+      "completed_at": "2026-10-04T00:05:48.993961Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://google.com.hk/llms.txt",
+            "observed_at": "2026-10-04T00:05:48.857622Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googleadservices.com",
+      "run_id": "5a8d93cf-15a0-4604-a83f-863be477a171",
+      "completed_at": "2026-10-04T00:05:47.912361Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://googleadservices.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:47.764361Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googleapis.com",
+      "run_id": "8548535b-8013-45e7-b11e-51b97657faa6",
+      "completed_at": "2026-10-04T00:05:48.212172Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://googleapis.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:48.086519Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googlesyndication.com",
+      "run_id": "3ea86e39-67af-4393-982a-b85b4bbea6dc",
+      "completed_at": "2026-10-04T00:05:51.641155Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://googlesyndication.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:51.503355Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googletagmanager.com",
+      "run_id": "ed66be44-f1fc-44a3-8291-31793ac9804c",
+      "completed_at": "2026-10-04T00:05:51.758201Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://googletagmanager.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:51.625761Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googleusercontent.com",
+      "run_id": "a44ae37d-11f3-4b6a-b00a-608c9c58c049",
+      "completed_at": "2026-10-04T00:05:52.425569Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://googleusercontent.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:52.393066Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "googlevideo.com",
+      "run_id": "0b5bec48-4447-43c0-aeb9-3bfa6c1ce8b3",
+      "completed_at": "2026-10-04T00:05:53.112082Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gstatic.com",
+      "run_id": "0f87c39d-06d1-4b9f-8a6b-a1bba35bd20a",
+      "completed_at": "2026-10-04T00:05:54.693092Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "gumgum.com",
+      "run_id": "019bdc54-d83c-4ddb-affa-4442a764f750",
+      "completed_at": "2026-10-04T00:05:59.218415Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://gumgum.com/llms.txt",
+            "observed_at": "2026-10-04T00:05:59.162759Z",
+            "http_status": 200,
+            "content_sha256": "771cc4d4d42685e64b8d847a95d4f88852ce5692ee2f78f35363667a7fc14f2b",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "gvt1-cn.com",
+      "run_id": "eea5c4cc-907f-4e7d-828e-623e6d57dbcd",
+      "completed_at": "2026-10-04T00:06:02.963610Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://gvt1-cn.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:02.828721Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "heytapmobi.com",
+      "run_id": "f058d335-0476-40b4-9f19-f69159dcebba",
+      "completed_at": "2026-10-04T00:06:05.032279Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://heytapmobi.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:04.796277Z",
+            "http_status": 404,
+            "content_sha256": "6640c51ecd2c4eb6c19c779df63efed77969da44c085c27f991ba8a40c60c914",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "hihonorcloud.com",
+      "run_id": "e8036644-a994-4faa-b190-f17bc7842274",
+      "completed_at": "2026-10-04T00:06:06.408621Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "hp.com",
+      "run_id": "e9371061-c4e4-4e09-a545-cfceeb0a2b9e",
+      "completed_at": "2026-10-04T00:06:10.315729Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://hp.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:10.315365Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "icanhazip.com",
+      "run_id": "822115f2-08f7-4305-b631-9ea329cb0a0a",
+      "completed_at": "2026-10-04T00:06:14.277906Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://icanhazip.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:14.229054Z",
+            "http_status": 200,
+            "content_sha256": "6cab668f157136d40788c7a3b13f252d59c0cb93ac1acdec31408d3188e9bda2",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "icloud.com",
+      "run_id": "691fb887-f15a-42d3-b4df-d28fc7490140",
+      "completed_at": "2026-10-04T00:06:21.331025Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.icloud.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:21.045012Z",
+            "http_status": 404,
+            "content_sha256": "29db126bc092a4d8d995fbba69a2a0975edd0f3855ccc610bbf80e7947a0fcf6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "inmobi.com",
+      "run_id": "59e6d537-39c2-4a6b-844a-f525c223dc86",
+      "completed_at": "2026-10-04T00:06:22.734246Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.inmobi.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:22.655081Z",
+            "http_status": 404,
+            "content_sha256": "1f48dde1f9240bf70f278c4aef5abcaa8e055ba96830f59f1b4d0b9e0c6f900f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "inner-active.mobi",
+      "run_id": "cb49ac41-a122-4b53-9b01-370a50e184e1",
+      "completed_at": "2026-10-04T00:07:06.895689Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "instagram.com",
+      "run_id": "227d4a49-8fe6-4d37-a3ac-d2d403b93196",
+      "completed_at": "2026-10-04T00:06:23.023913Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ip-api.com",
+      "run_id": "ab4b65a6-3fdf-449b-8aec-05fd6ad66f58",
+      "completed_at": "2026-10-04T00:06:35.182469Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://ip-api.com/#llms.txt",
+            "observed_at": "2026-10-04T00:06:35.080636Z",
+            "http_status": 200,
+            "content_sha256": "61dc7c95fb5fb72ff523c69063a4d510d6724697560b5db4efe9e78592bf9846",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ipify.org",
+      "run_id": "d7009949-ad4d-4872-8e6d-28ba05e33adc",
+      "completed_at": "2026-10-04T00:06:38.760152Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.ipify.org/llms.txt",
+            "observed_at": "2026-10-04T00:06:38.660894Z",
+            "http_status": 404,
+            "content_sha256": "81383be8d2343dfb71284537b78f1a8854342b2ebb9493b488abaae70bd8cec6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ipinfo.io",
+      "run_id": "de99f04e-c5b2-4c4c-92c3-6ce7acc95a6e",
+      "completed_at": "2026-10-04T00:06:40.705050Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://ipinfo.io/llms.txt",
+            "observed_at": "2026-10-04T00:06:40.615719Z",
+            "http_status": 404,
+            "content_sha256": "b4460b49db044715df97cdd3df3d35c0c8b971a75d1c0340657752445e9c2407",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "jquery.com",
+      "run_id": "98b44308-8ca8-4ba4-9187-7ecf6e94b854",
+      "completed_at": "2026-10-04T00:06:42.447048Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://jquery.com/llms.txt",
+            "observed_at": "2026-10-04T00:06:42.311603Z",
+            "http_status": 404,
+            "content_sha256": "27d5151ef70de128e7e5ff7af85087f84939ae166df41bb80e331470afb395df",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "jsdelivr.net",
+      "run_id": "7b5ecd9f-50d4-4bae-856a-015c6c0d610d",
+      "completed_at": "2026-10-04T00:07:27.020309Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "kwai.com",
+      "run_id": "708e10e3-3f90-4329-8fc7-fe3b95d8d1d7",
+      "completed_at": "2026-10-04T00:07:06.824575Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.kwai.com/llms.txt",
+            "observed_at": "2026-10-04T00:07:06.479398Z",
+            "http_status": 200,
+            "content_sha256": "13fb36e78982a3944472873b1b2aafdbd00b22a127aa78911cfe0ce34fd990a9",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "kwai.net",
+      "run_id": "8c2546ca-922a-466d-b6c8-b498fa6ca9c7",
+      "completed_at": "2026-10-04T00:07:53.189747Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "launchdarkly.com",
+      "run_id": "25620a5a-a2d5-4525-b3c5-6928fee99124",
+      "completed_at": "2026-10-04T00:07:12.910874Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://launchdarkly.com/llms.txt",
+            "observed_at": "2026-10-04T00:07:12.754297Z",
+            "http_status": 404,
+            "content_sha256": "9e82cbdcc4b9bc1aaf60eb10609bac989a61f1a603cb3432effb5e720e53fd4a",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "leiniao.com",
+      "run_id": "323f8374-8b01-4cd0-a984-b8c6e14c420a",
+      "completed_at": "2026-10-04T00:07:59.490475Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "life360.com",
+      "run_id": "c41c74c0-bb5e-4f79-9a8a-9714222b0874",
+      "completed_at": "2026-10-04T00:07:43.731478Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "liftoff.io",
+      "run_id": "a5a78db5-7ce0-4e26-9517-fd5cd1f2579a",
+      "completed_at": "2026-10-04T00:07:45.091869Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://liftoff.io/llms.txt",
+            "observed_at": "2026-10-04T00:07:45.091566Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "lijit.com",
+      "run_id": "0e4683eb-95f8-4448-8b0c-0fc4fd2bd005",
+      "completed_at": "2026-10-04T00:07:45.535730Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "linkedin.com",
+      "run_id": "320f464c-fa8c-4ea8-9834-f70cf5b1784b",
+      "completed_at": "2026-10-04T00:07:47.258143Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "live-video.net",
+      "run_id": "7b267b24-7aa1-48da-ba1b-c1a52c474e7c",
+      "completed_at": "2026-10-04T00:07:47.843038Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ltwebstatic.com",
+      "run_id": "07979392-aa4d-43f6-b59a-3d3d54821542",
+      "completed_at": "2026-10-04T00:07:57.618502Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://ltwebstatic.com/llms.txt",
+            "observed_at": "2026-10-04T00:07:57.506765Z",
+            "http_status": 404,
+            "content_sha256": "ee1a27178227546d3dcc49e611a6d72e4f1c30080ee4493ae4085b58a49e28e6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "mail.ru",
+      "run_id": "0b133092-7ca7-4b46-b287-03f5eda52715",
+      "completed_at": "2026-10-04T00:08:00.557660Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "mcafee.com",
+      "run_id": "c1ce5df9-2f19-4b68-ad4f-b7749a9e4d5e",
+      "completed_at": "2026-10-04T00:08:00.482652Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "me.com",
+      "run_id": "7377a061-f339-4c09-a89f-4f6530924476",
+      "completed_at": "2026-10-04T00:08:03.650351Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.icloud.com/",
+            "observed_at": "2026-10-04T00:08:03.609303Z",
+            "http_status": 200,
+            "content_sha256": "89d0faa83f00a91b0ed30327047d4c117c3371fb299bc8da2d9efc6279a83bb2",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "media.net",
+      "run_id": "b8b28008-a8aa-48b9-a124-c9b4f2dac5d4",
+      "completed_at": "2026-10-04T00:08:08.289566Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.media.net/llms.txt",
+            "observed_at": "2026-10-04T00:08:08.158402Z",
+            "http_status": 404,
+            "content_sha256": "c51d1389e9584b7c7eda32e41e3b0aef3f2ad861754841bd8b2be0b540f3012d",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "meraki.com",
+      "run_id": "dd9b79f1-d1f0-4a60-a2e2-cec47b25198a",
+      "completed_at": "2026-10-04T00:08:09.549404Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "meta.com",
+      "run_id": "85a91781-4be1-4181-85a6-bc4401beff22",
+      "completed_at": "2026-10-04T00:08:17.083460Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.meta.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:16.752903Z",
+            "http_status": 404,
+            "content_sha256": "8aa61d2a5590cc241aefcff705872dc09395f7462808cded95bac7993aa2566f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "mikrotik.com",
+      "run_id": "80a6c311-ef17-46b0-96e2-240dff55d2dd",
+      "completed_at": "2026-10-04T00:08:22.398212Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://mikrotik.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:22.210637Z",
+            "http_status": 404,
+            "content_sha256": "5099d27284c2257d2983450585cbd4bede6475519755508047e213d985cbc7c9",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "miui.com",
+      "run_id": "42edba11-85a6-43b6-a316-3711e3d664fc",
+      "completed_at": "2026-10-04T00:08:26.906829Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://miui.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:26.517915Z",
+            "http_status": 404,
+            "content_sha256": "91fe1bb2ce31dfa39896c9a04ee23274a7e9dd0ad1fc91ec191e8b7307f652f2",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "miwifi.com",
+      "run_id": "70c47406-cc3c-4d2c-9919-86a8023245f7",
+      "completed_at": "2026-10-04T00:08:28.738717Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.miwifi.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:28.318764Z",
+            "http_status": 404,
+            "content_sha256": "73db7cbfed8c1340d31d07e911253225b7c4aab47b320697e974d110f24670d4",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "mixpanel.com",
+      "run_id": "ca31ca1b-24f2-4e8d-a796-8476c49e65d6",
+      "completed_at": "2026-10-04T00:08:30.048047Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://mixpanel.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:29.925358Z",
+            "http_status": 404,
+            "content_sha256": "63e1a41812b6a7e2f04d2a9d22d1b51001bb9861b076633539e2a4b6c89bdaf3",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "mmechocaptiveportal.com",
+      "run_id": "9fe305a9-f7ed-440a-b839-273347613b83",
+      "completed_at": "2026-10-04T00:09:13.254577Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "moloco.com",
+      "run_id": "0b0ed67d-49ef-40b5-ba75-7c83e54ab946",
+      "completed_at": "2026-10-04T00:08:36.426597Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.moloco.com/llms.txt",
+            "observed_at": "2026-10-04T00:08:36.344451Z",
+            "http_status": 200,
+            "content_sha256": "e7e7a6649a4e6388da419732b2a1d88f62081c4df8042a782f5641d1f8d14af3",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "mona.co",
+      "run_id": "57a90ab9-d5d7-4947-b202-67a4e902aa61",
+      "completed_at": "2026-10-04T00:09:01.654765Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "msedge.net",
+      "run_id": "e6cb1b0b-fa8c-4121-b2f2-d747ad6fea3c",
+      "completed_at": "2026-10-04T00:09:35.430200Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "msn.com",
+      "run_id": "712c5f0a-7bff-4cae-8099-0b91dd39858e",
+      "completed_at": "2026-10-04T00:09:08.614741Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.msn.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:08.507019Z",
+            "http_status": 404,
+            "content_sha256": "10fcf682b17971154f37ba43feed59f3f054c12d46e8d9dab193696175e960ff",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "myshopify.com",
+      "run_id": "72a2731e-ee9a-4ed9-a52b-c196ceb3202b",
+      "completed_at": "2026-10-04T00:09:12.577038Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://myshopify.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:12.417308Z",
+            "http_status": 404,
+            "content_sha256": "aca34a237cc49ea34c2c42a5fad3363cf426e9ff67c81f68cb73d4c69ff9e0ff",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "naver.com",
+      "run_id": "35af2b53-a24f-4d33-abd4-e564aa3bf333",
+      "completed_at": "2026-10-04T00:09:18.368661Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netflix.com",
+      "run_id": "eaa1dc85-4660-4308-9f86-e3a7a6fb2762",
+      "completed_at": "2026-10-04T00:09:18.497470Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netflix.net",
+      "run_id": "859a3b3f-eee1-4914-905a-581fe19eae8d",
+      "completed_at": "2026-10-04T00:09:19.648932Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "netgear.com",
+      "run_id": "62a45152-1c2d-4f57-ada7-3edbaf1c92ef",
+      "completed_at": "2026-10-04T00:09:26.712606Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.netgear.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:26.370681Z",
+            "http_status": 200,
+            "content_sha256": "0036838ffe30083e0dac457b082f8df1548d5829f6b4401d034817cf3f082512",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "newrelic.com",
+      "run_id": "fdbcceec-e2a8-495b-9930-dbf6e91b597b",
+      "completed_at": "2026-10-04T00:09:25.372380Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://newrelic.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:25.104944Z",
+            "http_status": 200,
+            "content_sha256": "64dccb4898fa1ffcbcf7c59bd68537bd41e46c7bf5e14ba1e30868b23afe1f39",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "nextcloud.com",
+      "run_id": "f2965e07-1a33-4094-91bb-332b575b238b",
+      "completed_at": "2026-10-04T00:09:33.557300Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://nextcloud.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:32.723834Z",
+            "http_status": 404,
+            "content_sha256": "576d64f6fdcae796825e69cc31eda2636a1885f050d337f53b547d99f3f2fc4b",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "nflximg.com",
+      "run_id": "3b0293b1-811e-49e7-b395-b33333709dec",
+      "completed_at": "2026-10-04T00:10:13.022747Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nflxvideo.net",
+      "run_id": "b5d11afe-c2db-42b7-9bf0-2586e958cc5e",
+      "completed_at": "2026-10-04T00:09:35.314780Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "nist.gov",
+      "run_id": "53a9c115-6601-40fa-8014-56797f154f25",
+      "completed_at": "2026-10-04T00:09:41.876814Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.nist.gov/llms.txt",
+            "observed_at": "2026-10-04T00:09:41.784355Z",
+            "http_status": 404,
+            "content_sha256": "9f2a00f25e72882b5eccd6317bec66ab599e54b2cd6d4ff92bb6552d871b8f06",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ntp.org",
+      "run_id": "6ab9593d-9f71-4495-b599-bf14b58b8c52",
+      "completed_at": "2026-10-04T00:09:43.835716Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.ntp.org/llms.txt",
+            "observed_at": "2026-10-04T00:09:43.771482Z",
+            "http_status": 404,
+            "content_sha256": "ce78ad119af14e88e0bd97553a54a70a036626840ba00e22b9aebc2022165394",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "office365.com",
+      "run_id": "19e20918-9a84-486c-be21-de78d18d4924",
+      "completed_at": "2026-10-04T00:09:50.240963Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "okcdn.ru",
+      "run_id": "1527a65c-bc3f-4a5c-b3ee-c8a2ca704b08",
+      "completed_at": "2026-10-04T00:09:58.747495Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://st.okcdn.ru/llms.txt",
+            "observed_at": "2026-10-04T00:09:58.409897Z",
+            "http_status": 404,
+            "content_sha256": "9145e451d2330fa2b4c9f1accfc1d289eae481ab19f0f1030ca870946881b343",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "one.one",
+      "run_id": "91d59144-1ba0-46ff-8add-1da84dd3e51d",
+      "completed_at": "2026-10-04T00:09:56.424580Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.one.com/llms.txt",
+            "observed_at": "2026-10-04T00:09:56.264696Z",
+            "http_status": 200,
+            "content_sha256": "12ee377eaa605c61293ba5c795db1003f28116d9be56fcb81f72033962a17f57",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "onesignal.com",
+      "run_id": "2d2d9d36-0354-455f-a0d1-c098e69a492b",
+      "completed_at": "2026-10-04T00:10:04.367324Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://onesignal.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:04.217377Z",
+            "http_status": 200,
+            "content_sha256": "2e04cc7a63e9b05ad6cc7748d68d981327e80eb1b0a7170de561232b1d2ce792",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "onetag-sys.com",
+      "run_id": "4cb2b477-5f08-4da3-af5c-39a8ad788ef5",
+      "completed_at": "2026-10-04T00:10:04.932966Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://onetag-sys.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:04.879421Z",
+            "http_status": 200,
+            "content_sha256": "8636b148f7f30b577172d0bea8065e399cad8c51e01ac50e275272d184c2b74b",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "openai.com",
+      "run_id": "b8e5a9e5-d8b2-4177-8bec-ca1c975d0fe7",
+      "completed_at": "2026-10-04T00:10:08.445507Z",
+      "observation": {
+        "value": null,
+        "outcome": "no_evidence",
+        "confidence": "no_evidence",
+        "confidence_score": 0.0,
+        "method": "llms.txt returned an inconclusive status",
+        "evidence": [
+          {
+            "source_url": "https://openai.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:08.402964Z",
+            "http_status": 403,
+            "content_sha256": "50da44599430760665392d0c69f604f7da268982a2cb390d008d3da6494d1fde",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "openx.net",
+      "run_id": "53bdeb30-294f-4b2d-8a7f-223cd1abaa62",
+      "completed_at": "2026-10-04T00:10:12.189600Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://openx.net/llms.txt",
+            "observed_at": "2026-10-04T00:10:12.131930Z",
+            "http_status": 404,
+            "content_sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "opera-api.com",
+      "run_id": "fb771a52-2ba3-451a-8940-cc55c04d1789",
+      "completed_at": "2026-10-04T00:10:58.428183Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "opera.com",
+      "run_id": "56253e95-9a00-481b-9623-21ead6d68d98",
+      "completed_at": "2026-10-04T00:10:20.037926Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.opera.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:19.932479Z",
+            "http_status": 200,
+            "content_sha256": "abefbde9fb5c1ef40e063c0d21aeff38c71e1f9899b3b7cc8d924a89deffb013",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "oracle.com",
+      "run_id": "34a52a85-e184-4371-9a7e-c23efdb9be99",
+      "completed_at": "2026-10-04T00:10:28.172794Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.oracle.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:28.043311Z",
+            "http_status": 404,
+            "content_sha256": "7cbc728731e684468ebc16af24bed4ac48661b76bbbd9458aa27a249408e9202",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "oraclecloud.com",
+      "run_id": "29ffd807-d193-4377-bdf4-7f715318951b",
+      "completed_at": "2026-10-04T00:10:24.275609Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "outbrain.com",
+      "run_id": "3b4bdf73-886d-4180-807e-5c978c4481e2",
+      "completed_at": "2026-10-04T00:10:28.649227Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "oxylabs.io",
+      "run_id": "17be905b-6449-4127-9e44-81b3ca67fe00",
+      "completed_at": "2026-10-04T00:10:40.165458Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://oxylabs.io/llms.txt",
+            "observed_at": "2026-10-04T00:10:40.012329Z",
+            "http_status": 200,
+            "content_sha256": "3d38efd3a06b47993beedaedc08a2fc5ae3969c30df64080eab6a12cd3bba63f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "palmplaystore.com",
+      "run_id": "5b26fdb5-9fa1-4fe4-ac34-d658ced63e62",
+      "completed_at": "2026-10-04T00:10:44.939640Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://palmplaystore.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:44.653713Z",
+            "http_status": 404,
+            "content_sha256": "f03d67b5dddd67b6ab4b923e723e4c5cc2da91ee053eb07ee243b2b0184028cc",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "paloaltonetworks.com",
+      "run_id": "15014445-b325-4853-8fe9-c975442e8a08",
+      "completed_at": "2026-10-04T00:10:48.018857Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.paloaltonetworks.com/llms.txt",
+            "observed_at": "2026-10-04T00:10:47.913354Z",
+            "http_status": 200,
+            "content_sha256": "14e55414db825c4385a8e3ade91481b28fcc6392c1a43f67ae945eaf97f42bd6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "perplexity.ai",
+      "run_id": "de28b6f3-5087-49d2-936e-0e4f79139c92",
+      "completed_at": "2026-10-04T00:10:52.009795Z",
+      "observation": {
+        "value": null,
+        "outcome": "no_evidence",
+        "confidence": "no_evidence",
+        "confidence_score": 0.0,
+        "method": "llms.txt returned an inconclusive status",
+        "evidence": [
+          {
+            "source_url": "https://www.perplexity.ai/llms.txt",
+            "observed_at": "2026-10-04T00:10:51.969371Z",
+            "http_status": 403,
+            "content_sha256": "454ec0b4a08842cd55977d80d9126286fe033114c5f596fc1d5788ca47335fe1",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "pinimg.com",
+      "run_id": "cb53789e-dbfa-4726-a38b-e97e5ed3a7ba",
+      "completed_at": "2026-10-04T00:10:49.677570Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pinterest.com",
+      "run_id": "2aa0b973-4bbd-4116-a19d-efd95b975474",
+      "completed_at": "2026-10-04T00:10:51.978858Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "pki.goog",
+      "run_id": "962f346d-fe98-44d4-b0a4-722210aea556",
+      "completed_at": "2026-10-04T00:10:55.576579Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://pki.goog/llms.txt",
+            "observed_at": "2026-10-04T00:10:55.525289Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "presage.io",
+      "run_id": "cb84913a-8852-4667-86bf-4ee9422e5a80",
+      "completed_at": "2026-10-04T00:10:57.806054Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "prodregistryv2.org",
+      "run_id": "32e03d2d-cdd5-474b-96f3-4733184911df",
+      "completed_at": "2026-10-04T00:11:01.280656Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://prodregistryv2.org/llms.txt",
+            "observed_at": "2026-10-04T00:11:01.242454Z",
+            "http_status": 404,
+            "content_sha256": "4ff444d1abe117bbe3055e97182351923ce4db715959b733900bb28f72fa0e29",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "publicnode.com",
+      "run_id": "827a0b05-4eb4-4612-bcb8-7c49a0d0f255",
+      "completed_at": "2026-10-04T00:11:02.562329Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://publicnode.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:02.441330Z",
+            "http_status": 404,
+            "content_sha256": "94bb0067036e2109c6c030095c9b17c5b229798d010133c4ffc36dda0186bdce",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "pubmatic.com",
+      "run_id": "711bd825-95b4-483f-8789-eca65d992686",
+      "completed_at": "2026-10-04T00:11:02.551942Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "px-cloud.net",
+      "run_id": "4c251082-c9ca-47c6-92bd-f38c3cbdb640",
+      "completed_at": "2026-10-04T00:11:06.182312Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://px-cloud.net/llms.txt",
+            "observed_at": "2026-10-04T00:11:06.117138Z",
+            "http_status": 404,
+            "content_sha256": "8d13e9e92cc81a38caae9b13d3786422782132e1a746ac73cae921e5df6da3be",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "quantserve.com",
+      "run_id": "6264bf63-cb5a-4408-bed5-9f152a499635",
+      "completed_at": "2026-10-04T00:11:06.946870Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "recaptcha.net",
+      "run_id": "be0361c1-5e8d-4279-a470-17f590bf8d47",
+      "completed_at": "2026-10-04T00:11:10.652506Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://recaptcha.net/llms.txt",
+            "observed_at": "2026-10-04T00:11:10.607086Z",
+            "http_status": 404,
+            "content_sha256": "efa69c9a25484eb4e67bdb35955d30019f4575f2282a8538063e6aa6494b59fa",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "reddit.com",
+      "run_id": "1daa5109-615a-405e-b5e8-8e097c43c4d9",
+      "completed_at": "2026-10-04T00:11:12.264876Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ring.com",
+      "run_id": "372c0d79-3e5a-46f8-bb6b-e5d4e824d458",
+      "completed_at": "2026-10-04T00:11:18.357676Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://ring.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:18.303751Z",
+            "http_status": 200,
+            "content_sha256": "e2c5cc8d009953838ad15ae1596f6a5eca7562a60f41c5990ddbb769e4209ec6",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "roblox.com",
+      "run_id": "c69e5faa-f3ac-4b8a-82d5-c577f89d08a1",
+      "completed_at": "2026-10-04T00:11:21.377628Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.roblox.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:21.300686Z",
+            "http_status": 404,
+            "content_sha256": "2fffe55a19d8bd2596560c97d969508153c8fee1dc76d19666dc8a27bc9ecce8",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "run.app",
+      "run_id": "6c687606-44df-4263-bf87-cb7dc85d7e54",
+      "completed_at": "2026-10-04T00:11:30.174107Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://run.app/llms.txt",
+            "observed_at": "2026-10-04T00:11:30.042369Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "salthasher.com",
+      "run_id": "fb940f4a-d0e8-4355-8b23-c62327b738f1",
+      "completed_at": "2026-10-04T00:11:27.369481Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "samsungapps.com",
+      "run_id": "ac367706-02ce-4864-9c38-907d766ffeae",
+      "completed_at": "2026-10-04T00:12:15.227705Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "samsungcloud.com",
+      "run_id": "b04559cc-c836-42d0-90a2-f54e700fcf85",
+      "completed_at": "2026-10-04T00:11:37.120637Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.samsungcloud.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:36.844370Z",
+            "http_status": 404,
+            "content_sha256": "5984786022817806b3ec371afc3c7c82683f97a27d3d0e6d8039a0c5385fdcfa",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "scorecardresearch.com",
+      "run_id": "18d9c0dd-bbae-4fda-8105-a3c01b4c5ca1",
+      "completed_at": "2026-10-04T00:11:43.872723Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://scorecardresearch.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:43.825098Z",
+            "http_status": 404,
+            "content_sha256": "dc1d54dab6ec8c00f70137927504e4f222c8395f10760b6beecfcfa94e08249f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "sentry.io",
+      "run_id": "3b439853-1834-4ed4-83de-41d65890d0d6",
+      "completed_at": "2026-10-04T00:11:50.466517Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://sentry.io/llms.txt",
+            "observed_at": "2026-10-04T00:11:50.331863Z",
+            "http_status": 200,
+            "content_sha256": "2599f2c9e6294844f5669fa54f31629327cff512e5d8294c8e1048a317b453de",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "shalltry.com",
+      "run_id": "98f8df68-d5b9-4bef-bae1-d98d342000d8",
+      "completed_at": "2026-10-04T00:11:46.166425Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "sharepoint.com",
+      "run_id": "c23901cd-dd56-4a68-917e-48e8cc8dba35",
+      "completed_at": "2026-10-04T00:11:49.996233Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "sharethrough.com",
+      "run_id": "0edf22c3-2483-4386-947a-45a3a9ef18e1",
+      "completed_at": "2026-10-04T00:11:51.635800Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "shein.com",
+      "run_id": "fab0742a-1018-45cd-8d69-d38930208989",
+      "completed_at": "2026-10-04T00:11:58.487444Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.shein.com/llms.txt",
+            "observed_at": "2026-10-04T00:11:58.331655Z",
+            "http_status": 200,
+            "content_sha256": "19f2eb866e9b8eff8ceb9cee0eca9dd614a9ab7dbf31b77b205a8be876c0c90d",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "shopeemobile.com",
+      "run_id": "54fdad44-f624-425e-a596-93947b8381e6",
+      "completed_at": "2026-10-04T00:12:37.882753Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "singular.net",
+      "run_id": "ff96d30d-2dd1-4852-b426-4f5f4fca9cf1",
+      "completed_at": "2026-10-04T00:12:06.801303Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "slack.com",
+      "run_id": "9b3304ca-d90b-4c8f-8a77-b550130bd005",
+      "completed_at": "2026-10-04T00:12:18.247094Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://slack.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:18.188797Z",
+            "http_status": 200,
+            "content_sha256": "d08ba41e1e7bbccb335dd566f975bb9e93ad9f65bfa48a5c0fb109bc0095e267",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "smilewanted.com",
+      "run_id": "bf3aec3d-abe5-46e2-b5a6-e88a7731a734",
+      "completed_at": "2026-10-04T00:12:26.805423Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://smilewanted.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:26.331088Z",
+            "http_status": 404,
+            "content_sha256": "f33c27745f2bd87344be790465ef984a972fd539dc83bd4f61d4242c607ef1ee",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "starlink.com",
+      "run_id": "90a36ae3-0c91-4bb7-bbec-06959a28d8a5",
+      "completed_at": "2026-10-04T00:12:40.675661Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://starlink.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:40.675414Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "statsigapi.net",
+      "run_id": "8b7acdce-b64d-4f30-80bd-9d7f74c2ddec",
+      "completed_at": "2026-10-04T00:12:41.139413Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "steamcommunity.com",
+      "run_id": "41730e88-c4cd-497b-971b-8a9b0d5bd07a",
+      "completed_at": "2026-10-04T00:12:46.992044Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://steamcommunity.com",
+            "observed_at": "2026-10-04T00:12:46.613347Z",
+            "http_status": 200,
+            "content_sha256": "7380199d6ae3e5dcf69da18512d846d2ca8414d2372ac381776c85d4b2133d3d",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "stripe.com",
+      "run_id": "6b973afd-bce8-4cf9-a517-e9a5f43e94cd",
+      "completed_at": "2026-10-04T00:12:51.843941Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://stripe.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:51.669848Z",
+            "http_status": 200,
+            "content_sha256": "d1251f7b78e9f0d58ccb13f6dfe409d0950c9937899031f22e405c6865d9d9b4",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "supercell.com",
+      "run_id": "a5839499-b8ae-483d-86b4-e2880a5b97dd",
+      "completed_at": "2026-10-04T00:12:53.735790Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://supercell.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:53.538075Z",
+            "http_status": 404,
+            "content_sha256": "b1eedba8ef76d3eb56941c2b4d8fbaef7df001ab7e533492ad11ccad7f196789",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "taboola.com",
+      "run_id": "c0292a9d-1a63-4541-8eb0-0c0e17dffa38",
+      "completed_at": "2026-10-04T00:12:52.380859Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "tailscale.com",
+      "run_id": "b379120d-7b0d-4607-9455-121222b7298b",
+      "completed_at": "2026-10-04T00:12:58.009122Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://tailscale.com/llms.txt",
+            "observed_at": "2026-10-04T00:12:57.935207Z",
+            "http_status": 200,
+            "content_sha256": "9a38afc113269fb02a4b7741ae5133770ad30d8ac69388676b6b1c121bec6c22",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tbcache.com",
+      "run_id": "0a41b1f5-202c-45e0-b569-c3483220f92f",
+      "completed_at": "2026-10-04T00:13:44.614726Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "teads.tv",
+      "run_id": "8faa0abf-b7a6-4801-8cb5-ca7f2bcb5de2",
+      "completed_at": "2026-10-04T00:13:07.539471Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://cdn.teads.tv/redirect.html",
+            "observed_at": "2026-10-04T00:13:07.477573Z",
+            "http_status": 200,
+            "content_sha256": "e95484810ffbed5388ddfc811bedd19bf3c40c7e9c44df2438cc9c567536f81c",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "telegram.org",
+      "run_id": "a9c31de1-50eb-45ee-a0fb-459a870a60c0",
+      "completed_at": "2026-10-04T00:13:12.336375Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://telegram.org/llms.txt",
+            "observed_at": "2026-10-04T00:13:12.126734Z",
+            "http_status": 200,
+            "content_sha256": "2544a485ba9d54998f16962626c40c2564b2e1499cab766034328900e1b21eb7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "telephony.goog",
+      "run_id": "21c03f91-9891-40b8-92f7-627da9c1e061",
+      "completed_at": "2026-10-04T00:13:34.401492Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "temu.com",
+      "run_id": "58a9ea43-8cad-4013-b7b7-6dfb559cf104",
+      "completed_at": "2026-10-04T00:13:20.460346Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.temu.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:20.411115Z",
+            "http_status": 404,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tiktokglobalshopv.com",
+      "run_id": "e0a9abe5-dd1b-4630-b913-2c101a548155",
+      "completed_at": "2026-10-04T00:13:32.340726Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://tiktokglobalshopv.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:32.269552Z",
+            "http_status": 404,
+            "content_sha256": "b282ac8512c5e029959282e6fd450dc119f5db4a072869eabf45e31440596248",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tiktokv.com",
+      "run_id": "a98d74d4-e5fb-441c-a0c4-08edf1116ed2",
+      "completed_at": "2026-10-04T00:13:36.734782Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://tiktokv.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:36.391932Z",
+            "http_status": 404,
+            "content_sha256": "b282ac8512c5e029959282e6fd450dc119f5db4a072869eabf45e31440596248",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tp-link.com",
+      "run_id": "fdd1b8a9-76b6-4707-9ff4-3f19f1e2f0b2",
+      "completed_at": "2026-10-04T00:13:42.527447Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.tp-link.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:42.458582Z",
+            "http_status": 404,
+            "content_sha256": "c0d5464cf8e9e90f8cfa7f61e607242e53817b541e6d1cf6831413363f457b66",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tradingview.com",
+      "run_id": "c5e954a3-cb0b-4525-afe3-755cca4c733a",
+      "completed_at": "2026-10-04T00:13:50.300210Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.tradingview.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:50.158668Z",
+            "http_status": 404,
+            "content_sha256": "2747bc754bfc87e7a84e778ee472bd570dfd66737b009a333f4787605d4aed0f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tradplusad.com",
+      "run_id": "bc508802-0729-48ee-bd3f-fdf717c05a49",
+      "completed_at": "2026-10-04T00:13:50.702264Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://tradplusad.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:50.237899Z",
+            "http_status": 200,
+            "content_sha256": "6ec6d6e7cbe8c84c5901ae9a5f498b74a8ede0f041fce97d00722cf6d3964bb0",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "translate.goog",
+      "run_id": "8d434eae-be02-4a5e-8925-4fe69fd43ead",
+      "completed_at": "2026-10-04T00:13:48.794485Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://translate.goog/llms.txt",
+            "observed_at": "2026-10-04T00:13:48.655087Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "tsyndicate.com",
+      "run_id": "d33ab6a3-5a40-44bd-8355-8232157e8f96",
+      "completed_at": "2026-10-04T00:13:54.104937Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://tsyndicate.com/llms.txt",
+            "observed_at": "2026-10-04T00:13:54.055402Z",
+            "http_status": 404,
+            "content_sha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "twc.com",
+      "run_id": "67bb7a96-02a7-4296-b345-61a5a63f072b",
+      "completed_at": "2026-10-04T00:13:53.670904Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "twitch.tv",
+      "run_id": "cc503a03-b15d-4775-9d04-29ac9f81a0b5",
+      "completed_at": "2026-10-04T00:14:00.632065Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.twitch.tv/llms.txt",
+            "observed_at": "2026-10-04T00:14:00.594942Z",
+            "http_status": 200,
+            "content_sha256": "c0037f6f1fedfa6927232fce21aba83400de6ac7fe91d43d2b1f481aadf952f1",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "twitter.com",
+      "run_id": "5a9ed168-5f91-4ae8-8b77-c300e281d8f6",
+      "completed_at": "2026-10-04T00:13:54.494674Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "typekit.net",
+      "run_id": "09ebdf85-7a2e-455e-8436-235533daac16",
+      "completed_at": "2026-10-04T00:14:40.773503Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ubuntu.com",
+      "run_id": "b47fe821-b66c-47a6-9843-80b305a76817",
+      "completed_at": "2026-10-04T00:14:02.252357Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://ubuntu.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:02.072373Z",
+            "http_status": 200,
+            "content_sha256": "73127cc2f34665b4661f5405ac319b54b0556db4ecfce6a773d8acbe71e79274",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "ueiwsp.com",
+      "run_id": "0a3ee6aa-1131-48df-b7fd-456b27dadcfb",
+      "completed_at": "2026-10-04T00:14:01.041716Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "ui.com",
+      "run_id": "72b009a6-5ee8-4d04-a44a-2c19cb9709b2",
+      "completed_at": "2026-10-04T00:14:06.153570Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://ui.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:05.738519Z",
+            "http_status": 404,
+            "content_sha256": "dba8605870837af8258346bcf6424df58be05c3b54e1f6fee6281bf19e0fb517",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "unpkg.com",
+      "run_id": "84b87377-9a07-411d-80bd-8589cbae7d8f",
+      "completed_at": "2026-10-04T00:14:11.638058Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://unpkg.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:11.495838Z",
+            "http_status": 404,
+            "content_sha256": "175d7a0603bcf6fdfb182668fe4c0db9e80d54644dfb3dca9ccaa23b66f37fdc",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "unrulymedia.com",
+      "run_id": "8381588d-116e-409f-8fad-203ff12b07a0",
+      "completed_at": "2026-10-04T00:14:15.176208Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://unrulymedia.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:15.097265Z",
+            "http_status": 404,
+            "content_sha256": "c424ba9efecb2c86d9d5e994ee6ed8a337661947413669175c607489fb50a1e8",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "usercontent.goog",
+      "run_id": "c7b3b8aa-aaf7-4a16-8399-acbb72d11483",
+      "completed_at": "2026-10-04T00:14:36.623690Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://usercontent.goog/llms.txt",
+            "observed_at": "2026-10-04T00:14:36.472022Z",
+            "http_status": 404,
+            "content_sha256": "47d71ed470dfe1ca13eb2af8fa019b95871a1bd1381a518ed71359e69b9c3cc7",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "verisign.com",
+      "run_id": "97f1bea2-23cc-4684-a2a3-18fbdcd80387",
+      "completed_at": "2026-10-04T00:14:44.480894Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.verisign.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:44.048771Z",
+            "http_status": 404,
+            "content_sha256": "ded5a0a80ae4dc87df00b1d9ded1fa73613bdb7ce5422d6b294d689368dbae1d",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "vivo.com.cn",
+      "run_id": "75c50c5e-5bd7-4713-84a0-ae3010e77318",
+      "completed_at": "2026-10-04T00:14:59.344432Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.vivo.com.cn/llms.txt",
+            "observed_at": "2026-10-04T00:14:58.727539Z",
+            "http_status": 404,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "vivoglobal.com",
+      "run_id": "dd662ea5-b745-4034-8e0b-3844bc9d04ac",
+      "completed_at": "2026-10-04T00:14:55.326426Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://vivoglobal.com/llms.txt",
+            "observed_at": "2026-10-04T00:14:55.065463Z",
+            "http_status": 404,
+            "content_sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "vk.com",
+      "run_id": "d535d803-e1b4-436e-b903-217e5a0f1576",
+      "completed_at": "2026-10-04T00:15:01.237881Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://vk.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:00.967878Z",
+            "http_status": 404,
+            "content_sha256": "02df22b1683f5dfbe9b9b06e4a1332d2be7acc48714baa1c504edacfbaa97f39",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "vk.ru",
+      "run_id": "ba72ab58-60f3-44d1-a97a-4854479d8ec4",
+      "completed_at": "2026-10-04T00:15:08.412997Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://vk.ru/llms.txt",
+            "observed_at": "2026-10-04T00:15:08.157875Z",
+            "http_status": 404,
+            "content_sha256": "02df22b1683f5dfbe9b9b06e4a1332d2be7acc48714baa1c504edacfbaa97f39",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "vkuserphoto.ru",
+      "run_id": "9ecd6952-87d5-40d3-a7f8-613825275ba8",
+      "completed_at": "2026-10-04T00:15:05.317085Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "vungle.com",
+      "run_id": "e09c922c-304d-4a60-8020-18c6d60dbcfc",
+      "completed_at": "2026-10-04T00:15:05.944157Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://vungle.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:05.943838Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "weather.com",
+      "run_id": "fd3c85ac-b212-4489-a550-70b7eab44aa3",
+      "completed_at": "2026-10-04T00:15:06.556486Z",
+      "observation": {
+        "value": null,
+        "outcome": "error",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "llms.txt fetch failed",
+        "evidence": [
+          {
+            "source_url": "https://weather.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:06.556180Z",
+            "http_status": null,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "webex.com",
+      "run_id": "cb710dc7-8418-4758-aa8e-08ea5fa3d513",
+      "completed_at": "2026-10-04T00:15:08.281185Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "whatsapp.com",
+      "run_id": "153f5c8c-5ff0-460b-8d7c-c7ace8c349ee",
+      "completed_at": "2026-10-04T00:15:20.686470Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.whatsapp.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:19.802386Z",
+            "http_status": 404,
+            "content_sha256": "5d3f687dd7bacd60b3b5a92e093b1c3444e09d2551adf4b453b22e315aaca67f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "whatsapp.net",
+      "run_id": "b83a5db6-0954-4c61-b160-4104dd1c354f",
+      "completed_at": "2026-10-04T00:15:18.141101Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.whatsapp.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:17.799988Z",
+            "http_status": 404,
+            "content_sha256": "63c34a76e55b50fde04e3ff48decf435c32349136fc99d9cd5beda5649150eec",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "windows.net",
+      "run_id": "e4dbf85d-34ff-40f1-9f96-4bbbe8a1f2a5",
+      "completed_at": "2026-10-04T00:15:26.568774Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "wps.com",
+      "run_id": "8a25bf4c-644a-48fc-923f-641e488a6bfd",
+      "completed_at": "2026-10-04T00:15:36.766287Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://www.wps.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:36.491544Z",
+            "http_status": 200,
+            "content_sha256": "8a4ef0584f62057f72fd3fc85acf49497487552dc99d662bf9d9fc901962d071",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "x.com",
+      "run_id": "a45cfb07-e749-4d83-b887-3d657f3ead2f",
+      "completed_at": "2026-10-04T00:15:32.250950Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xboxlive.com",
+      "run_id": "8bdb1b4e-fa74-411b-8064-b385d9d33958",
+      "completed_at": "2026-10-04T00:15:35.036319Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xhcdn.com",
+      "run_id": "5093a0d5-7c6c-43ac-93a4-0f23e14c4684",
+      "completed_at": "2026-10-04T00:15:35.867316Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "xiaomi.net",
+      "run_id": "2fd924c6-2353-4a5c-9ca7-bd61533fb8f6",
+      "completed_at": "2026-10-04T00:15:38.946020Z",
+      "observation": {
+        "value": null,
+        "outcome": "skipped",
+        "confidence": "unknown",
+        "confidence_score": 0.0,
+        "method": "skipped because crawler policy was not affirmatively allowed",
+        "evidence": []
+      }
+    },
+    {
+      "domain": "yahoo.com",
+      "run_id": "02c9fd47-416a-443d-9565-73b7e0b11ba9",
+      "completed_at": "2026-10-04T00:15:43.525456Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.yahoo.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:43.435488Z",
+            "http_status": 404,
+            "content_sha256": "2437bd52e41d0bfb221510c9eed2f7de9de6254c24f67a91f0b13857248bfecb",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "yandex.com",
+      "run_id": "1c27a039-7a71-4bee-a0a4-e74d69dd45da",
+      "completed_at": "2026-10-04T00:15:44.535477Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://yandex.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:44.206084Z",
+            "http_status": 404,
+            "content_sha256": "0de3072cc36e17ee7f739b7492fcc04c3c2d14d36fc9e3833341a468252a57a2",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "yandex.ru",
+      "run_id": "335db7f0-ae29-468b-ac8c-840e75d7e242",
+      "completed_at": "2026-10-04T00:16:06.632227Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://yandex.ru/llms.txt",
+            "observed_at": "2026-10-04T00:16:06.332491Z",
+            "http_status": 404,
+            "content_sha256": "82a1719acd3ff9ab976fa48d970cf936353064fbda26a3c9bea95cfcbbf10bb9",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "yastatic.net",
+      "run_id": "b3a418f2-7726-4ca0-a503-c2384e83ee5b",
+      "completed_at": "2026-10-04T00:15:51.089928Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://yastatic.net/llms.txt",
+            "observed_at": "2026-10-04T00:15:50.808812Z",
+            "http_status": 404,
+            "content_sha256": null,
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "yieldmo.com",
+      "run_id": "14463fe4-f506-47cd-96ba-1df8a479bcf8",
+      "completed_at": "2026-10-04T00:15:55.780139Z",
+      "observation": {
+        "value": true,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned HTTP 200",
+        "evidence": [
+          {
+            "source_url": "https://yieldmo.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:55.730279Z",
+            "http_status": 200,
+            "content_sha256": "acb1ed4094df7c783d4149a8e047200eb7267ef7228d2f6c0cba8d272f80a7d8",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "youtube.com",
+      "run_id": "68d1e72b-294b-47dd-8c8b-d9b3ebf64922",
+      "completed_at": "2026-10-04T00:15:57.550531Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://www.youtube.com/llms.txt",
+            "observed_at": "2026-10-04T00:15:57.464327Z",
+            "http_status": 404,
+            "content_sha256": "cbe2b451912b7d616f1914fa23614a1b341485a341f31608ff6b32c40686781f",
+            "note": null
+          }
+        ]
+      }
+    },
+    {
+      "domain": "zoom.us",
+      "run_id": "43ae52ed-42c5-4da9-8f92-22b4abcd647a",
+      "completed_at": "2026-10-04T00:16:01.662740Z",
+      "observation": {
+        "value": false,
+        "outcome": "observed",
+        "confidence": "confirmed",
+        "confidence_score": 1.0,
+        "method": "llms.txt returned a not-found status",
+        "evidence": [
+          {
+            "source_url": "https://zoom.us/llms.txt",
+            "observed_at": "2026-10-04T00:16:01.404117Z",
+            "http_status": 404,
+            "content_sha256": "5f0038181e9736116164b52980e77085e03ff3843f6e600c9ad78220ba676726",
+            "note": null
+          }
+        ]
+      }
+    }
+  ]
+}
