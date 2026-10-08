@@ -1,0 +1,111 @@
+signal,domain_count,observed_count,no_evidence_count,skipped_count,error_count,unique_values,most_common_value,most_common_count,similarity_score
+infrastructure.response_headers,324,231,0,85,8,231,"{""cache-control"": ""no-cache,no-store,private"", ""content-encoding"": ""gzip"", ""content-type"": ""text/html; charset=utf-8"", ""date"": ""Sun, 04 Oct 2026 00:00:40 GMT"", ""server"": ""Tengine"", ""vary"": ""special-area"", ""via"": ""cache53.l2nu20-8[54,103,200-0,C], cache11.l2nu20-8[104,0], ens-cache32.l2hk11[136,219,200-0,C], ens-cache30.l2hk11[220,0], ens-cache12.l2us5[439,1061,200-0,C], ens-cache26.l2us5[1062,0], ens-cache29.us34[1082,1081,200-0,M], ens-cache21.us34[1086,0]"", ""x-cache"": ""MISS TCP_MISS dirn:-2:-2""}",1,0.004329004329004329
+network.dns_addresses,346,346,0,0,0,317,"[{""address"": ""20.112.250.133"", ""family"": ""IPv4""}, {""address"": ""20.231.239.246"", ""family"": ""IPv4""}, {""address"": ""20.236.44.162"", ""family"": ""IPv4""}, {""address"": ""20.70.246.20"", ""family"": ""IPv4""}, {""address"": ""20.76.201.171"", ""family"": ""IPv4""}]",4,0.011560693641618497
+metadata.canonical_url,324,143,51,122,8,136,https://www.apple.com/,2,0.013986013986013986
+human.homepage_final_url,324,231,0,85,8,220,https://www.google.com/,5,0.021645021645021644
+network.tls_certificate_not_after,346,318,0,0,28,255,Oct 11 23:59:59 2026 GMT,8,0.025157232704402517
+economic.registration_links,324,77,112,122,13,75,"[{""text"": ""Log In"", ""url"": ""https://discord.com/app""}, {""text"": ""Open Discord in your browser"", ""url"": ""https://discord.com/login""}]",2,0.025974025974025976
+network.tls_certificate_not_before,346,318,0,0,28,268,Jul 13 00:00:00 2026 GMT,9,0.02830188679245283
+economic.pricing_links,324,70,120,122,12,69,"[{""text"": ""View pricing"", ""url"": ""https://www.apple.com/us/shop/goto/buy_iphone/iphone_duo""}]",2,0.02857142857142857
+metadata.html_title,324,188,6,122,8,173,Google,7,0.03723404255319149
+legal.policy_links,324,143,46,122,13,130,"[{""text"": ""Privacy"", ""url"": ""https://www.google.com/intl/en/policies/privacy/""}, {""text"": ""Terms"", ""url"": ""https://www.google.com/intl/en/policies/terms/""}]",6,0.04195804195804196
+preservation.cache_header_hints,324,185,46,85,8,145,"{""cache-control"": ""private, max-age=0""}",8,0.043243243243243246
+infrastructure.cache_headers,324,185,46,85,8,145,"{""cache-control"": ""private, max-age=0""}",8,0.043243243243243246
+metadata.web_manifest_url,324,38,148,122,16,36,https://www.mi.com/us/manifest.json?xm-v=0.55.138,2,0.05263157894736842
+metadata.json_ld_types,324,94,96,122,12,76,"[""Organization""]",5,0.05319148936170213
+agent.tollbit_gateway,346,18,318,0,10,18,"{""canonical_name"": ""www3.l.google.com"", ""hostname"": ""tollbit.app-ads-services.com"", ""record_types"": [""A"", ""CNAME""]}",1,0.05555555555555555
+crawler.http_status_distribution,346,314,32,0,0,106,"{""404"": 4}",24,0.07643312101910828
+metadata.feeds,324,13,170,122,19,13,"[""https://alphonso.tv/comments/feed/"", ""https://alphonso.tv/feed/"", ""https://alphonso.tv/wp-json/wp/v2/pages/7655""]",1,0.07692307692307693
+network.dns_soa_primary,346,337,0,0,9,234,ns1.google.com,26,0.0771513353115727
+network.dns_nameservers,346,337,0,0,9,253,"[""ns1.google.com"", ""ns2.google.com"", ""ns3.google.com"", ""ns4.google.com""]",26,0.0771513353115727
+legal.license_links,324,25,159,122,18,22,"[{""text"": ""Licensing"", ""url"": ""https://www.microsoft.com/licensing/""}]",2,0.08
+agent.interface_links,324,11,173,122,18,11,"[{""rel"": [], ""tag"": ""a"", ""type"": null, ""url"": ""https://amplitude.com/mcp-server?siteLocation=nav""}, {""rel"": [], ""tag"": ""a"", ""type"": null, ""url"": ""https://amplitude.com/mcp-server?siteLocation=homepage_platform_cards""}, {""rel"": [], ""tag"": ""a"", ""type"": null, ""url"": ""https://amplitude.com/mcp-server?siteLocation=footer""}]",1,0.09090909090909091
+metadata.generator,324,29,156,122,17,25,HubSpot,3,0.10344827586206896
+agent.mcp,324,9,175,122,18,9,"[""https://amplitude.com/mcp-server?siteLocation=footer"", ""https://amplitude.com/mcp-server?siteLocation=homepage_platform_cards"", ""https://amplitude.com/mcp-server?siteLocation=nav""]",1,0.1111111111111111
+network.tls_certificate_issuer,346,318,0,0,28,53,"countryName=US, organizationName=DigiCert Inc, commonName=DigiCert Global G2 TLS RSA SHA256 2020 CA1",41,0.1289308176100629
+infrastructure.security_headers,324,194,37,85,8,28,"[""content-security-policy"", ""referrer-policy"", ""strict-transport-security"", ""x-content-type-options"", ""x-frame-options""]",26,0.13402061855670103
+metadata.opensearch_url,324,6,177,122,19,6,https://firebase.google.com/s/opensearch.xml,1,0.16666666666666666
+infrastructure.cache_status,324,86,145,85,8,32,"[{""provider"": ""cloudflare"", ""status"": ""HIT""}]",15,0.1744186046511628
+infrastructure.server_header,324,181,50,85,8,50,cloudflare,49,0.27071823204419887
+network.dns_address_count,346,346,0,0,0,13,2,104,0.30057803468208094
+metadata.sitemap_child_sitemap_count,345,125,72,87,61,41,0,41,0.328
+crawler.user_agents,346,281,28,0,37,92,"[""*""]",94,0.33451957295373663
+infrastructure.dns_provider,346,217,120,0,9,10,"[""amazon_route_53""]",89,0.41013824884792627
+human.homepage_content_type,324,230,1,85,8,10,text/html; charset=utf-8,96,0.41739130434782606
+crawler.http_403_frequency,346,314,32,0,0,18,"{""count"": 0, ""rate"": 0.0, ""response_count"": 8}",134,0.4267515923566879
+legal.scraping_restrictions,324,7,166,131,20,5,"{""declarations"": [{""rule"": ""automated_access_prohibited"", ""source_url"": ""https://www.apple.com/legal/internet-services/terms/site.html""}], ""detected"": true}",3,0.42857142857142855
+crawler.http_429_frequency,346,314,32,0,0,9,"{""count"": 0, ""rate"": 0.0, ""response_count"": 8}",140,0.445859872611465
+crawler.sitemaps,346,281,28,0,37,136,[],136,0.48398576512455516
+human.cookie_wall_detected,324,22,161,122,19,6,"{""detected"": true, ""markers"": [""resource:cookielaw.org""]}",11,0.5
+economic.metering,324,2,156,142,24,2,"{""declarations"": [{""detail"": ""up to 10,000 requests per month"", ""rule"": ""periodic_limit"", ""source_url"": ""https://www.hcaptcha.com/plans""}], ""detected"": true}",1,0.5
+legal.license,324,4,179,122,19,3,"[""https://creativecommons.org/licenses/by-sa/4.0/""]",2,0.5
+infrastructure.edge_response_hints,324,89,142,85,8,5,"[""cloudflare""]",48,0.5393258426966292
+infrastructure.cdn,324,88,143,85,8,4,"[""cloudflare""]",48,0.5454545454545454
+infrastructure.cdn_hints,324,88,143,85,8,4,"[""cloudflare""]",48,0.5454545454545454
+network.tls_cipher,346,318,0,0,28,9,"{""bits"": 256, ""name"": ""TLS_AES_256_GCM_SHA384"", ""protocol"": ""TLSv1.3""}",175,0.550314465408805
+network.dns_ip_families,346,346,0,0,0,2,"[""IPv4""]",198,0.5722543352601156
+economic.registration_required,324,5,147,148,24,2,True,3,0.6
+metadata.html_language,324,175,19,122,8,10,en,115,0.6571428571428571
+human.captcha_detected,324,9,174,122,19,4,"{""detected"": true, ""markers"": [""resource:google.com/recaptcha""]}",6,0.6666666666666666
+infrastructure.response_cookie_fingerprints,324,6,225,85,8,3,"[""cloudflare:__cf_bm""]",4,0.6666666666666666
+metadata.llms_txt_status,240,144,0,88,8,4,404,96,0.6666666666666666
+metadata.sitemap_document_type,345,125,72,87,61,2,sitemapindex,84,0.672
+metadata.sitemap_url_count,345,125,72,87,61,39,0,84,0.672
+metadata.sitemap_exists,345,186,11,87,61,2,True,125,0.6720430107526881
+metadata.llms_txt_exists,240,139,5,88,8,2,False,96,0.6906474820143885
+metadata.sitemap_status,345,250,0,87,8,5,200,178,0.712
+crawler.robots_status,346,309,0,0,37,7,200,235,0.7605177993527508
+crawler.ai_specific_user_agents,346,281,28,0,37,43,[],223,0.7935943060498221
+infrastructure.bot_management_hints,324,5,226,85,8,2,"[""cloudflare""]",4,0.8
+crawler.robots_exists,346,281,28,0,37,2,True,235,0.8362989323843416
+crawler.ai_homepage_policies,346,281,28,0,37,23,"{""amazonbot"": true, ""anthropic-ai"": true, ""bytespider"": true, ""ccbot"": true, ""chatgpt-user"": true, ""claude-web"": true, ""cohere-ai"": true, ""google-extended"": true, ""gptbot"": true, ""meta-externalagent"": true, ""perplexitybot"": true}",236,0.8398576512455516
+network.tls_version,346,318,0,0,28,2,TLSv1.3,269,0.8459119496855346
+human.homepage_status,324,231,0,85,8,5,200,196,0.8484848484848485
+human.homepage_accessible,324,231,0,85,8,2,True,198,0.8571428571428571
+human.http_access_disposition,324,231,0,85,8,3,reachable,198,0.8571428571428571
+network.http_version,324,231,0,85,8,2,HTTP/2,210,0.9090909090909091
+crawler.homepage_policy_allowed,346,281,28,0,37,2,True,261,0.9288256227758007
+crawler.crawl_delays,346,281,28,0,37,16,{},262,0.9323843416370107
+network.dns_addresses_truncated,346,346,0,0,0,2,False,345,0.9971098265895953
+infrastructure.edge_location_hints,324,50,181,85,8,1,"{""cloudflare"": ""IAD""}",50,1.0
+infrastructure.http3_advertised,324,100,131,85,8,1,True,100,1.0
+infrastructure.load_balancer_hints,324,1,230,85,8,1,"[""cloudflare""]",1,1.0
+infrastructure.content_encoding,324,188,43,85,8,1,gzip,188,1.0
+infrastructure.challenge_response,324,5,226,85,8,1,"{""provider"": ""cloudflare"", ""type"": ""challenge""}",5,1.0
+economic.api_pricing,324,1,157,142,24,1,"{""declarations"": [{""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/legal/code-of-conduct""}, {""detail"": ""$ 0.25"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/products/scraper-api/web/pricing""}], ""detected"": true}",1,1.0
+agent.oauth_metadata,324,1,182,122,19,1,"[""https://dashboard.stripe.com/login/oauth/google/init""]",1,1.0
+agent.graphql,324,1,182,122,19,1,"[""https://web.np.playstation.com/api/graphql/v1""]",1,1.0
+agent.api_documentation,324,1,182,122,19,1,"[""https://developers.zoom.us/docs/mcp/""]",1,1.0
+human.rate_limited,324,231,0,85,8,1,False,231,1.0
+human.javascript_required,324,8,175,122,19,1,"{""detected"": true, ""markers"": [""noscript:javascript-required""]}",8,1.0
+infrastructure.waf,324,5,226,85,8,1,"[""cloudflare""]",5,1.0
+metadata.open_graph,324,145,49,122,8,1,True,145,1.0
+metadata.json_ld,324,94,96,122,12,1,True,94,1.0
+legal.ai_restrictions,324,1,172,131,20,1,"{""declarations"": [{""rule"": ""ai_training_prohibited"", ""source_url"": ""https://www.docker.com/legal/docker-terms-use/""}], ""detected"": true}",1,1.0
+network.dns_canonical_name,346,1,335,0,10,1,sgp.ali.cdn.b2cop.lb.mi.com,1,1.0
+network.dns_resolved,346,346,0,0,0,1,True,346,1.0
+network.tls_certificate_verified,346,318,0,0,28,1,True,318,1.0
+network.tls_handshake,346,318,0,0,28,1,True,318,1.0
+agent.a2a,324,0,183,122,19,0,,0,
+agent.agent_card,324,0,183,122,19,0,,0,
+agent.openapi,324,0,183,122,19,0,,0,
+browser.navigation,324,0,0,324,0,0,,0,
+browser.network_summary,324,0,0,324,0,0,,0,
+browser.rendered_document,324,0,0,324,0,0,,0,
+crawler.browser_http_difference,324,0,0,324,0,0,,0,
+economic.subscription_required,324,0,183,122,19,0,,0,
+human.authentication_challenge,324,0,231,85,8,0,,0,
+human.browser_captcha_marker_visible,324,0,0,324,0,0,,0,
+human.browser_cookie_wall_marker_visible,324,0,0,324,0,0,,0,
+human.browser_login_marker_visible,324,0,0,324,0,0,,0,
+human.browser_paywall_marker_visible,324,0,0,324,0,0,,0,
+human.geographic_restriction,324,0,231,85,8,0,,0,
+human.login_required,324,0,231,85,8,0,,0,
+human.paywall_detected,324,0,183,122,19,0,,0,
+infrastructure.acceleration_hints,324,0,231,85,8,0,,0,
+infrastructure.edge_provider,346,0,336,0,10,0,,0,
+infrastructure.edge_service_hints,346,0,336,0,10,0,,0,
+infrastructure.hosting_provider,346,0,336,0,10,0,,0,
+preservation.archive_blocked,240,0,0,240,0,0,,0,
+preservation.archive_coverage,240,0,0,240,0,0,,0,
+preservation.cache_behavior,240,0,0,240,0,0,,0,

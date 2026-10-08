@@ -5,11 +5,11 @@ import pandas as pd
 
 
 INPUT = Path(
-    "data/analysis/top1000-2026-09-28/observations.csv"
+    "data/analysis/top500-2026-10-04/observations.csv"
 )
 
 OUTPUT = Path(
-    "data/analysis/top1000-2026-09-28/signal_similarity.csv"
+    "data/analysis/top500-2026-10-04/signal_similarity.csv"
 )
 
 
