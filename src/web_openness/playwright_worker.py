@@ -202,8 +202,7 @@ class PlaywrightBrowserWorker:
                 try:
                     await route.continue_()
                 except PlaywrightError:
-                    # If the page was intentionally closed because the
-                    # transfer limit was reached, this request is no longer
+                    # If the page closed because the transfer limit was reached, this request is no longer
                     # relevant and should not crash the scan.
                     if page.is_closed() or transfer_error is not None:
                         return
