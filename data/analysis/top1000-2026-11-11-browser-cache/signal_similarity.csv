@@ -1,0 +1,111 @@
+signal,domain_count,observed_count,no_evidence_count,skipped_count,error_count,unique_values,most_common_value,most_common_count,similarity_score
+infrastructure.response_headers,671,486,0,176,9,486,"{""age"": ""345"", ""cache-control"": ""max-age=600"", ""content-encoding"": ""gzip"", ""content-length"": ""2915"", ""content-type"": ""text/html; charset=utf-8"", ""date"": ""Wed, 11 Nov 2026 22:21:05 GMT"", ""etag"": ""W/\""6ae989eb-1b96\"""", ""last-modified"": ""Tue, 03 Nov 2026 07:14:51 GMT"", ""server"": ""GitHub.com"", ""strict-transport-security"": ""max-age=31556952"", ""vary"": ""Accept-Encoding"", ""via"": ""1.1 varnish"", ""x-cache"": ""HIT"", ""x-served-by"": ""cache-iad-kiad7000049-IAD""}",1,0.002057613
+crawler.browser_http_difference,671,421,0,176,74,421,"{""access_disposition_changed"": false, ""browser_final_url"": ""https://0xrpc.github.io/"", ""browser_status"": 200, ""document_char_delta"": -14, ""final_url_changed"": true, ""http_available"": true, ""http_document_chars"": 7055, ""http_final_url"": ""https://0xrpc.github.io"", ""http_status"": 200, ""rendered_document_chars"": 7041, ""status_changed"": false}",1,0.002375297
+network.dns_addresses,710,710,0,0,0,640,"[{""address"": ""141.193.213.20"", ""family"": ""IPv4""}, {""address"": ""141.193.213.21"", ""family"": ""IPv4""}]",7,0.009859155
+metadata.canonical_url,671,292,127,240,12,274,https://discord.com,3,0.010273972602739725
+browser.network_summary,671,421,0,176,74,412,"{""blocked_requests"": 0, ""requests"": 3, ""third_party_requests"": 2, ""transferred_response_bytes"": 12780}",5,0.011876484560570071
+network.tls_certificate_not_after,710,646,0,0,64,496,Nov 19 23:59:59 2026 GMT,9,0.013931889
+economic.pricing_links,671,142,264,240,25,132,"[{""text"": ""Subscribe & Save"", ""url"": ""https://www.amazon.com/auto-deliveries/landing?ref_=nav_cs_sns""}, {""text"": ""Amazon Newsletter"", ""url"": ""https://www.aboutamazon.com/subscribe?utm_source=amazon_com&utm_medium=amazonfooter&utm_campaign=newslettersubscribers&utm_term=amazonnewssignup""}]",2,0.014084507042253521
+economic.registration_links,671,179,227,240,25,167,"[{""text"": ""Log In"", ""url"": ""https://discord.com/app""}, {""text"": ""Open Discord in your browser"", ""url"": ""https://discord.com/login""}]",3,0.016759777
+network.tls_certificate_not_before,710,646,0,0,64,517,Aug 21 00:00:00 2026 GMT,13,0.020123839009287926
+metadata.web_manifest_url,671,89,308,240,34,85,https://bunny.net/manifest.webmanifest,2,0.02247191
+browser.rendered_document,671,421,0,176,74,397,"{""document_chars"": 1591, ""title"": ""Error 404 (Not Found)!!1"", ""visible_text_chars"": 92}",11,0.026128266033254157
+agent.tollbit_gateway,710,37,656,0,17,37,"{""canonical_name"": ""redirect.acrobat.com"", ""hostname"": ""tollbit.acrobat.com"", ""record_types"": [""A"", ""CNAME""]}",1,0.027027027
+human.homepage_final_url,671,486,0,176,9,459,https://www.google.com/,15,0.030864197530864196
+browser.navigation,671,421,0,176,74,393,"{""accessible"": true, ""final_url"": ""https://www.google.com/"", ""status"": 200}",16,0.038004751
+metadata.html_title,671,402,18,240,11,363,Google,17,0.042288557
+metadata.json_ld_types,671,211,199,240,21,152,"[""BreadcrumbList"", ""EntryPoint"", ""ImageObject"", ""ListItem"", ""Organization"", ""PropertyValueSpecification"", ""ReadAction"", ""SearchAction"", ""WebPage"", ""WebSite""]",10,0.047393365
+legal.policy_links,671,301,105,240,25,269,"[{""text"": ""Privacy"", ""url"": ""https://www.google.com/intl/en/policies/privacy/""}, {""text"": ""Terms"", ""url"": ""https://www.google.com/intl/en/policies/terms/""}]",15,0.049833887
+preservation.cache_header_hints,671,392,94,176,9,277,"{""cache-control"": ""private, max-age=0""}",20,0.051020408
+infrastructure.cache_headers,671,392,94,176,9,277,"{""cache-control"": ""private, max-age=0""}",20,0.051020408
+legal.license_links,671,39,356,240,36,36,"[{""text"": ""Pricing and Billing"", ""url"": ""https://www.atlassian.com/company/contact/purchasing-licensing""}, {""text"": ""Purchasing and Licensing"", ""url"": ""https://www.atlassian.com/licensing/purchase-licensing""}]",2,0.051282051
+metadata.feeds,671,39,352,240,40,35,"[""https://www.docker.com/feed/"", ""https://www.docker.com/wp-json/wp/v2/pages/69521""]",2,0.051282051
+network.dns_soa_primary,710,688,6,0,16,467,ns1.google.com,39,0.056686046511627904
+network.dns_nameservers,710,687,7,0,16,514,"[""ns1.google.com"", ""ns2.google.com"", ""ns3.google.com"", ""ns4.google.com""]",39,0.056768558951965066
+crawler.http_status_distribution,710,633,77,0,0,194,"{""200"": 5, ""301"": 3}",49,0.077409163
+agent.interface_links,671,25,367,240,39,21,"[{""rel"": [], ""tag"": ""a"", ""type"": null, ""url"": ""https://www.docker.com/products/mcp-enterprise-gateway/""}]",2,0.08
+metadata.generator,671,62,332,240,37,43,WordPress 7.1.4,5,0.080645161
+agent.mcp,671,22,370,240,39,19,"[""https://www.docker.com/products/mcp-enterprise-gateway/""]",2,0.090909091
+infrastructure.security_headers,671,397,89,176,9,39,"[""content-security-policy"", ""referrer-policy"", ""strict-transport-security"", ""x-content-type-options"", ""x-frame-options""]",41,0.10327455919395466
+metadata.opensearch_url,671,16,374,240,41,14,https://www.themoviedb.org/opensearch.xml,2,0.125
+network.dns_canonical_name,710,8,685,0,17,8,dalyfeds.com.edgesuite.net,1,0.125
+network.tls_certificate_issuer,710,646,0,0,64,79,"countryName=US, organizationName=Google Trust Services, commonName=WE1",81,0.12538699690402477
+infrastructure.cache_status,671,217,269,176,9,41,"[{""provider"": ""cloudflare"", ""status"": ""DYNAMIC""}]",44,0.20276497695852536
+legal.scraping_restrictions,671,12,349,264,46,8,"{""declarations"": [{""rule"": ""automated_access_prohibited"", ""source_url"": ""https://www.apple.com/legal/internet-services/terms/site.html""}], ""detected"": true}",3,0.25
+network.dns_address_count,710,710,0,0,0,16,1,194,0.27323943661971833
+crawler.user_agents,710,571,52,0,87,172,"[""*""]",190,0.3327495621716287
+legal.license,671,6,383,240,42,5,"[""https://creativecommons.org/licenses/by-sa/4.0/""]",2,0.3333333333333333
+economic.metering,671,3,337,278,53,3,"{""declarations"": [{""detail"": ""up to 10,000 requests per month"", ""rule"": ""periodic_limit"", ""source_url"": ""https://www.hcaptcha.com/plans""}], ""detected"": true}",1,0.3333333333333333
+infrastructure.server_header,671,398,88,176,9,77,cloudflare,140,0.35175879396984927
+metadata.sitemap_child_sitemap_count,707,276,146,182,103,63,0,106,0.38405797101449274
+preservation.cache_behavior,510,87,193,221,9,6,"{""conditional_status"": 304, ""content_unchanged"": true, ""result"": ""not_modified"", ""validator"": ""etag""}",36,0.41379310344827586
+infrastructure.dns_provider,710,458,236,0,16,13,"[""amazon_route_53""]",203,0.4432314410480349
+human.homepage_content_type,671,483,3,176,9,16,text/html; charset=utf-8,216,0.4472049689440994
+crawler.sitemaps,710,571,52,0,87,272,[],271,0.4746059544658494
+crawler.http_403_frequency,710,633,77,0,0,23,"{""count"": 0, ""rate"": 0.0, ""response_count"": 8}",305,0.48183254344391785
+crawler.http_429_frequency,710,633,77,0,0,10,"{""count"": 0, ""rate"": 0.0, ""response_count"": 8}",314,0.4960505529225908
+human.browser_login_marker_visible,671,2,419,176,74,2,"{""selectors"": [""form[action*=\""login\"" i]"", ""form[action*=\""signin\"" i]""], ""visible"": true}",1,0.5
+infrastructure.edge_provider,710,2,691,0,17,2,"[""akamai""]",1,0.5
+human.cookie_wall_detected,671,48,344,240,39,9,"{""detected"": true, ""markers"": [""resource:cookielaw.org""]}",26,0.5416666666666666
+infrastructure.response_cookie_fingerprints,671,21,465,176,9,7,"[""cloudflare:__cf_bm""]",12,0.5714285714285714
+economic.registration_required,671,14,312,289,56,2,TRUE,8,0.5714285714285714
+network.tls_cipher,710,646,0,0,64,10,"{""bits"": 256, ""name"": ""TLS_AES_256_GCM_SHA384"", ""protocol"": ""TLSv1.3""}",370,0.5727554179566563
+infrastructure.edge_response_hints,671,228,258,176,9,7,"[""cloudflare""]",136,0.5964912280701754
+infrastructure.cdn_hints,671,227,259,176,9,6,"[""cloudflare""]",136,0.5991189427312775
+infrastructure.cdn,671,227,259,176,9,6,"[""cloudflare""]",136,0.5991189427312775
+infrastructure.bot_management_hints,671,20,466,176,9,5,"[""cloudflare""]",12,0.6
+metadata.sitemap_url_count,707,276,146,182,103,83,0,170,0.6159420289855072
+metadata.sitemap_document_type,707,276,146,182,103,2,sitemapindex,170,0.6159420289855072
+human.captcha_detected,671,16,373,240,42,6,"{""detected"": true, ""markers"": [""resource:google.com/recaptcha""]}",10,0.625
+network.dns_ip_families,710,710,0,0,0,2,"[""IPv4""]",446,0.6281690140845071
+metadata.llms_txt_status,510,321,0,180,9,5,404,209,0.6510903426791277
+agent.api_documentation,671,3,386,240,42,2,"[""https://developers.zoom.us/docs/mcp/""]",2,0.6666666666666666
+metadata.llms_txt_exists,510,312,9,180,9,2,FALSE,209,0.6698717948717948
+metadata.html_language,671,373,49,240,9,19,en,253,0.678284182
+metadata.sitemap_exists,707,404,18,182,103,2,TRUE,276,0.6831683168316832
+metadata.sitemap_status,707,517,0,182,8,6,200,371,0.7176015473887815
+crawler.robots_status,710,624,0,0,86,11,200,485,0.7772435897435898
+crawler.ai_specific_user_agents,710,571,52,0,87,66,[],465,0.8143607705779334
+crawler.ai_homepage_policies,710,571,52,0,87,38,"{""amazonbot"": true, ""anthropic-ai"": true, ""bytespider"": true, ""ccbot"": true, ""chatgpt-user"": true, ""claude-web"": true, ""cohere-ai"": true, ""google-extended"": true, ""gptbot"": true, ""meta-externalagent"": true, ""perplexitybot"": true}",481,0.8423817863397548
+crawler.robots_exists,710,571,52,0,87,2,TRUE,484,0.8476357267950964
+network.tls_version,710,646,0,0,64,2,TLSv1.3,557,0.8622291021671826
+human.homepage_status,671,486,0,176,9,9,200,426,0.8765432098765432
+human.http_access_disposition,671,486,0,176,9,5,reachable,429,0.8827160493827161
+human.homepage_accessible,671,486,0,176,9,2,TRUE,429,0.8827160493827161
+network.http_version,671,486,0,176,9,2,HTTP/2,440,0.9053497942386831
+crawler.homepage_policy_allowed,710,571,52,0,87,2,TRUE,534,0.9352014010507881
+infrastructure.edge_location_hints,671,143,343,176,9,7,"{""cloudflare"": ""IAD""}",134,0.9370629370629371
+crawler.crawl_delays,710,571,52,0,87,23,{},536,0.9387040280210157
+network.dns_addresses_truncated,710,710,0,0,0,2,FALSE,706,0.9943661971830986
+human.rate_limited,671,486,0,176,9,2,FALSE,484,0.9958847736625515
+agent.graphql,671,1,388,240,42,1,"[""https://web.np.playstation.com/api/graphql/v1""]",1,1
+legal.ai_restrictions,671,2,359,264,46,1,"{""declarations"": [{""rule"": ""ai_training_prohibited"", ""source_url"": ""https://www.docker.com/legal/docker-terms-use/""}], ""detected"": true}",2,1
+infrastructure.waf,671,10,476,176,9,1,"[""cloudflare""]",10,1
+infrastructure.edge_service_hints,710,1,692,0,17,1,"[""akamai_standard_tls_edge_hostname""]",1,1
+infrastructure.http3_advertised,671,201,285,176,9,1,TRUE,201,1
+infrastructure.load_balancer_hints,671,1,485,176,9,1,"[""cloudflare""]",1,1
+human.javascript_required,671,16,373,240,42,1,"{""detected"": true, ""markers"": [""noscript:javascript-required""]}",16,1
+infrastructure.challenge_response,671,10,476,176,9,1,"{""provider"": ""cloudflare"", ""type"": ""challenge""}",10,1
+infrastructure.content_encoding,671,410,76,176,9,1,gzip,410,1
+human.paywall_detected,671,2,387,240,42,1,"{""detected"": true, ""markers"": [""dom:paywall""]}",2,1
+agent.oauth_metadata,671,2,387,240,42,1,"[""https://dashboard.stripe.com/login/oauth/google/init""]",2,1
+economic.api_pricing,671,1,338,278,54,1,"{""declarations"": [{""detail"": ""$0.50"", ""rule"": ""published_api_price"", ""source_url"": ""https://oxylabs.io/products/web-api/scrape/pricing""}], ""detected"": true}",1,1
+human.browser_paywall_marker_visible,671,1,420,176,74,1,"{""selectors"": [""[id*=\""paywall\"" i]""], ""visible"": true}",1,1
+metadata.json_ld,671,212,199,240,20,1,TRUE,212,1
+network.dns_resolved,710,710,0,0,0,1,TRUE,710,1
+network.tls_certificate_verified,710,646,0,0,64,1,TRUE,646,1
+metadata.open_graph,671,308,112,240,11,1,TRUE,308,1
+network.tls_handshake,710,646,0,0,64,1,TRUE,646,1
+agent.a2a,671,0,389,240,42,0,,0,
+agent.agent_card,671,0,389,240,42,0,,0,
+agent.openapi,671,0,389,240,42,0,,0,
+economic.subscription_required,671,0,389,240,42,0,,0,
+human.authentication_challenge,671,0,486,176,9,0,,0,
+human.browser_captcha_marker_visible,671,0,421,176,74,0,,0,
+human.browser_cookie_wall_marker_visible,671,0,421,176,74,0,,0,
+human.geographic_restriction,671,0,486,176,9,0,,0,
+human.login_required,671,0,486,176,9,0,,0,
+infrastructure.acceleration_hints,671,0,486,176,9,0,,0,
+infrastructure.hosting_provider,710,0,693,0,17,0,,0,
+preservation.archive_blocked,510,0,0,510,0,0,,0,
+preservation.archive_coverage,510,0,0,510,0,0,,0,
